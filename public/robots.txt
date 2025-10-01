@@ -1,0 +1,64 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and API routes (except public APIs)
+Disallow: /api/
+Allow: /api/indexnow
+
+# Disallow temporary or development files
+Disallow: /_next/
+Disallow: /temp/
+Disallow: /.well-known/
+
+# Allow all major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Host
+Host: https://www.petshard.online
+
+# Sitemaps
+Sitemap: https://www.petshard.online/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# IndexNow key location
+# IndexNow-Key: https://www.petshard.online/indexnow-key.txt 
