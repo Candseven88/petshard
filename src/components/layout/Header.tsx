@@ -9,21 +9,22 @@ interface HeaderProps {
   showBackButton?: boolean;
 }
 
-// 主要导航项
+// 主要导航项（优先显示新亮点功能）
 const mainNavItems = [
-  { label: "Breed Identification", href: "/breed-identification" },
-  { label: "Pet Age Calculator", href: "/pet-age-calculator" },
-  { label: "Video Generator", href: "/pet-video" },
-  { label: "Virtual Breeding", href: "/virtual-breeding" },
+  { label: "Health Center", href: "/health-center", icon: "🏥" },
+  { label: "Care Guide", href: "/pet-care-guide", icon: "📚" },
+  { label: "Breed ID", href: "/breed-identification", icon: "🔍" },
+  { label: "Age Calc", href: "/pet-age-calculator", icon: "📅" },
 ];
 
 // 次要导航项（将放入下拉菜单）
 const dropdownNavItems = [
-  { label: "Health Guide", href: "/health-guide" },
-  { label: "Pet Diary", href: "/pet-diary" },
-  { label: "Pet Horoscope", href: "/pet-horoscope" },
-  { label: "AI Tools", href: "/ai-tools" },
-  { label: "Blog", href: "/blog" },
+  { label: "Virtual Breeding", href: "/virtual-breeding", icon: "🧬" },
+  { label: "Video Generator", href: "/pet-video", icon: "🎬" },
+  { label: "Pet Diary", href: "/pet-diary", icon: "📔" },
+  { label: "Pet Horoscope", href: "/pet-horoscope", icon: "🔮" },
+  { label: "Blog", href: "/blog", icon: "📝" },
+  { label: "AI Tools", href: "/ai-tools", icon: "🤖" },
 ];
 
 export default function Header({ title, showBackButton = false }: HeaderProps) {
@@ -73,18 +74,20 @@ export default function Header({ title, showBackButton = false }: HeaderProps) {
         </div>
         
         {/* 主导航 */}
-        <nav className="flex items-center gap-2 md:gap-3">
+        <nav className="flex items-center gap-1 md:gap-2">
           {mainNavItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`px-3 py-1 rounded-lg font-medium transition-all duration-200 ${
+              className={`px-2 md:px-3 py-1 rounded-lg font-medium text-sm md:text-base transition-all duration-200 whitespace-nowrap ${
                 isActive(item.href) 
                 ? "bg-pink-100 text-pink-600 font-semibold" 
                 : "text-gray-700 hover:bg-pink-100 hover:text-pink-600 active:scale-95"
               }`}
+              title={item.label}
             >
-              {item.label}
+              <span className="hidden sm:inline">{item.label}</span>
+              <span className="inline sm:hidden">{item.icon}</span>
             </Link>
           ))}
           
@@ -107,19 +110,20 @@ export default function Header({ title, showBackButton = false }: HeaderProps) {
             </button>
             
             {dropdownOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-1 z-40 animate-fadeIn">
+              <div className="absolute right-0 mt-2 w-52 bg-white rounded-lg shadow-lg py-1 z-40 animate-fadeIn border border-pink-100">
                 {dropdownNavItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`block px-4 py-2 ${
+                    className={`flex items-center gap-2 px-4 py-2 transition-colors ${
                       isActive(item.href) 
                       ? "bg-pink-50 text-pink-600 font-medium" 
                       : "text-gray-700 hover:bg-pink-50 hover:text-pink-600"
                     }`}
                     onClick={() => setDropdownOpen(false)}
                   >
-                    {item.label}
+                    <span className="text-lg">{item.icon}</span>
+                    <span>{item.label}</span>
                   </Link>
                 ))}
               </div>

@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 /**
  * API Route: /api/pet-diary
  * 
- * This endpoint generates a pet diary entry using Bigmodel GLM-4-Flash-250414.
+ * This endpoint generates a pet diary entry using Bigmodel GLM-4.5-Flash.
  * It accepts a prompt (string) and returns a diary entry in English.
  */
 
@@ -29,25 +29,31 @@ export async function POST(request: Request) {
     }
 
     // Compose prompt for social media post generation
-    const promptText = `You are a social media content creator for pets. Write a short, fun, and engaging English post for a mainstream social media platform (like Instagram, Facebook, or Twitter) based on the following topic or idea: "${prompt}". The post should be lively, use first-person as the pet, include some emojis, and be suitable for direct posting. Do NOT include any date, [Owner's Name], or technical details. Limit to 2-5 sentences.`;
+    const promptText = `You are a creative social media content creator specializing in pet content. Write a short, fun, and engaging post in English for a mainstream social media platform (like Instagram, Facebook, or Twitter) based on the following topic or idea: "${prompt}".
+
+IMPORTANT: Your response MUST be entirely in English.
+
+Requirements:
+- Write in first-person as the pet
+- Make it lively and entertaining
+- Include appropriate emojis (2-4 emojis)
+- Keep it suitable for direct posting
+- DO NOT include dates, [Owner's Name], hashtags, or technical details
+- Length: 2-5 sentences
+- Response must be in English`;
 
     const apiUrl = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
     const requestBody = {
-      model: "glm-4-flash-250414",
+      model: "glm-4-flash",
       messages: [
         {
           role: "user",
-          content: [
-            {
-              type: "text",
-              text: promptText
-            }
-          ]
+          content: promptText
         }
       ],
-      temperature: 0.7,
-      top_p: 0.9,
-      max_tokens: 800
+      temperature: 0.8,
+      top_p: 0.95,
+      max_tokens: 512
     };
 
     const response = await fetch(apiUrl, {

@@ -12,6 +12,22 @@ const petImages = [
 
 const coreFeatures = [
   {
+    title: "Pet Health Center",
+    desc: "Check symptoms and get breed-specific health advice instantly.",
+    img: "/pet/7.jpg",
+    href: "/health-center",
+    badge: "NEW",
+    highlight: true
+  },
+  {
+    title: "Pet Care Guide",
+    desc: "Get personalized care advice for feeding, training, and more.",
+    img: "/pet/8.jpg",
+    href: "/pet-care-guide",
+    badge: "NEW",
+    highlight: true
+  },
+  {
     title: "Pet Breed Identification",
     desc: "Upload a photo and let AI tell you your pet's breed.",
     img: "/pet/2.jpg",
@@ -22,24 +38,12 @@ const coreFeatures = [
     desc: "Convert your pet's age to human years.",
     img: "/pet/5.jpg",
     href: "/pet-age-calculator"
-  },
-  {
-    title: "Virtual Breeding Analysis",
-    desc: "See what your pet's offspring might look like!",
-    img: "/pet/4.jpg",
-    href: "/virtual-breeding"
-  },
-  {
-    title: "Pet Video Generator",
-    desc: "Create fun videos of your pet with AI magic.",
-    img: "/pet/1.jpg",
-    href: "/pet-video"
   }
 ];
 
 const minorFeatures = [
-  { title: "Pet Ranking", icon: "🏆", desc: "Vote for the cutest pets", href: "/pet-ranking" },
-  { title: "Health Guide", icon: "🩺", desc: "AI health tips for your pet", href: "/health-guide" },
+  { title: "Virtual Breeding", icon: "🧬", desc: "Predict offspring appearance", href: "/virtual-breeding" },
+  { title: "Video Generator", icon: "🎬", desc: "Create fun pet videos", href: "/pet-video" },
   { title: "Pet Diary", icon: "📔", desc: "Record your pet's daily life", href: "/pet-diary" },
   { title: "Pet Horoscope", icon: "🔮", desc: "Discover your pet's zodiac", href: "/pet-horoscope" },
 ];
@@ -81,14 +85,23 @@ function HomeContent() {
         </section>
 
         {/* Core Features Section */}
-        <section id="core-features" className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <section id="core-features" className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {coreFeatures.map((f, i) => (
-            <a key={f.title} href={f.href} className="group bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-pink-200 cursor-pointer animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-              <div className="w-32 h-32 mb-4 relative">
+            <a key={f.title} href={f.href} className={`group bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer animate-fade-in relative ${
+              f.highlight ? 'border-2 border-pink-400 ring-2 ring-pink-200' : 'border-2 border-transparent hover:border-pink-200'
+            }`} style={{ animationDelay: `${i * 100}ms` }}>
+              {f.badge && (
+                <span className="absolute top-3 right-3 bg-gradient-to-r from-pink-500 to-red-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-md animate-pulse">
+                  {f.badge}
+                </span>
+              )}
+              <div className="w-28 h-28 mb-4 relative">
                 <Image src={f.img} alt={f.title} fill className="object-cover rounded-xl group-hover:scale-110 transition-transform duration-300" />
               </div>
-              <h3 className="text-xl font-bold text-pink-500 mb-2">{f.title}</h3>
-              <p className="text-gray-600 text-center">{f.desc}</p>
+              <h3 className={`text-lg font-bold mb-2 text-center ${f.highlight ? 'text-pink-600' : 'text-pink-500'}`}>
+                {f.title}
+              </h3>
+              <p className="text-gray-600 text-center text-sm">{f.desc}</p>
             </a>
           ))}
         </section>

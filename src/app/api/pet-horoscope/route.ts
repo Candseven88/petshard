@@ -12,47 +12,50 @@ export async function POST(req: NextRequest) {
     }
 
     // Compose prompt for structured pet horoscope analysis
-    const promptText = `You are an expert pet astrologer and animal behaviorist. Please generate a detailed, engaging, and professional English pet horoscope analysis for the following pet:
+    const promptText = `You are an expert pet astrologer and animal behaviorist. Please generate a detailed, engaging, and professional pet horoscope analysis for the following pet:
 
 - Breed: ${breed}
 - Zodiac sign: ${zodiac}
 - Birthday: ${birthday}
 
+IMPORTANT: All content MUST be in English only.
+
 Your response must be a valid JSON object with the following structure:
 {
-  "zodiac": "", // Zodiac sign name
+  "zodiac": "", // Zodiac sign name in English
   "date_range": "", // Zodiac date range (e.g. August 23 – September 22)
-  "keywords": ["", "", ""], // 3-5 representative keywords as short adjectives
+  "keywords": ["", "", ""], // 3-5 representative keywords as short English adjectives
   "sections": {
-    "personality": "", // 2-3 sentences about personality traits combining breed and zodiac
-    "compatibility": "", // 1-2 sentences about compatibility with owners/other pets
-    "tips": "", // 2-3 short tips for owners
-    "challenges": "" // 1-2 sentences about potential challenges
+    "personality": "", // 2-3 sentences in English about personality traits combining breed and zodiac
+    "compatibility": "", // 1-2 sentences in English about compatibility with owners/other pets
+    "tips": "", // 2-3 short tips in English for owners
+    "challenges": "" // 1-2 sentences in English about potential challenges
   },
-  "lucky_color": "", // Lucky color (one word)
+  "lucky_color": "", // Lucky color (one word in English)
   "lucky_number": "", // Lucky number (single digit)
-  "conclusion": "" // 1 sentence warm conclusion
+  "conclusion": "" // 1 sentence warm conclusion in English
 }
 
-Keep each section concise (2-3 sentences maximum) and focused on the most important points. The analysis should be lively, positive, and suitable for pet owners. Only output the JSON object, nothing else.`;
+Requirements:
+- Keep each section concise (2-3 sentences maximum)
+- Focus on the most important and insightful points
+- Make the analysis lively, positive, and suitable for pet owners
+- Combine breed characteristics with zodiac traits
+- Only output the JSON object, nothing else
+- All text must be in English`;
 
     const apiUrl = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
     const requestBody = {
-      model: "glm-4-flash-250414",
+      model: "glm-4-flash",
       messages: [
         {
           role: "user",
-          content: [
-            {
-              type: "text",
-              text: promptText
-            }
-          ]
+          content: promptText
         }
       ],
       temperature: 0.7,
-      top_p: 0.9,
-      max_tokens: 1200
+      top_p: 0.95,
+      max_tokens: 1536
     };
 
     const response = await fetch(apiUrl, {

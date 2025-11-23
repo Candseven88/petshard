@@ -21,16 +21,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.petshard.online'),
   title: {
-    default: "PetShard - AI Pet Breed Identification & Virtual Breeding Tools",
+    default: "PetShard - AI Pet Health Center & Care Guide for Dogs & Cats",
     template: "%s | PetShard - AI Pet Tools"
   },
-  description: "Identify your pet's breed, get health insights, create pet videos, analyze virtual breeding compatibility, and generate pet content with our AI-powered tools. Discover AI tools directory including Ghostface AI for creative content.",
+  description: "Check pet symptoms, get instant health advice, and personalized care guides for your pets. AI-powered breed identification, health center, care recommendations, training tips, and more. Expert veterinary insights at your fingertips.",
   keywords: [
+    "pet symptom checker", "pet health center", "pet care guide", "veterinary advice online",
+    "dog symptom checker", "cat health advice", "pet feeding guide", "pet training tips",
     "pet breed identification", "dog breed finder", "cat breed identifier", 
+    "pet grooming guide", "puppy care", "kitten care", "senior pet care",
     "virtual pet breeding", "pet health guide", "pet video generator", 
-    "pet diary", "pet horoscope", "AI pet tools", "AI tools directory",
-    "Ghostface AI", "horror content creation", "supernatural AI", 
-    "pet care technology", "veterinary AI", "pet health analysis"
+    "AI pet tools", "veterinary AI", "pet health analysis", "pet care technology"
   ],
   authors: [{ name: "PetShard Team" }],
   creator: "PetShard",
@@ -41,16 +42,16 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "PetShard - AI Pet Breed Identification & Virtual Breeding Tools",
-    description: "Identify your pet's breed, get health insights, create pet videos, analyze virtual breeding compatibility, and generate pet content with our AI-powered tools. Discover AI tools directory including Ghostface AI for creative content.",
+    title: "PetShard - AI Pet Health Center & Care Guide",
+    description: "Check pet symptoms instantly, get AI-powered health advice, and personalized care guides for your dogs and cats. Expert veterinary insights and breed identification tools.",
     url: "https://www.petshard.online",
     siteName: "PetShard",
     images: [
       {
-        url: "/pet/1.jpg",
+        url: "/pet/7.jpg",
         width: 1200,
         height: 630,
-        alt: "PetShard - AI Pet Tools Platform",
+        alt: "PetShard - AI Pet Health Center & Care Guide",
       }
     ],
     locale: "en_US",
@@ -58,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PetShard - AI Pet Breed Identification & Virtual Breeding Tools",
-    description: "Identify your pet's breed, get health insights, create pet videos, analyze virtual breeding compatibility, and generate pet content with our AI-powered tools.",
-    images: ["/pet/1.jpg"],
+    title: "PetShard - AI Pet Health Center & Care Guide",
+    description: "Check pet symptoms instantly, get AI health advice, and personalized care guides for your pets. Expert veterinary insights at your fingertips.",
+    images: ["/pet/7.jpg"],
     creator: "@PetShard",
   },
   robots: {

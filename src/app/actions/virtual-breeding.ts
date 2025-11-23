@@ -51,7 +51,7 @@ export async function analyzeBreedPairing(formData: FormData) {
     }
 
     // Make the API request
-    const response = await fetch('https://api.bigmodel.cn/api/v1/chat/completions', {
+    const response = await fetch('https://open.bigmodel.cn/api/paas/v4/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

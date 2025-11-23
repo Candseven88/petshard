@@ -3,8 +3,11 @@ import { NextResponse } from 'next/server';
 /**
  * API Route: /api/health-guide
  * 
- * This endpoint generates pet health recommendations using Bigmodel GLM-4-Flash-250414.
+ * This endpoint generates pet health recommendations using Bigmodel GLM-4.5-Flash.
  * It accepts a breed name (string), pet age (optional) and returns a health guide in English.
+ * 
+ * Note: This endpoint is maintained for backward compatibility. 
+ * New implementations should use /api/health-center instead.
  */
 
 export async function POST(request: Request) {
@@ -31,41 +34,47 @@ export async function POST(request: Request) {
     }
 
     // Compose prompt with age information if available
-    let promptText = `You are a professional veterinarian. Please provide a concise, practical health care guide in English for a pet of the following breed: ${breed}.`;
+    let promptText = `You are a professional veterinarian with extensive experience. Please provide a concise, practical health care guide for a pet of the following breed: ${breed}.`;
 
     // Add age information if available
     if (age !== undefined) {
       promptText += ` The pet is ${age} years old.`;
     }
 
-    promptText += ` The guide should include these sections with ## as headers:
+    promptText += `
+
+IMPORTANT: Your response MUST be entirely in English.
+
+The guide should include these sections with ## as headers:
 ## Common Health Issues
 ## Recommended Diet
 ## Exercise Needs
 ## Preventive Care Tips
 ## Age-Specific Recommendations
 
-Keep each section brief and focused, with 1-3 short paragraphs per section. Use clear, simple language. Do not use any markdown formatting except for the ## section headers. Do not use bullet points or numbered lists. Each paragraph should be a single line of text without line breaks within paragraphs.`;
+Guidelines:
+- Keep each section brief and focused, with 2-3 short paragraphs per section
+- Use clear, simple English language
+- Provide actionable, practical advice
+- Use only ## for section headers
+- Do not use bullet points or numbered lists
+- Write in complete paragraphs
+- Response must be in English`;
 
 console.log("Sending prompt to API:", promptText);
 
     const apiUrl = "https://open.bigmodel.cn/api/paas/v4/chat/completions";
     const requestBody = {
-      model: "glm-4-flash-250414",
+      model: "glm-4-flash",
       messages: [
         {
           role: "user",
-          content: [
-            {
-              type: "text",
-              text: promptText
-            }
-          ]
+          content: promptText
         }
       ],
-      temperature: 0.2,
-      top_p: 0.8,
-      max_tokens: 1200
+      temperature: 0.6,
+      top_p: 0.95,
+      max_tokens: 1536
     };
 
     const response = await fetch(apiUrl, {

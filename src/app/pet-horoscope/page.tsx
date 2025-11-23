@@ -330,7 +330,7 @@ export default function PetHoroscope() {
           </div>
         )}
         <div className="text-gray-400 text-xs text-center mt-4">
-          Powered by Bigmodel GLM-4-Flash-250414
+          Powered by Bigmodel GLM-4.5-Flash
         </div>
       </section>
     </Layout>

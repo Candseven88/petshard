@@ -1,116 +1,139 @@
 # PetShard
 
-PetShard是一个宠物相关服务的Web应用，提供宠物品种识别、宠物健康指南、宠物星座和虚拟繁育等功能。
+PetShard是一个专业的AI驱动宠物健康与护理服务平台，为宠物主人提供全方位的宠物健康咨询、护理建议和AI工具。
 
-## 项目特点
+## 核心功能
+
+### 🏥 新功能亮点
+
+- **Pet Health Center（宠物健康中心）**
+  - 🩺 **Symptom Checker（症状问诊）**: 快速分析宠物症状，评估严重程度，提供专业建议
+  - 📋 **Breed Health Guide（品种健康指南）**: 针对特定品种的健康建议和预防措施
+
+- **Pet Care Guide（宠物护理指南）**
+  - 🍖 喂养指南：营养需求和喂养计划
+  - 🎾 训练技巧：行为训练和服从性培养
+  - 🏠 环境布置：安全舒适的生活空间
+  - ✂️ 美容护理：毛发、指甲和牙齿护理
+  - 👶 幼宠护理：幼犬/幼猫的特殊照顾
+  - 👴 老年宠物护理：老龄宠物的特殊需求
+
+### 🔧 其他AI工具
 
 - 宠物品种识别
-- 宠物健康指南
-- 宠物星座
-- 虚拟繁育
+- 宠物年龄计算器
+- 虚拟繁育分析
 - 宠物视频生成
 - 宠物日记
+- 宠物星座
+
+## 功能使用指南
+
+### Pet Health Center（宠物健康中心）
+
+访问路径：`/health-center`
+
+**Symptom Checker（症状问诊）**
+1. 选择宠物类型（狗/猫/其他）
+2. 输入宠物信息（品种、年龄）
+3. 选择观察到的症状（支持多选）
+4. 添加额外的症状描述
+5. AI分析并提供：
+   - 严重程度评估（轻微/中等/紧急）
+   - 可能的病因
+   - 应对建议
+   - 就医建议
+
+**Breed Health Guide（品种健康指南）**
+1. 输入宠物品种
+2. 获取包含以下内容的健康指南：
+   - 常见健康问题
+   - 推荐饮食
+   - 运动需求
+   - 预防护理建议
+   - 年龄特定建议
+
+### Pet Care Guide（宠物护理指南）
+
+访问路径：`/pet-care-guide`
+
+1. 选择护理主题（喂养/训练/美容等）
+2. 填写宠物信息（类型、品种、年龄、体重）
+3. 添加特殊情况说明（可选）
+4. 获取个性化的护理建议
 
 ## 技术栈
 
-- Next.js 15
-- React 19
-- TypeScript
-- Tailwind CSS
-- PayPal集成
+- **Next.js 15** - React 全栈框架
+- **React 19** - 用户界面库
+- **TypeScript** - 类型安全
+- **Tailwind CSS 4** - 现代化样式
+- **智谱AI GLM-4-Flash** - AI 模型
+- **PayPal** - 支付集成
+- **Google Analytics & Microsoft Clarity** - 数据分析
 
-## 本地开发
+## 快速开始
 
-1. 克隆仓库
-2. 安装依赖
-   ```bash
-   npm install
-   ```
-3. 创建`.env.local`文件，参考`env.example`
-4. 启动开发服务器
-   ```bash
-npm run dev
+### 环境要求
+
+- Node.js 18.x 或更高版本
+- npm 或 yarn 包管理器
+
+### API 配置
+
+本项目使用智谱AI **GLM-4-Flash** 模型提供 AI 服务。
+
+1. 从 [智谱AI开放平台](https://open.bigmodel.cn/) 获取 API 密钥
+2. 在项目根目录创建 `.env.local` 文件：
+
+```env
+BIGMODEL_API_KEY=your_api_key_here
+NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
-5. 在浏览器中打开 [http://localhost:3000](http://localhost:3000)
 
-## Vercel部署指南
+完整的环境变量配置请参考 `env.example` 文件。
 
-### 前提条件
+### 本地开发
 
-1. 一个[GitHub](https://github.com/)账户
-2. 一个[Vercel](https://vercel.com/)账户
+```bash
+# 1. 克隆仓库
+git clone <repository-url>
+cd petshard
 
-### 步骤1: 将项目上传到GitHub
+# 2. 安装依赖
+npm install
 
-1. 在GitHub上创建一个新的仓库
-2. 在本地项目目录中初始化Git仓库（如果尚未初始化）:
-   ```bash
-   git init
-   ```
-3. 添加所有文件到Git:
-   ```bash
-   git add .
-   ```
-4. 提交更改:
-   ```bash
-   git commit -m "初始提交"
-   ```
-5. 添加GitHub仓库作为远程仓库:
-   ```bash
-   git remote add origin https://github.com/你的用户名/你的仓库名.git
-   ```
-6. 推送代码到GitHub:
-   ```bash
-   git push -u origin main
-   ```
-   (如果你的默认分支是`master`而不是`main`，请相应调整)
+# 3. 配置环境变量
+cp env.example .env.local
+# 编辑 .env.local 填入你的 API 密钥
 
-### 步骤2: 在Vercel上部署项目
+# 4. 启动开发服务器
+npm run dev
 
-1. 登录到[Vercel](https://vercel.com/)
-2. 点击"Add New..."，然后选择"Project"
-3. 导入你的GitHub仓库
-4. 配置项目:
-   - 项目名称: `petshard`（或你喜欢的名称）
-   - 框架预设: `Next.js`
-   - 根目录: `./`（默认）
-   - 构建命令: 保持默认（Vercel会自动检测）
-   - 输出目录: 保持默认（Vercel会自动检测）
+# 5. 打开浏览器访问
+# http://localhost:3000
+```
 
-### 步骤3: 配置环境变量
+## 部署
 
-在Vercel项目设置中，添加以下环境变量:
+支持多种部署方式：
 
-1. 在Vercel Dashboard中，转到你的项目
-2. 点击"Settings" > "Environment Variables"
-3. 添加以下环境变量:
-   - `BIGMODEL_API_KEY`: 你的API密钥
-   - `BIGMODEL_API_BASE_URL`: API基础URL
-   - `NEXT_PUBLIC_PAYPAL_CLIENT_ID`: PayPal客户端ID
-   - `PAYPAL_SECRET`: PayPal密钥
-   - `PAYPAL_MODE`: `sandbox`或`live`
-   - `NEXT_PUBLIC_APP_URL`: 你的网站URL（例如`https://petshard.online`）
-   - `NEXT_PUBLIC_GA_MEASUREMENT_ID`: 你的Google Analytics测量ID
+- **Vercel**（推荐）- 零配置部署
+- **Cloudflare Pages** - 全球 CDN 加速
 
-### 步骤4: 部署
+详细部署步骤请查看 [DEPLOYMENT.md](./DEPLOYMENT.md)
 
-1. 点击"Deploy"按钮
-2. Vercel将自动构建和部署你的应用
-3. 部署完成后，你的应用将可通过`https://你的项目名称.vercel.app`访问
+## 项目文档
 
-### 步骤5: 自定义域名（可选）
+- 📖 [部署指南](./DEPLOYMENT.md) - 详细的部署步骤
+- ⚙️ [配置指南](./CONFIGURATION_GUIDE.md) - 环境变量和配置
+- 🧪 [测试指南](./TESTING_GUIDE.md) - 测试说明
+- 🔍 [SEO 优化指南](./SEO_OPTIMIZATION_GUIDE.md) - SEO 最佳实践
 
-如果你想使用自定义域名:
+## 贡献
 
-1. 在Vercel Dashboard中，转到你的项目
-2. 点击"Settings" > "Domains"
-3. 添加你的自定义域名
-4. 按照Vercel提供的说明配置DNS记录
-
-### 持续部署
-
-每当你推送更改到GitHub仓库的主分支时，Vercel将自动重新构建和部署你的应用。
+欢迎提交 Issue 和 Pull Request！
 
 ## 许可证
 
-[MIT](LICENSE)
+MIT License
