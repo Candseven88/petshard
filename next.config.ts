@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   output: 'standalone',
   images: {
     formats: ['image/avif', 'image/webp'],
-    // Allow images from The Cat API and The Dog API
+    // Allow images from The Cat API, The Dog API, and Shopify CDN
     remotePatterns: [
       {
         protocol: 'https',
@@ -28,6 +28,16 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: '**.thedogapi.com',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.shopify.com',
+        pathname: '/s/files/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.thesprucepets.com',
+        pathname: '/thmb/**',
       }
     ],
   },

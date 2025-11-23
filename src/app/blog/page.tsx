@@ -7,6 +7,24 @@ import Image from "next/image";
 
 const blogPosts = [
   {
+    id: "best-aquarium-thermometers-with-alarm",
+    title: "Best Aquarium Thermometers with High Temp Alarm: Keep Your Fish Safe 24/7",
+    description: "Expert guide to choosing thermometers with alarm functions. Compare digital LED, LCD, and traditional types. Includes top 3 product recommendations with alarm capability.",
+    image: "https://www.thesprucepets.com/thmb/DWmPXX3FB2nkHBvvqo-asPo5BWQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Aquarium-digital-thermometer-59000ef63df78ca1591de6b0.jpg",
+    date: "November 23, 2024",
+    tags: ["aquarium equipment", "thermometer", "temperature alarm", "fish safety"],
+    featured: true
+  },
+  {
+    id: "best-bottom-feeders-for-medium-fish",
+    title: "Best Bottom Feeders for 4-5 Inch Fish: 10 Clean-Up Crew Options That Actually Work",
+    description: "Discover 10 proven bottom feeders that eat excess food and thrive peacefully with medium-sized fish. Expert guide includes compatibility ratings, care tips, and essential tools.",
+    image: "https://cdn.shopify.com/s/files/1/0311/3149/files/albino_cory_catfish.jpg?v=1586193662",
+    date: "November 23, 2024",
+    tags: ["aquarium care", "bottom feeders", "fish compatibility", "tank maintenance"],
+    featured: true
+  },
+  {
     id: "ai-tools-comparison",
     title: "Best AI Tools for Content Creation in 2024: A Comprehensive Comparison",
     description: "Discover the most innovative AI tools for creative projects, from horror content creation to pet care analysis. Compare features, pricing, and find the perfect tool for your needs.",
@@ -32,8 +50,7 @@ const blogPosts = [
     date: "August 1, 2023",
     tags: ["health", "disease prevention", "pet care"],
     featured: true
-  },
-  // More blog posts can be added here in the future
+  }
 ];
 
 function BlogContent() {
@@ -41,9 +58,9 @@ function BlogContent() {
     <Layout title="Pet Health Blog" showBackButton={true}>
       <div className="max-w-4xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-pink-600 mb-4">Pet Health & Wellness Blog</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-pink-600 mb-4">Pet Care & Aquarium Blog</h1>
           <p className="text-gray-600 text-lg">
-            Expert insights on pet health, disease prevention, and using AI to keep your furry friends safe and healthy.
+            Expert insights on pet health, aquarium care, disease prevention, and practical tips to keep your pets thriving.
           </p>
         </div>
 
