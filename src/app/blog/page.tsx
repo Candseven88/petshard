@@ -7,6 +7,15 @@ import Image from "next/image";
 
 const blogPosts = [
   {
+    id: "best-full-spectrum-aquarium-lights",
+    title: "Best Full Spectrum Aquarium Lights for Planted Tanks: Complete Guide 2024",
+    description: "Expert guide to choosing full-spectrum aquarium lights. Learn about color spectrum, intensity, and light spread. Compare 5 budget-friendly options tested for real plant growth.",
+    image: "https://cdn.shopify.com/s/files/1/0311/3149/files/shutterstock_601059413_97867db7-ccf6-45e3-b082-d4af94f1777f.jpg?v=1573605721",
+    date: "November 24, 2024",
+    tags: ["aquarium lighting", "planted tank", "full spectrum", "LED lights", "plant growth"],
+    featured: true
+  },
+  {
     id: "best-aquarium-thermometers-with-alarm",
     title: "Best Aquarium Thermometers with High Temp Alarm: Keep Your Fish Safe 24/7",
     description: "Expert guide to choosing thermometers with alarm functions. Compare digital LED, LCD, and traditional types. Includes top 3 product recommendations with alarm capability.",
