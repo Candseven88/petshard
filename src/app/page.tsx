@@ -12,11 +12,19 @@ const petImages = [
 
 const coreFeatures = [
   {
+    title: "Pet Name Generator",
+    desc: "Upload your pet's photo and get the perfect name with a complete personality profile.",
+    img: "/pet/1.jpg",
+    href: "/pet-naming",
+    badge: "NEW",
+    highlight: true
+  },
+  {
     title: "Pet Health Center",
     desc: "Check symptoms and get breed-specific health advice instantly.",
     img: "/pet/7.jpg",
     href: "/health-center",
-    badge: "NEW",
+    badge: "HOT",
     highlight: true
   },
   {
@@ -24,24 +32,18 @@ const coreFeatures = [
     desc: "Get personalized care advice for feeding, training, and more.",
     img: "/pet/8.jpg",
     href: "/pet-care-guide",
-    badge: "NEW",
-    highlight: true
+    highlight: false
   },
   {
     title: "Pet Breed Identification",
     desc: "Upload a photo and let AI tell you your pet's breed.",
     img: "/pet/2.jpg",
     href: "/breed-identification"
-  },
-  {
-    title: "Pet Age Calculator",
-    desc: "Convert your pet's age to human years.",
-    img: "/pet/5.jpg",
-    href: "/pet-age-calculator"
   }
 ];
 
 const minorFeatures = [
+  { title: "Age Calculator", icon: "📅", desc: "Convert pet age to human years", href: "/pet-age-calculator" },
   { title: "Virtual Breeding", icon: "🧬", desc: "Predict offspring appearance", href: "/virtual-breeding" },
   { title: "Video Generator", icon: "🎬", desc: "Create fun pet videos", href: "/pet-video" },
   { title: "Pet Diary", icon: "📔", desc: "Record your pet's daily life", href: "/pet-diary" },

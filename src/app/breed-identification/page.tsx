@@ -242,31 +242,8 @@ export default function BreedIdentification() {
         </div>
       </section>
       
-      {/* Introduction Section */}
-      <section className="my-12 text-center max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Discover What Kind of Dog You Have</h2>
-        <p className="text-lg text-gray-600">
-          Ever wondered "what type of dog is this" or "what breed is my dog"? Our dog breed identifier by picture 
-          uses advanced AI technology to analyze your dog's unique features and identify their breed with high accuracy.
-          Whether you have a purebred or mixed breed dog, our dog breed finder tool can help you learn more about your furry friend.
-        </p>
-      </section>
-
-      {/* Core Features Section */}
-      <section id="core-features" className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {coreFeatures.map((f, i) => (
-          <a key={f.title} href={f.href} className="group bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-pink-200 cursor-pointer animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
-            <div className="w-32 h-32 mb-4 relative">
-              <Image src={f.img} alt={f.title} fill className="object-cover rounded-xl group-hover:scale-110 transition-transform duration-300" />
-            </div>
-            <h3 className="text-xl font-bold text-pink-500 mb-2">{f.title}</h3>
-            <p className="text-gray-600 text-center">{f.desc}</p>
-          </a>
-        ))}
-      </section>
-
-      {/* Dog Breed Identification Tool */}
-      <div id="identify-breed" className="max-w-3xl mx-auto mt-16 animate-fade-in">
+      {/* Dog Breed Identification Tool - Moved to top */}
+      <div id="identify-breed" className="max-w-3xl mx-auto mt-12 animate-fade-in">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold mb-2">Dog Breed Identifier Tool</h2>
           <p className="text-gray-600">
@@ -345,6 +322,29 @@ export default function BreedIdentification() {
           </>
         )}
       </div>
+
+      {/* Introduction Section */}
+      <section className="my-16 text-center max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Discover What Kind of Dog You Have</h2>
+        <p className="text-lg text-gray-600">
+          Ever wondered "what type of dog is this" or "what breed is my dog"? Our dog breed identifier by picture 
+          uses advanced AI technology to analyze your dog's unique features and identify their breed with high accuracy.
+          Whether you have a purebred or mixed breed dog, our dog breed finder tool can help you learn more about your furry friend.
+        </p>
+      </section>
+
+      {/* Core Features Section */}
+      <section id="core-features" className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        {coreFeatures.map((f, i) => (
+          <a key={f.title} href={f.href} className="group bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-pink-200 cursor-pointer animate-fade-in" style={{ animationDelay: `${i * 100}ms` }}>
+            <div className="w-32 h-32 mb-4 relative">
+              <Image src={f.img} alt={f.title} fill className="object-cover rounded-xl group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <h3 className="text-xl font-bold text-pink-500 mb-2">{f.title}</h3>
+            <p className="text-gray-600 text-center">{f.desc}</p>
+          </a>
+        ))}
+      </section>
 
       {/* Additional Tools Section */}
       <section className="mt-16 mb-12">

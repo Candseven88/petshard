@@ -11,14 +11,15 @@ interface HeaderProps {
 
 // 主要导航项（优先显示新亮点功能）
 const mainNavItems = [
+  { label: "Pet Naming", href: "/pet-naming", icon: "✨" },
   { label: "Health Center", href: "/health-center", icon: "🏥" },
   { label: "Care Guide", href: "/pet-care-guide", icon: "📚" },
   { label: "Breed ID", href: "/breed-identification", icon: "🔍" },
-  { label: "Age Calc", href: "/pet-age-calculator", icon: "📅" },
 ];
 
 // 次要导航项（将放入下拉菜单）
 const dropdownNavItems = [
+  { label: "Age Calculator", href: "/pet-age-calculator", icon: "📅" },
   { label: "Virtual Breeding", href: "/virtual-breeding", icon: "🧬" },
   { label: "Video Generator", href: "/pet-video", icon: "🎬" },
   { label: "Pet Diary", href: "/pet-diary", icon: "📔" },
