@@ -3,164 +3,184 @@ import { BottomFeeder, Product, ProTip } from './types';
 export const bottomFeeders: BottomFeeder[] = [
   {
     id: 1,
-    name: "Corydoras Catfish",
-    emoji: "⭐",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/albino_cory_catfish.jpg?v=1586193662",
-    size: "2-4 inches",
+    name: "Kuhli Loach",
+    emoji: "🐍",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-1-1.jpg",
+    size: "3-4 inches",
     compatibility: 5,
-    specialSkill: "Living vacuum cleaner with whiskers",
-    description: "The beloved cory catfish comes in many varieties and sizes. As peaceful scavengers, they use their barbels (or whiskers) to search for scraps, worms, and tiny crustaceans hidden in the substrate. Like a living robot vacuum, cory catfish happily suck up any food that gets past the surface eaters.",
-    tankRequirement: "Any size, groups of 3+",
-    whyItWorks: "Peaceful, active scavenger that fits perfectly with 4-5\" fish"
+    specialSkill: "Snake-like substrate sifter",
+    description: "These eel-like loaches are peaceful nocturnal scavengers that burrow through substrate searching for food particles. Their snake-like appearance and gentle nature make them fascinating tank inhabitants that won't disturb other fish.",
+    tankRequirement: "20+ gallons, soft substrate preferred",
+    whyItWorks: "Completely peaceful, excellent at finding hidden food particles"
   },
   {
     id: 2,
-    name: "Bristlenose Plecos",
-    emoji: "🦈",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/Male_and_female_bristlenose_plecos.jpg?v=1586193761",
-    size: "4-5 inches",
+    name: "Zebra Loach",
+    emoji: "🦓",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-1-1.jpg",
+    size: "3-4 inches",
     compatibility: 4,
-    specialSkill: "Algae destroyer + wood keeper",
-    description: "Bristlenose plecos only get 4 to 5 inches long and are great cleaners that eat algae, scavenge for food, and keep driftwood clean. They come in several color varieties and are easy to breed. It's easy to differentiate between males and females because only males have bristles on their snouts.",
-    tankRequirement: "29+ gallons",
-    whyItWorks: "Perfect size match for medium tanks with excellent algae control"
+    specialSkill: "Active group scavenger",
+    description: "Striped loaches that are more active during the day than their Kuhli cousins. They work in groups to clean substrate and are excellent at controlling snail populations while being peaceful with other fish.",
+    tankRequirement: "30+ gallons, groups of 5+",
+    whyItWorks: "Social cleaners that are active during feeding time"
   },
   {
     id: 3,
-    name: "Eartheaters (Geophagus)",
-    emoji: "🌍",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/Albino_Threadfin_Acara_Acarichthys_heckelii.jpg?v=1586193599",
-    size: "Varies by species",
+    name: "Yoyo Loach",
+    emoji: "🎯",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-2.jpg",
+    size: "4-6 inches",
     compatibility: 4,
-    specialSkill: "Substrate sifter - natural filtration",
-    description: "This group of South American cichlids are known for scooping up substrate into their mouths and filtering it through their gills. Any edible leftovers are swallowed and digested, breaking down waste for plants to absorb. They prefer sand substrate over gravel.",
-    tankRequirement: "55+ gallons with sand",
-    whyItWorks: "Peaceful cichlids that provide natural substrate cleaning"
+    specialSkill: "Snail control specialist",
+    description: "Named for their Y-O-Y-O pattern, these active loaches are excellent scavengers and natural snail controllers. They're playful and social, working together to keep the tank bottom clean.",
+    tankRequirement: "40+ gallons, groups preferred",
+    whyItWorks: "Perfect size match with excellent cleaning abilities"
   },
   {
     id: 4,
-    name: "Loaches (Yoyo, Kuhli)",
-    emoji: "🥨",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/yoyo_loach.jpg?v=1586193724",
-    size: "3-5 inches",
-    compatibility: 4,
-    specialSkill: "Snail control + crevice cleaning",
-    description: "Loaches are playful bottom dwellers perfect for snail control and crevice cleaning. Yoyo loaches work like a pack of playful puppies, while Kuhli loaches look like tiny snakes that wiggle into narrow spaces. Both are excellent scavengers.",
-    tankRequirement: "20+ gallons, groups preferred",
-    whyItWorks: "Active, entertaining, and effective at pest snail control"
+    name: "Cory Catfish",
+    emoji: "😸",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-2.jpg",
+    size: "2-4 inches",
+    compatibility: 5,
+    specialSkill: "Living vacuum cleaner",
+    description: "The most popular bottom feeders, Corydoras use their barbels to search substrate for food particles. They're peaceful, social, and come in many beautiful varieties. Essential for any community tank.",
+    tankRequirement: "20+ gallons, groups of 3+",
+    whyItWorks: "Perfect community fish that cleans constantly"
   },
   {
     id: 5,
-    name: "Snails (Ramshorn, Nerite)",
-    emoji: "🐌",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/pink_ramshorn_snail.jpg?v=1586193702",
-    size: "0.5-2 inches",
+    name: "Otocinclus Catfish",
+    emoji: "🔍",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-3.jpg",
+    size: "1.5-2 inches",
     compatibility: 5,
-    specialSkill: "Eat almost anything including fish waste",
-    description: "One of the best cleaners in the tank because they eat almost anything - fish waste, algae, rotting leaves, and even dead fish. They work 24/7 breaking down organic material for plants to use. Nerite snails won't reproduce in freshwater.",
-    tankRequirement: "Any tank size",
-    whyItWorks: "Completely peaceful, works around the clock, safe with all fish"
+    specialSkill: "Algae cleaning specialist",
+    description: "Tiny algae-eating catfish that work tirelessly to keep glass and decorations clean. They're completely peaceful and won't bother any tankmates, making them perfect for community tanks.",
+    tankRequirement: "10+ gallons, groups preferred",
+    whyItWorks: "Small, peaceful, and excellent algae control"
   },
   {
     id: 6,
-    name: "Amano Shrimp",
-    emoji: "🦐",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/amano_shrimp_911784ef-67a5-4a8e-b2dc-ae13dd0cfc21.jpg?v=1586193781",
-    size: "2 inches",
+    name: "Twig Catfish",
+    emoji: "🌿",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-3.jpg",
+    size: "4-6 inches",
     compatibility: 4,
-    specialSkill: "Reaches tiniest cracks",
-    description: "Made popular by their algae-eating capabilities in planted aquascapes, these dwarf shrimp are great scavengers that can use their little legs to grab inside the tiniest cracks that most fish and snails can't reach. One of the hardiest dwarf shrimp species.",
-    tankRequirement: "10+ gallons, planted preferred",
-    whyItWorks: "Access tight spaces other cleaners miss"
+    specialSkill: "Camouflaged algae eater",
+    description: "These stick-like catfish blend perfectly with driftwood while eating algae and biofilm. They're peaceful and unique-looking, adding both function and visual interest to planted tanks.",
+    tankRequirement: "30+ gallons, driftwood required",
+    whyItWorks: "Unique appearance with excellent cleaning abilities"
   },
   {
     id: 7,
-    name: "Platies",
-    emoji: "🐟",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/bumble_bee_platies.jpg?v=1586193684",
-    size: "2-3 inches",
-    compatibility: 5,
-    specialSkill: "Constant algae pickers",
-    description: "Colorful livebearers with insatiable appetites that cause them to constantly pick at the ground, plants, and décor for edible snacks. They reproduce readily, providing platies of different sizes that can fit into various nooks and crannies.",
-    tankRequirement: "10+ gallons",
-    whyItWorks: "Peaceful community fish that clean while swimming at all levels"
+    name: "Synodontis Catfish",
+    emoji: "🎭",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-4-1.jpg",
+    size: "4-8 inches",
+    compatibility: 4,
+    specialSkill: "Robust scavenger",
+    description: "African catfish known for their distinctive patterns and upside-down swimming behavior. They're excellent scavengers that can handle larger food particles and are compatible with medium-sized fish.",
+    tankRequirement: "40+ gallons",
+    whyItWorks: "Hardy cleaners perfect for medium-sized community tanks"
   },
   {
     id: 8,
-    name: "Flagfish",
-    emoji: "🇺🇸",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/flagfish.jpg?v=1586193634",
-    size: "2.5 inches",
-    compatibility: 3,
-    specialSkill: "Hair algae specialist",
-    description: "North American native fish with a beautiful star-spangled pattern. Their mouths are uniquely shaped for pulling off hair algae and black beard algae, though they may damage delicate plants. Can live in unheated aquariums.",
-    tankRequirement: "20+ gallons",
-    whyItWorks: "Specialized algae eater for tough algae types"
+    name: "Siamese Algae Eater",
+    emoji: "🧹",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-4-1.jpg",
+    size: "4-6 inches",
+    compatibility: 4,
+    specialSkill: "Black beard algae destroyer",
+    description: "The only fish that reliably eats black beard algae and other tough algae types. They're active swimmers that also scavenge for food particles, making them dual-purpose cleaners.",
+    tankRequirement: "30+ gallons",
+    whyItWorks: "Specialized algae control with scavenging abilities"
   },
   {
     id: 9,
-    name: "Rainbow/Redtail Sharks",
-    emoji: "🦈",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/redtail_shark.jpg?v=1586193578",
-    size: "4-6 inches",
-    compatibility: 3,
-    specialSkill: "Scavenger + algae eater",
-    description: "These freshwater 'sharks' are excellent scavengers that clean up excess food between decor, rocks, and equipment, plus they eat algae. Can be territorial, so only keep one shark per tank. Available in many color variations including black, albino, and GloFish.",
-    tankRequirement: "29+ gallons, one per tank",
-    whyItWorks: "Active cleaners for larger tanks with robust tankmates"
+    name: "Bristlenose Pleco",
+    emoji: "🦔",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-5.jpg",
+    size: "4-5 inches",
+    compatibility: 5,
+    specialSkill: "Algae and wood cleaner",
+    description: "Compact plecos that stay small while providing excellent algae control. They rasp algae from surfaces and help break down driftwood, contributing to a healthy tank ecosystem.",
+    tankRequirement: "30+ gallons, driftwood preferred",
+    whyItWorks: "Perfect size with outstanding cleaning performance"
   },
   {
     id: 10,
-    name: "Common Goldfish",
-    emoji: "🐠",
-    imageUrl: "https://cdn.shopify.com/s/files/1/0311/3149/files/orange_common_goldfish.jpg?v=1586193742",
-    size: "Up to 12 inches",
+    name: "Bumblebee Goby",
+    emoji: "🐝",
+    imageUrl: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-5.jpg",
+    size: "1.5 inches",
     compatibility: 3,
-    specialSkill: "Substrate picker, detritus breaker",
-    description: "Goldfish love picking through substrate, munching on leftovers and fish waste, and eating algae. Their reputation for being messy comes from being kept in tanks too small. In large aquariums with big peaceful tankmates, they keep the bottom very clean.",
-    tankRequirement: "75+ gallons for adults",
-    whyItWorks: "For large tanks only - powerful substrate cleaners"
+    specialSkill: "Micro-cleanup specialist",
+    description: "Tiny bottom dwellers with striking yellow and black stripes. They pick at substrate for small food particles and are perfect for nano tanks or as supplementary cleaners in larger setups.",
+    tankRequirement: "10+ gallons, peaceful tankmates only",
+    whyItWorks: "Small size allows access to tight spaces other fish miss"
   }
 ];
 
 export const products: Product[] = [
   {
-    name: "Luigi's Fish Tank Cleaner",
-    affiliateLink: "https://amzn.to/44sGEKR",
+    name: "Tetra PRO PlecoWafers 5.29 Ounces - Nutritionally Balanced Vegetarian Fish Food for Bottom Feeders",
+    affiliateLink: "https://amzn.to/4pw6fL3",
     features: [
-      "Perfect for Regular Water Changes: Clears 30L in about 5 minutes",
-      "Keep your Aquarium Clean: Filter through gravel to remove waste and toxins",
-      "Fish & Invertebrate Safe: Attached filter prevents accidental suction",
-      "Great Value: Simple, robust product at fraction of expensive siphon cost",
-      "Hassle-Free Cleaning: Hand pump - no manual priming needed"
+      "Nutritionally Balanced: Specially formulated for bottom-feeding fish dietary needs",
+      "Sinking Wafers: Designed to sink quickly to reach bottom feeders before other fish",
+      "Vegetarian Formula: Perfect for herbivorous plecos and algae-eating species",
+      "High Quality Ingredients: Promotes healthy growth and vibrant colors",
+      "Easy to Digest: Reduces waste and maintains better water quality"
     ],
-    description: "Your bottom feeders handle daily maintenance, but for weekly water changes, this is your best friend."
+    description: "Even the best bottom feeders need proper nutrition. These specialized wafers ensure your cleanup crew stays healthy and active."
   },
   {
-    name: "Automatic Fish Feeder for Aquarium",
-    affiliateLink: "https://amzn.to/48doIoy",
+    name: "Planted Aquarium Lighting System",
+    affiliateLink: "https://amzn.to/48oU4sH",
     features: [
-      "Accurate Food Amount: 16 grids total, each holds up to 2g for precise portions",
-      "2 Setup Methods: Adjustable clamp base or suction cup mounting",
-      "Moisture-resistant Design: Fully sealed opening prevents food from getting wet",
-      "Customized Feeding Time: Up to 3 feedings per day, programmable schedule",
-      "USB Rechargeable: 700mAh battery lasts 1-2 months on single charge"
+      "Full Spectrum LED: Promotes healthy plant growth and enhances fish colors",
+      "Adjustable Brightness: Customize lighting intensity for different tank needs",
+      "Energy Efficient: Long-lasting LEDs reduce electricity costs",
+      "Easy Installation: Simple mounting system fits most aquarium sizes",
+      "Timer Function: Automated day/night cycle for consistent lighting"
     ],
-    description: "The #1 reason for excess food? Overfeeding. This feeder ensures your fish get exactly what they need – nothing more, nothing less."
+    description: "Healthy plants create a better environment for bottom feeders by providing natural filtration and oxygen production."
+  },
+  {
+    name: "Mini Wave Maker Aquarium Circulation Pump",
+    affiliateLink: "https://amzn.to/44sCzGD",
+    features: [
+      "Improved Water Circulation: Prevents dead spots where debris accumulates",
+      "Compact Design: Small size won't disturb tank aesthetics",
+      "Adjustable Flow: Multiple speed settings for different tank sizes",
+      "Quiet Operation: Silent motor won't stress fish or disturb peace",
+      "Easy Maintenance: Simple design makes cleaning and upkeep effortless"
+    ],
+    description: "Better water circulation helps bottom feeders by distributing food particles and preventing waste buildup in corners."
   }
 ];
 
 export const proTips: ProTip[] = [
   {
-    icon: "⚡",
-    text: "Don't rely only on clean-up crew - they need dedicated feeding too"
+    icon: "🍽️",
+    text: "Feed bottom feeders specialized sinking foods - they can't compete with surface feeders for floating food"
   },
   {
-    icon: "⚡",
-    text: "Use the automatic feeder to prevent overfeeding at the source"
+    icon: "🌊",
+    text: "Good water circulation prevents food from settling in dead spots where it can rot"
   },
   {
-    icon: "⚡",
-    text: "Match your bottom feeder to your tank size and substrate type"
+    icon: "🌱",
+    text: "Live plants work with bottom feeders to create a natural cleaning system"
+  },
+  {
+    icon: "📏",
+    text: "Match bottom feeder size to your existing fish - avoid tiny cleaners with large, aggressive fish"
+  },
+  {
+    icon: "🏠",
+    text: "Provide hiding spots for shy bottom feeders like caves, driftwood, or dense plants"
   }
 ];

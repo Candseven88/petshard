@@ -26,11 +26,20 @@ const blogPosts = [
   },
   {
     id: "best-bottom-feeders-for-medium-fish",
-    title: "Best Bottom Feeders for 4-5 Inch Fish: 10 Clean-Up Crew Options That Actually Work",
-    description: "Discover 10 proven bottom feeders that eat excess food and thrive peacefully with medium-sized fish. Expert guide includes compatibility ratings, care tips, and essential tools.",
-    image: "https://cdn.shopify.com/s/files/1/0311/3149/files/albino_cory_catfish.jpg?v=1586193662",
-    date: "November 23, 2024",
-    tags: ["aquarium care", "bottom feeders", "fish compatibility", "tank maintenance"],
+    title: "Best Bottom Feeders for Community Tanks: 10 Perfect Clean-Up Crew Options",
+    description: "Expert guide to choosing bottom feeders that eat excess food and thrive peacefully with 4-5 inch community fish. Includes compatibility ratings, care tips, and essential products.",
+    image: "https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-2.jpg",
+    date: "November 26, 2024",
+    tags: ["aquarium care", "bottom feeders", "fish compatibility", "tank maintenance", "community tank"],
+    featured: true
+  },
+  {
+    id: "best-quiet-filters-40-gallon-tank",
+    title: "Best Quiet Filters for 40-Gallon Tanks: 2025 Complete Guide",
+    description: "Expert guide to choosing quiet, efficient filters for 40-gallon aquariums. Compare top 10 models with noise levels, flow rates, and performance reviews for whisper-quiet operation.",
+    image: "https://images1.ratemyfishtank.com/photo/9/660x508c/47000/46502/23234-1-40-gallon-tank-102c3lb4buxgy.webp",
+    date: "November 26, 2024",
+    tags: ["aquarium equipment", "filters", "quiet operation", "40 gallon tank", "2025 guide"],
     featured: true
   },
   {

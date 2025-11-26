@@ -26,7 +26,7 @@ function PodcastContent() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Best Bottom Feeders for 4-5 Inch Fish: 10 Clean-Up Crew Options That Actually Work
+            Best Bottom Feeders for Community Tanks: 10 Perfect Clean-Up Crew Options
           </h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-500">
@@ -40,8 +40,8 @@ function PodcastContent() {
 
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
-            src="https://cdn.shopify.com/s/files/1/0311/3149/files/albino_cory_catfish.jpg?v=1586193662" 
-            alt="Corydoras Catfish - Popular bottom feeder for aquariums" 
+            src="https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-2.jpg" 
+            alt="Bottom feeder fish for community aquarium - Cory Catfish and Loaches" 
             fill 
             className="object-cover"
             priority
@@ -64,9 +64,7 @@ function PodcastContent() {
 
             <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-blue-400">
               <p className="text-lg font-medium text-gray-800">
-                <span className="text-blue-600">Today's Question:</span> "I'm looking 
-                for a bottom feeder that can eat excess food and can get along with fish 
-                about 4-5 inches long. Any suggestions?"
+                <span className="text-blue-600">Reader Question:</span> "Looking for a bottom feeder for my community tank with 4-5 inch fish. Need something that will eat excess food and get along peacefully with my existing fish."
               </p>
             </div>
 
