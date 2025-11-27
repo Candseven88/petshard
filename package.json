@@ -6,7 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build:cli": "tsc --project tsconfig.cli.json",
+    "seo:generate": "npm run build:cli && node bin/seo-cli generate",
+    "seo:batch": "npm run build:cli && node bin/seo-cli batch",
+    "seo:validate": "npm run build:cli && node bin/seo-cli validate",
+    "seo:config": "npm run build:cli && node bin/seo-cli config",
+    "seo:blog": "npm run build:cli && node bin/seo-cli blog"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -16,8 +24,11 @@
     "@types/html2canvas": "^0.5.35",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
     "html-to-image": "^1.11.13",
     "html2canvas": "^1.4.1",
+    "inquirer": "^13.0.1",
     "lucide-react": "^0.468.0",
     "next": "15.4.2",
     "react": "19.1.0",
@@ -29,12 +40,22 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/inquirer": "^9.0.9",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.2",
+    "fast-check": "^4.3.0",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "bin": {
+    "seo-content-generator": "./bin/seo-cli"
   }
 }

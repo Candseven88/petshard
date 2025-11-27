@@ -1,0 +1,13 @@
+# Pet Care Keywords
+# Lines starting with # are comments and will be ignored
+
+dog grooming tips
+cat litter box training
+pet nutrition guide
+puppy training basics
+senior pet care
+pet dental health
+indoor cat exercise
+dog walking safety
+pet first aid
+healthy pet treats

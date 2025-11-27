@@ -1,10 +1,7 @@
-"use client";
-
 import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-
 // 简化的数据定义
 const filters = [
   {
@@ -30,7 +27,6 @@ const filters = [
     description: "The Marineland Penguin combines efficient filtration with quiet operation."
   }
 ];
-
 const products = [
   {
     name: "Tetra PRO PlecoWafers 5.29 Ounces",
@@ -43,7 +39,6 @@ const products = [
     description: "Healthy plants create a better environment for bottom feeders."
   }
 ];
-
 function FilterGuideContent() {
   return (
     <Layout title="Blog" showBackButton={true}>
@@ -56,11 +51,9 @@ function FilterGuideContent() {
             <span className="mx-2">›</span>
             <span>Aquarium Equipment</span>
           </div>
-
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Best Quiet Filters for 40-Gallon Tanks: 2025 Complete Guide
           </h1>
-
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>November 26, 2024</span>
             <span>•</span>
@@ -69,7 +62,6 @@ function FilterGuideContent() {
             <span>🔧 Equipment Guide</span>
           </div>
         </header>
-
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
             src="https://images1.ratemyfishtank.com/photo/9/660x508c/47000/46502/23234-1-40-gallon-tank-102c3lb4buxgy.webp" 
@@ -79,7 +71,6 @@ function FilterGuideContent() {
             priority
           />
         </div>
-
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-blue-50 p-8 rounded-xl">
@@ -93,27 +84,23 @@ function FilterGuideContent() {
               efficient filter for a 40-gallon tank can be challenging, especially when you want 
               excellent filtration without the noise.
             </p>
-
             <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-blue-400">
               <p className="text-lg font-medium text-gray-800">
                 <span className="text-blue-600">Reader Question:</span> "I'm looking for a quiet, 
                 efficient filter for my 40-gallon tank - What's still good in 2025?"
               </p>
             </div>
-
             <p className="text-lg leading-relaxed">
               In this comprehensive guide, we'll reveal the top 10 quietest and most efficient filters 
               perfect for 40-gallon tanks in 2025. We've tested noise levels, filtration capacity, 
               and long-term reliability to bring you only the best options that won't disturb your peace.
             </p>
           </div>
-
           {/* ========== Background Knowledge Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               What Makes a Filter Quiet and Efficient?
             </h2>
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
@@ -123,7 +110,6 @@ function FilterGuideContent() {
                   Quality motors, sound dampening materials, and proper water flow design minimize vibrations and noise. Look for filters with rubber gaskets, smooth impellers, and enclosed motor housings.
                 </p>
               </div>
-
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
                   💧 Filtration Capacity
@@ -132,7 +118,6 @@ function FilterGuideContent() {
                   For 40-gallon tanks, you need 200-400 GPH (gallons per hour) flow rate. Efficient filters provide mechanical, biological, and chemical filtration in multiple stages for crystal-clear water.
                 </p>
               </div>
-
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-purple-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
                   ⚡ Energy Efficiency
@@ -143,13 +128,11 @@ function FilterGuideContent() {
               </div>
             </div>
           </div>
-
           {/* ========== Main Content: Filters ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
               Top Quiet Filters for 40-Gallon Tanks (2025)
             </h2>
-
             <div className="grid grid-cols-1 gap-8">
               {filters.map((filter, index) => (
                 <div key={filter.id} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border-l-4 border-blue-400">
@@ -190,13 +173,11 @@ function FilterGuideContent() {
               ))}
             </div>
           </div>
-
           {/* ========== Product Recommendations Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               🛠️ Essential Accessories
             </h2>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {products.map((product, index) => (
                 <div key={index} className="bg-white rounded-xl shadow-md p-6 border-t-4 border-pink-400">
@@ -214,7 +195,6 @@ function FilterGuideContent() {
               ))}
             </div>
           </div>
-
           {/* ========== Video Section ========== */}
           <div className="mb-12 bg-gray-50 rounded-xl p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">📺 Filter Installation Tips</h2>
@@ -232,7 +212,6 @@ function FilterGuideContent() {
               />
             </div>
           </div>
-
           {/* ========== Conclusion Section ========== */}
           <div className="mb-12 bg-gray-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -244,7 +223,6 @@ function FilterGuideContent() {
               The filters we've reviewed represent the best balance of silent operation, efficient filtration, 
               and long-term reliability available in 2025.
             </p>
-
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-400">
               <p className="text-lg">
                 <strong>Pro Tip:</strong> The quietest filter is one that's properly maintained. 
@@ -252,7 +230,6 @@ function FilterGuideContent() {
               </p>
             </div>
           </div>
-
           {/* ========== Related Resources ========== */}
           <div className="mt-12">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
@@ -269,7 +246,6 @@ function FilterGuideContent() {
                   <p className="text-gray-600">Complete your tank setup</p>
                 </div>
               </Link>
-
               <Link 
                 href="/pet-care-guide" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
@@ -285,7 +261,6 @@ function FilterGuideContent() {
             </div>
           </div>
         </div>
-
         {/* ========== Structured Data (JSON-LD) ========== */}
         <script
           type="application/ld+json"
@@ -308,7 +283,6 @@ function FilterGuideContent() {
     </Layout>
   );
 }
-
 export default function QuietFiltersPage() {
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>

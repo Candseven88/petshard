@@ -1,5 +1,3 @@
-"use client";
-
 import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
@@ -9,9 +7,7 @@ import ProductRecommendation from "./components/ProductRecommendation";
 import QuickActionPlan from "./components/QuickActionPlan";
 import VideoEmbed from "./components/VideoEmbed";
 import { bottomFeeders, products, proTips } from "./data";
-
 // Metadata configuration - convert to server component if needed
-
 function PodcastContent() {
   return (
     <Layout title="Blog" showBackButton={true}>
@@ -24,11 +20,9 @@ function PodcastContent() {
             <span className="mx-2">›</span>
             <span>Aquarium Care</span>
           </div>
-
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Best Bottom Feeders for Community Tanks: 10 Perfect Clean-Up Crew Options
           </h1>
-
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>November 23, 2024</span>
             <span>•</span>
@@ -37,7 +31,6 @@ function PodcastContent() {
             <span>📝 Blog Post</span>
           </div>
         </header>
-
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
             src="https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-2.jpg" 
@@ -47,7 +40,6 @@ function PodcastContent() {
             priority
           />
         </div>
-
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-blue-50 p-8 rounded-xl">
@@ -61,26 +53,22 @@ function PodcastContent() {
               one of the most common problems aquarium owners face – and it can lead to 
               cloudy water, ammonia spikes, and unhealthy fish.
             </p>
-
             <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-blue-400">
               <p className="text-lg font-medium text-gray-800">
                 <span className="text-blue-600">Reader Question:</span> "Looking for a bottom feeder for my community tank with 4-5 inch fish. Need something that will eat excess food and get along peacefully with my existing fish."
               </p>
             </div>
-
             <p className="text-lg leading-relaxed">
               In this episode, we'll reveal 10 proven bottom feeders that not only keep 
               your tank clean but also thrive peacefully with medium-sized fish. Plus, 
               we'll share two game-changing products that make tank maintenance even easier.
             </p>
           </div>
-
           {/* ========== Background Knowledge Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               Understanding Bottom Feeders
             </h2>
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
@@ -90,7 +78,6 @@ function PodcastContent() {
                   Bottom feeders are aquatic animals that naturally scavenge for food at the tank floor. They play a crucial role in maintaining ecosystem balance by consuming leftover food, algae, and organic debris that other fish miss.
                 </p>
               </div>
-
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
                   ⚖️ Size Compatibility
@@ -99,7 +86,6 @@ function PodcastContent() {
                   Matching bottom feeders to your existing fish size prevents aggression and ensures peaceful coexistence. For 4-5 inch fish, look for species that are similar sized or smaller and have compatible temperaments.
                 </p>
               </div>
-
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-purple-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
                   🧹 Cleaning Power
@@ -110,13 +96,11 @@ function PodcastContent() {
               </div>
             </div>
           </div>
-
           {/* ========== Main Content: 10 Bottom Feeders ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
               Top 10 Bottom Feeders for Your Community Tank
             </h2>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {bottomFeeders.map((feeder, index) => (
                 <BottomFeederCard 
@@ -126,7 +110,6 @@ function PodcastContent() {
                 />
               ))}
             </div>
-
             {bottomFeeders.length < 10 && (
               <div className="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
                 <p className="text-sm text-yellow-800">
@@ -135,7 +118,6 @@ function PodcastContent() {
               </div>
             )}
           </div>
-
           {/* ========== Product Recommendations Section ========== */}
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
@@ -148,12 +130,10 @@ function PodcastContent() {
                 🛠️ Essential Tools to Make Your Life Easier
               </h2>
             </div>
-
             <p className="text-lg text-gray-700 mb-6">
               Even with the best bottom feeders, you still need proper maintenance. 
               Here are two products that work hand-in-hand with your clean-up crew:
             </p>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {products.map((product, index) => (
                 <ProductRecommendation 
@@ -164,7 +144,6 @@ function PodcastContent() {
               ))}
             </div>
           </div>
-
           {/* ========== Video Section ========== */}
           <div className="mb-12">
             <VideoEmbed 
@@ -173,12 +152,10 @@ function PodcastContent() {
               description="I found this excellent YouTube video that shows a different cleanup crew setup. While our recommendations focus on fish that eat excess food, this video explores alternative solutions you might also consider. It's always good to see multiple perspectives before making your decision."
             />
           </div>
-
           {/* ========== Quick Action Plan ========== */}
           <div className="mb-12">
             <QuickActionPlan proTips={proTips} />
           </div>
-
           {/* ========== Conclusion Section ========== */}
           <div className="mb-12 bg-gray-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -188,11 +165,9 @@ function PodcastContent() {
             <p className="text-lg leading-relaxed mb-4">
               We've explored 10 excellent bottom feeders that are perfect companions for your 4-5 inch fish. From the versatile Corydoras catfish to the algae-loving Bristlenose plecos, each species brings unique benefits to your aquarium ecosystem. The key to success is matching the right species to your specific tank conditions and existing fish community.
             </p>
-
             <p className="text-lg leading-relaxed mb-4">
               Remember, bottom feeders are part of your tank's cleaning crew, not a replacement for regular maintenance. Combine them with proper feeding practices and the right equipment to create a thriving, low-maintenance aquarium that you'll enjoy for years to come.
             </p>
-
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-400">
               <p className="text-lg">
                 <strong>Remember:</strong> The best bottom feeder for your tank depends 
@@ -201,7 +176,6 @@ function PodcastContent() {
               </p>
             </div>
           </div>
-
           {/* ========== Call to Action ========== */}
           <div className="bg-pink-50 rounded-xl p-6 shadow-md mb-8">
             <h3 className="text-xl font-bold text-pink-600 mb-2">
@@ -226,7 +200,6 @@ function PodcastContent() {
               </Link>
             </div>
           </div>
-
           {/* ========== Related Resources ========== */}
           <div className="mt-12">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
@@ -245,7 +218,6 @@ function PodcastContent() {
                   <p className="text-gray-600">Comprehensive health information</p>
                 </div>
               </Link>
-
               <Link 
                 href="/pet-care-guide" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
@@ -263,7 +235,6 @@ function PodcastContent() {
             </div>
           </div>
         </div>
-
         {/* ========== Structured Data (JSON-LD) ========== */}
         <script
           type="application/ld+json"
@@ -286,7 +257,6 @@ function PodcastContent() {
     </Layout>
   );
 }
-
 export default function BottomFeedersPage() {
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>

@@ -1,10 +1,7 @@
-"use client";
-
 import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-
 const aiToolsComparison = [
   {
     name: "Ghostface AI",
@@ -55,7 +52,6 @@ const aiToolsComparison = [
     rating: 4.2
   }
 ];
-
 function AIToolsComparisonContent() {
   return (
     <Layout title="AI Tools Comparison" showBackButton={true}>
@@ -76,7 +72,6 @@ function AIToolsComparisonContent() {
             <span>8 min read</span>
           </div>
         </header>
-
         {/* Featured Image */}
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
@@ -87,7 +82,6 @@ function AIToolsComparisonContent() {
             priority
           />
         </div>
-
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
           {/* Introduction */}
@@ -99,7 +93,6 @@ function AIToolsComparisonContent() {
               we'll explore some of the most interesting and useful AI tools available today, helping you choose the right solution for your specific needs.
             </p>
           </div>
-
           {/* Tools Comparison Section */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">Featured AI Tools Comparison</h2>
@@ -170,7 +163,6 @@ function AIToolsComparisonContent() {
               ))}
             </div>
           </div>
-
           {/* Specialized Use Cases */}
           <div className="mb-12 bg-purple-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-purple-800 mb-6">Specialized Use Cases</h2>
@@ -209,7 +201,6 @@ function AIToolsComparisonContent() {
               </div>
             </div>
           </div>
-
           {/* Choosing the Right Tool */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">How to Choose the Right AI Tool</h2>
@@ -266,7 +257,6 @@ function AIToolsComparisonContent() {
               </div>
             </div>
           </div>
-
           {/* Conclusion */}
           <div className="mb-12 bg-green-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-6">Conclusion</h2>
@@ -284,7 +274,6 @@ function AIToolsComparisonContent() {
             </div>
           </div>
         </div>
-
         {/* Related Tools CTA */}
         <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-8 shadow-md mt-8">
           <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Explore These AI Tools</h3>
@@ -321,7 +310,6 @@ function AIToolsComparisonContent() {
     </Layout>
   );
 }
-
 export default function AIToolsComparison() {
   return (
     <Suspense fallback={<div>Loading...</div>}>

@@ -73,6 +73,11 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images3.ratemyfishtank.com',
         pathname: '/photo/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
       }
     ],
   },

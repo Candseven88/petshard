@@ -1,5 +1,3 @@
-"use client";
-
 import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
@@ -8,7 +6,6 @@ import ThermometerCard from "./components/ThermometerCard";
 import ProductRecommendation from "./components/ProductRecommendation";
 import TemperatureGuide from "./components/TemperatureGuide";
 import { thermometerTypes, products, proTips, temperatureGuides } from "./data";
-
 function ThermometerContent() {
   return (
     <Layout title="Blog" showBackButton={true}>
@@ -20,11 +17,9 @@ function ThermometerContent() {
             <span className="mx-2">›</span>
             <span>Aquarium Equipment</span>
           </div>
-
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Best Aquarium Thermometers with High Temp Alarm: Keep Your Fish Safe 24/7
           </h1>
-
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>November 23, 2024</span>
             <span>•</span>
@@ -33,7 +28,6 @@ function ThermometerContent() {
             <span>📝 Blog Post</span>
           </div>
         </header>
-
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
             src="https://www.thesprucepets.com/thmb/DWmPXX3FB2nkHBvvqo-asPo5BWQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Aquarium-digital-thermometer-59000ef63df78ca1591de6b0.jpg" 
@@ -43,7 +37,6 @@ function ThermometerContent() {
             priority
           />
         </div>
-
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-blue-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
@@ -53,52 +46,42 @@ function ThermometerContent() {
             <p className="text-lg leading-relaxed mb-4">
               Have you ever woken up to find your fish gasping at the surface because your heater malfunctioned overnight? Temperature swings are one of the leading causes of fish stress, disease, and death. Unlike humans who can adjust to temperature changes, fish are cold-blooded and rely entirely on their environment.
             </p>
-
             <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-blue-400">
               <p className="text-lg font-medium text-gray-800">
                 <span className="text-blue-600">Today's Question:</span> "Looking for a thermometer with high temp alarm for fish raising. Any recommendations?"
               </p>
             </div>
-
             <p className="text-lg leading-relaxed">
               In this comprehensive guide, we'll explore the best aquarium thermometers with alarm functions, compare different types, and help you choose the perfect one to protect your aquatic pets around the clock.
             </p>
           </div>
-
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               Understanding Aquarium Thermometer Types
             </h2>
-
             <div className="bg-yellow-50 rounded-lg p-6 mb-6 border-l-4 border-yellow-400">
               <p className="text-gray-700">
                 <strong className="text-yellow-700">🚨 Critical Fact:</strong> Studies show that a 5°F temperature change can stress fish within hours, and a 10°F+ change can be fatal within 24 hours. A reliable thermometer with alarms is not optional—it's essential life-support equipment.
               </p>
             </div>
-
             <p className="text-gray-700 mb-6">
               Not all thermometers are created equal. Here are the three main types available, with their pros and cons for alarm functionality:
             </p>
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {thermometerTypes.map((thermo) => (
                 <ThermometerCard key={thermo.id} thermometer={thermo} />
               ))}
             </div>
           </div>
-
           <TemperatureGuide guides={temperatureGuides} />
-
           <div className="my-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               🎯 Why Digital Thermometers with Alarms Win
             </h2>
-
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-8">
               <p className="text-lg text-gray-700 mb-6">
                 While traditional thermometers have their place, digital models with alarm functions offer unmatched protection for your fish investment:
               </p>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-white rounded-lg p-5 shadow-sm">
                   <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
@@ -109,7 +92,6 @@ function ThermometerContent() {
                     Alarms alert you immediately when temperature exceeds safe ranges—even when you're sleeping or away from home.
                   </p>
                 </div>
-
                 <div className="bg-white rounded-lg p-5 shadow-sm">
                   <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
                     <span className="text-2xl">⚡</span>
@@ -119,7 +101,6 @@ function ThermometerContent() {
                     Digital sensors update every 5 seconds, detecting problems before they become fatal.
                   </p>
                 </div>
-
                 <div className="bg-white rounded-lg p-5 shadow-sm">
                   <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
                     <span className="text-2xl">🎯</span>
@@ -129,7 +110,6 @@ function ThermometerContent() {
                     ±0.9°F accuracy means you catch small changes before they cascade into disasters.
                   </p>
                 </div>
-
                 <div className="bg-white rounded-lg p-5 shadow-sm">
                   <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
                     <span className="text-2xl">💰</span>
@@ -142,7 +122,6 @@ function ThermometerContent() {
               </div>
             </div>
           </div>
-
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
               <div className="bg-pink-100 p-3 rounded-full">
@@ -154,11 +133,9 @@ function ThermometerContent() {
                 🏆 Top 3 Thermometers with Alarm Features
               </h2>
             </div>
-
             <p className="text-lg text-gray-700 mb-6">
               After testing dozens of models and reading thousands of reviews, these are our top picks for aquarists who need reliable temperature monitoring with alarm capability:
             </p>
-
             <div className="space-y-6">
               {products.map((product, index) => (
                 <ProductRecommendation 
@@ -169,12 +146,10 @@ function ThermometerContent() {
               ))}
             </div>
           </div>
-
           <div className="mb-12 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               🛠️ How to Set Up Temperature Alarms Correctly
             </h2>
-
             <div className="space-y-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
@@ -191,7 +166,6 @@ function ThermometerContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -207,7 +181,6 @@ function ThermometerContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -223,7 +196,6 @@ function ThermometerContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -239,7 +211,6 @@ function ThermometerContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -257,7 +228,6 @@ function ThermometerContent() {
               </div>
             </div>
           </div>
-
           <div className="mb-12 bg-green-50 rounded-xl p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
               <span className="text-2xl">💡</span>
@@ -275,7 +245,6 @@ function ThermometerContent() {
               ))}
             </div>
           </div>
-
           <div className="mb-12 bg-gray-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               Final Thoughts
@@ -284,18 +253,15 @@ function ThermometerContent() {
             <p className="text-lg leading-relaxed mb-4">
               Temperature stability is the foundation of a healthy aquarium. While basic thermometers can tell you the current temperature, only models with alarm functions provide true 24/7 protection for your fish. The small investment in a quality digital thermometer with high/low alarms can prevent catastrophic losses and give you peace of mind.
             </p>
-
             <p className="text-lg leading-relaxed mb-4">
               Our top recommendation is the <strong>Fish Tank Digital Thermometer with LED Display</strong> for its combination of accuracy, alarm reliability, and ease of use. However, any of the three products reviewed above will serve you well depending on your specific needs and budget.
             </p>
-
             <div className="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-400">
               <p className="text-lg">
                 <strong>Remember:</strong> The best thermometer is the one that's properly installed, regularly maintained, and has alarms set for your specific fish species. Don't wait for a disaster—protect your aquatic investment today.
               </p>
             </div>
           </div>
-
           <div className="bg-pink-50 rounded-xl p-6 shadow-md mb-8">
             <h3 className="text-xl font-bold text-pink-600 mb-2">
               💬 What's Your Experience?
@@ -318,7 +284,6 @@ function ThermometerContent() {
               </Link>
             </div>
           </div>
-
           <div className="mt-12">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -334,7 +299,6 @@ function ThermometerContent() {
                   <p className="text-sm text-gray-600">Best clean-up crew for medium fish</p>
                 </div>
               </Link>
-
               <Link 
                 href="/health-guide" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
@@ -350,7 +314,6 @@ function ThermometerContent() {
             </div>
           </div>
         </div>
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -372,7 +335,6 @@ function ThermometerContent() {
     </Layout>
   );
 }
-
 export default function ThermometerPage() {
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>

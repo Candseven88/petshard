@@ -5,14 +5,12 @@ import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-
 // Health Check Tool Component
 function PetHealthCheckTool() {
   const [petType, setPetType] = useState("dog");
   const [symptoms, setSymptoms] = useState<string[]>([]);
   const [showResult, setShowResult] = useState(false);
   const router = useRouter();
-
   const dogSymptoms = [
     "Fever",
     "Lameness or joint pain",
@@ -24,7 +22,6 @@ function PetHealthCheckTool() {
     "Skin rash or irritation",
     "Tick exposure in the last 30 days"
   ];
-
   const catSymptoms = [
     "Fever",
     "Lameness or joint pain",
@@ -35,9 +32,7 @@ function PetHealthCheckTool() {
     "Skin rash or irritation",
     "Tick exposure in the last 30 days"
   ];
-
   const currentSymptoms = petType === "dog" ? dogSymptoms : catSymptoms;
-
   const toggleSymptom = (symptom: string) => {
     if (symptoms.includes(symptom)) {
       setSymptoms(symptoms.filter(s => s !== symptom));
@@ -45,7 +40,6 @@ function PetHealthCheckTool() {
       setSymptoms([...symptoms, symptom]);
     }
   };
-
   const getHealthRisk = () => {
     // Check for Lyme disease risk
     const lymeRiskSymptoms = ["Fever", "Lameness or joint pain", "Swollen lymph nodes", "Tick exposure in the last 30 days"];
@@ -87,18 +81,14 @@ function PetHealthCheckTool() {
       };
     }
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setShowResult(true);
   };
-
   const handleBreedIdentification = () => {
     router.push("/breed-identification");
   };
-
   const riskResult = getHealthRisk();
-
   return (
     <div className="bg-blue-50 rounded-xl p-6 shadow-md mt-8">
       <h3 className="text-xl font-bold text-blue-700 mb-4">Pet Health Check Tool</h3>
@@ -135,7 +125,6 @@ function PetHealthCheckTool() {
             </button>
           </div>
         </div>
-
         <div className="mb-4">
           <label className="block text-gray-700 font-medium mb-2">Select Observed Symptoms</label>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -165,7 +154,6 @@ function PetHealthCheckTool() {
             ))}
           </div>
         </div>
-
         <button
           type="submit"
           className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
@@ -173,7 +161,6 @@ function PetHealthCheckTool() {
           Check Health Risk
         </button>
       </form>
-
       {showResult && (
         <div className="mt-6 p-4 rounded-lg border border-gray-300 bg-white">
           <h4 className="font-bold text-lg mb-2">Assessment Result</h4>
@@ -208,7 +195,6 @@ function PetHealthCheckTool() {
     </div>
   );
 }
-
 function ArticleContent() {
   return (
     <Layout title="Pet Health Blog" showBackButton={true}>
@@ -229,7 +215,6 @@ function ArticleContent() {
             <span>10 min read</span>
           </div>
         </header>
-
         {/* Featured Image */}
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
@@ -240,7 +225,6 @@ function ArticleContent() {
             priority
           />
         </div>
-
         {/* Article Content - Improved Readability */}
         <div className="prose prose-lg max-w-none">
           {/* Introduction Section */}
@@ -253,7 +237,6 @@ function ArticleContent() {
               Understanding these conditions is crucial for early detection and prevention.
             </p>
           </div>
-
           {/* Lyme Disease Section */}
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-6">
@@ -272,7 +255,6 @@ function ArticleContent() {
                 This disease is particularly prevalent in wooded, grassy areas where ticks thrive.
               </p>
             </div>
-
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h3 className="text-xl font-bold text-gray-800 mb-4">Lyme Disease in Pets</h3>
               <p className="mb-4">
@@ -313,7 +295,6 @@ function ArticleContent() {
               </div>
             </div>
           </div>
-
           {/* Legionnaires' Disease Section */}
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-6">
@@ -333,7 +314,6 @@ function ArticleContent() {
                 hot tubs, decorative fountains, or plumbing systems.
               </p>
             </div>
-
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h3 className="text-xl font-bold text-gray-800 mb-4">Legionnaires' Disease and Pets</h3>
               <p className="mb-4">
@@ -373,7 +353,6 @@ function ArticleContent() {
               </div>
             </div>
           </div>
-
           {/* Prevention Strategies Section */}
           <div className="mb-12 bg-green-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-6">Prevention Strategies</h2>
@@ -458,7 +437,6 @@ function ArticleContent() {
               </div>
             </div>
           </div>
-
           {/* AI Help Section */}
           <div className="mb-12">
             <div className="flex items-center gap-4 mb-6">
@@ -476,7 +454,6 @@ function ArticleContent() {
                 and prevention of various health issues, and even help create educational content about pet care:
               </p>
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-pink-400">
                 <h4 className="font-bold text-lg mb-3 text-pink-600">Breed Identification</h4>
@@ -491,7 +468,6 @@ function ArticleContent() {
                 <p>Based on your pet's breed, age, and lifestyle, AI can provide tailored health guidance and preventive care suggestions.</p>
               </div>
             </div>
-
             <div className="bg-pink-50 p-6 rounded-lg mb-6">
               <p className="text-lg mb-4">
                 Our PetShard platform offers AI-powered breed identification that can help you better understand your pet's 
@@ -508,7 +484,6 @@ function ArticleContent() {
               </p>
             </div>
           </div>
-
           {/* When to See a Veterinarian Section */}
           <div className="mb-12 bg-red-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-red-800 mb-6">When to See a Veterinarian</h2>
@@ -541,7 +516,6 @@ function ArticleContent() {
               Early intervention can significantly improve outcomes for pets affected by these and other diseases.
             </div>
           </div>
-
           {/* Conclusion Section */}
           <div className="mb-12 bg-gray-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Conclusion</h2>
@@ -565,10 +539,8 @@ function ArticleContent() {
             </p>
           </div>
         </div>
-
         {/* Health Check Tool */}
         <PetHealthCheckTool />
-
         {/* Call to Action */}
         <div className="bg-pink-50 rounded-xl p-6 shadow-md mt-8">
           <h3 className="text-xl font-bold text-pink-600 mb-2">Identify Your Pet's Breed for Better Health Insights</h3>
@@ -582,7 +554,6 @@ function ArticleContent() {
             Try Our AI Breed Identification
           </Link>
         </div>
-
         {/* Related Articles */}
         <div className="mt-12">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
@@ -621,7 +592,6 @@ function ArticleContent() {
     </Layout>
   );
 }
-
 export default function LymeAndLegionnairesArticle() {
   return (
     <Suspense fallback={<div>Loading...</div>}>

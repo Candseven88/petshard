@@ -1,5 +1,3 @@
-"use client";
-
 import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
@@ -9,7 +7,6 @@ import ProductCard from "./components/ProductCard";
 import VideoEmbed from "./components/VideoEmbed";
 import PlantCategoryGuide from "./components/PlantCategoryGuide";
 import { lightingFactors, budgetLights, topProducts, proTips, plantCategories, comparisonData } from "./data";
-
 function AquariumLightContent() {
   return (
     <Layout title="Blog" showBackButton={true}>
@@ -22,11 +19,9 @@ function AquariumLightContent() {
             <span className="mx-2">›</span>
             <span>Aquarium Equipment</span>
           </div>
-
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Best Full Spectrum Aquarium Lights for Planted Tanks: Complete Guide 2024
           </h1>
-
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>November 24, 2024</span>
             <span>•</span>
@@ -35,7 +30,6 @@ function AquariumLightContent() {
             <span>📝 Expert Guide</span>
           </div>
         </header>
-
         {/* Introduction */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl border-l-4 border-blue-500">
@@ -46,64 +40,53 @@ function AquariumLightContent() {
             <p className="text-lg leading-relaxed mb-4">
               Does this sound familiar? You've set up your planted aquarium, added beautiful plants, but they're struggling—pale leaves, slow growth, or even dying off. The culprit? Inadequate lighting. Unlike terrestrial plants that receive natural sunlight, aquarium plants depend entirely on artificial lighting for photosynthesis.
             </p>
-
             <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-pink-400">
               <p className="text-lg font-medium text-gray-800">
                 <span className="text-pink-600">Real User Question:</span> "I'm looking for a high intensity full spectrum light for my aquarium. My plants need more light."
               </p>
             </div>
-
             <p className="text-lg leading-relaxed">
               In this comprehensive guide, we'll explore everything you need to know about full-spectrum aquarium lighting—from understanding the three critical factors (color spectrum, intensity, and spread) to reviewing budget-friendly options that actually work. Whether you're growing easy beginner plants or demanding red species, we've got you covered.
             </p>
           </div>
-
           {/* Understanding the Three Key Factors */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               🔬 Understanding the 3 Critical Factors of Aquarium Lighting
             </h2>
-
             <p className="text-lg text-gray-700 mb-6">
               Before diving into product recommendations, it's essential to understand what makes aquarium lighting effective. These three factors work together to determine whether your plants will thrive or struggle:
             </p>
-
             <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8">
               {lightingFactors.map((factor) => (
                 <LightingFactorCard key={factor.id} factor={factor} />
               ))}
             </div>
-
             <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-400">
               <p className="text-gray-700">
                 <strong className="text-blue-700">💡 Key Takeaway:</strong> The best aquarium light isn't just about brightness—it's about delivering the right spectrum at the right intensity with even coverage across your entire tank. Full-spectrum LEDs excel at all three factors while remaining energy-efficient.
               </p>
             </div>
           </div>
-
           {/* Plant Categories Guide */}
           <div className="mb-12">
             <PlantCategoryGuide categories={plantCategories} />
           </div>
-
           {/* Budget-Friendly Lights Section */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
               <span className="text-3xl">💰</span>
               5 Budget-Friendly Full Spectrum Lights That Actually Work
             </h2>
-
             <p className="text-lg text-gray-700 mb-6">
               Based on extensive testing and real-world aquascaping experience, these five lights offer excellent value without compromising plant growth. Each has been tested with easy, medium, and advanced category plants to verify performance:
             </p>
-
             <div className="grid grid-cols-1 gap-6 mb-8">
               {budgetLights.map((light, index) => (
                 <AquariumLightCard key={light.id} light={light} rank={index + 1} />
               ))}
             </div>
           </div>
-
           {/* Video Review Section */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -115,7 +98,6 @@ function AquariumLightContent() {
               description={comparisonData.videoDescription}
             />
           </div>
-
           {/* Top Product Recommendations */}
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
@@ -128,24 +110,20 @@ function AquariumLightContent() {
                 🏆 Our Top Recommended Products
               </h2>
             </div>
-
             <p className="text-lg text-gray-700 mb-6">
               After reviewing dozens of aquarium lights and analyzing thousands of user experiences, these are our top picks for planted tank enthusiasts who want proven performance at reasonable prices:
             </p>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {topProducts.map((product, index) => (
                 <ProductCard key={index} product={product} index={index} />
               ))}
             </div>
           </div>
-
           {/* How to Choose Section */}
           <div className="mb-12 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
               🎯 How to Choose the Right Light for YOUR Tank
             </h2>
-
             <div className="space-y-6">
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
@@ -162,7 +140,6 @@ function AquariumLightContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -178,7 +155,6 @@ function AquariumLightContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -194,7 +170,6 @@ function AquariumLightContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -210,7 +185,6 @@ function AquariumLightContent() {
                   </div>
                 </div>
               </div>
-
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold flex-shrink-0">
@@ -228,7 +202,6 @@ function AquariumLightContent() {
               </div>
             </div>
           </div>
-
           {/* Pro Tips Section */}
           <div className="mb-12 bg-green-50 rounded-xl p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
@@ -250,7 +223,6 @@ function AquariumLightContent() {
               ))}
             </div>
           </div>
-
           {/* Common Mistakes Section */}
           <div className="mb-12 bg-red-50 rounded-xl p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
@@ -265,21 +237,18 @@ function AquariumLightContent() {
                   Wattage measures power consumption, not light output. A 20W light can produce 927 lumens (Higer 957) or 1,628 lumens (Chihiros A2). Always check lumen ratings instead.
                 </p>
               </div>
-
               <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
                 <h3 className="font-bold text-red-700 mb-2">❌ Starting with Maximum Intensity</h3>
                 <p className="text-gray-700">
                   High light from day one triggers massive algae blooms in new tanks. Start with 6 hours at 50-70% intensity, then gradually increase over 4-6 weeks as plants establish.
                 </p>
               </div>
-
               <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
                 <h3 className="font-bold text-red-700 mb-2">❌ Ignoring Spectrum Quality</h3>
                 <p className="text-gray-700">
                   Not all "full spectrum" lights are equal. White-only LEDs (like Chihiros A2) need higher lumens to match full-spectrum lights with dedicated red/blue/green diodes. Check actual spectrum coverage, not just the label.
                 </p>
               </div>
-
               <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
                 <h3 className="font-bold text-red-700 mb-2">❌ Forgetting About Heat</h3>
                 <p className="text-gray-700">
@@ -288,7 +257,6 @@ function AquariumLightContent() {
               </div>
             </div>
           </div>
-
           {/* Final Thoughts */}
           <div className="mb-12 bg-gray-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -298,22 +266,18 @@ function AquariumLightContent() {
             <p className="text-lg leading-relaxed mb-4">
               Choosing the right full-spectrum aquarium light doesn't have to be complicated or expensive. The key is understanding your specific needs: What plants are you growing? What's your tank size? What's your budget—both upfront and long-term electricity costs?
             </p>
-
             <p className="text-lg leading-relaxed mb-4">
               For beginners with easy plants, the <strong>Siora SR616</strong> or <strong>Higer 058</strong> ($15-22) provides everything you need at an unbeatable price. If you're ready to grow red plants or want more control, the <strong>Higer 957/076</strong> ($25-32) offers excellent mid-range performance. Serious aquascapers pursuing advanced plants should consider the <strong>Chihiros A2 Series</strong> ($47-54) for its exceptional lumen output and professional-grade features.
             </p>
-
             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400 mb-4">
               <p className="text-lg">
                 <strong>Our Top Recommendation:</strong> For most aquarists, the <strong>Higer 076</strong> hits the sweet spot—enough intensity for a wide variety of plants, energy-efficient operation, advanced controls, and reasonable pricing. Pair it with the <strong>GooingTop LED Grow Light</strong> or <strong>AQUANEAT Full Spectrum Light</strong> for targeted supplemental lighting where needed.
               </p>
             </div>
-
             <p className="text-lg leading-relaxed">
               Remember: The best light is one that matches your plants' needs, fits your tank properly, and includes features you'll actually use. Start conservative with photoperiods and intensity, monitor your plants' response, and adjust accordingly. With the right lighting, your planted aquarium will transform into a thriving underwater garden.
             </p>
           </div>
-
           {/* Call to Action */}
           <div className="bg-pink-50 rounded-xl p-6 shadow-md mb-8">
             <h3 className="text-xl font-bold text-pink-600 mb-2">
@@ -337,7 +301,6 @@ function AquariumLightContent() {
               </Link>
             </div>
           </div>
-
           {/* Related Resources */}
           <div className="mt-12">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
@@ -354,7 +317,6 @@ function AquariumLightContent() {
                   <p className="text-sm text-gray-600">Temperature monitoring with alarms</p>
                 </div>
               </Link>
-
               <Link 
                 href="/blog/best-bottom-feeders-for-medium-fish" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
@@ -370,7 +332,6 @@ function AquariumLightContent() {
             </div>
           </div>
         </div>
-
         {/* Structured Data */}
         <script
           type="application/ld+json"
@@ -407,7 +368,6 @@ function AquariumLightContent() {
     </Layout>
   );
 }
-
 export default function AquariumLightPage() {
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>

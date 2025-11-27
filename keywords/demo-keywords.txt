@@ -1,0 +1,6 @@
+# Demo Keywords for SEO Content Generator
+# This file demonstrates the CLI functionality
+
+pet grooming tips
+cat health symptoms
+dog training basics

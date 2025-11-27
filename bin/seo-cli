@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+/**
+ * SEO Content Generator CLI Entry Point
+ * This script provides a command-line interface for generating SEO-optimized blog articles
+ */
+
+// Import and run the CLI
+require('../dist/lib/seo-content-generator/cli.js');
