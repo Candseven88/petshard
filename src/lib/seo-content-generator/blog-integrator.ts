@@ -1,5 +1,6 @@
 import { GeneratedArticle } from './types';
 import { FileStructureManager } from './file-structure-manager';
+import { SEOUpdater } from './seo-updater';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 
@@ -10,12 +11,14 @@ import * as path from 'path';
  */
 export class BlogIntegrator {
   private fileManager: FileStructureManager;
+  private seoUpdater: SEOUpdater;
   private blogPagePath: string;
   private projectRoot: string;
 
   constructor(projectRoot: string = process.cwd()) {
     this.projectRoot = projectRoot;
     this.fileManager = new FileStructureManager(projectRoot);
+    this.seoUpdater = new SEOUpdater(projectRoot);
     this.blogPagePath = path.join(projectRoot, 'src', 'app', 'blog', 'page.tsx');
   }
 
@@ -62,6 +65,20 @@ export class BlogIntegrator {
           results.updatedBlogPage = true;
         } catch (error) {
           results.errors.push(`Failed to update blog main page: ${error}`);
+        }
+      }
+
+      // Step 3: Update SEO-related files
+      if (results.successfulIntegrations > 0) {
+        try {
+          const slugs = results.createdFiles.map(file => file.slug);
+          const seoResults = await this.seoUpdater.updateSEOFiles(slugs);
+          
+          if (seoResults.errors.length > 0) {
+            results.errors.push(...seoResults.errors);
+          }
+        } catch (error) {
+          results.errors.push(`SEO update failed: ${error}`);
         }
       }
 
