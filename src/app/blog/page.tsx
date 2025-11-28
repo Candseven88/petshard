@@ -4,6 +4,384 @@ import Link from "next/link";
 import Image from "next/image";
 const blogPosts = [
   {
+    id: "pet-vaccination-schedule",
+    title: "The Ultimate Pet Vaccination Schedule Guide for Pet Parents",
+    description: "Expert guide on pet vaccination schedule for pet owners",
+    image: "/pet/1.jpg",
+    date: "November 28, 2025",
+    tags: ["pet vaccination schedule", "pet vaccination schedule tips", "pet vaccination schedule guide"],
+    featured: true
+  },
+  {
+    id: "common-dog-diseases",
+    title: "The Ultimate Common Dog Diseases Guide for Pet Parents",
+    description: "Essential common dog diseases guide for pet care",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["pet health", "health guide", "common dog diseases", "common dog diseases tips", "common dog diseases guide"],
+    featured: true
+  },
+  {
+    id: "cat-health-symptoms",
+    title: "The Ultimate Cat Health Symptoms Guide for Pet Parents",
+    description: "Essential cat health symptoms guide for pet care",
+    image: "https://cdn2.thecatapi.com/images/e35.jpg",
+    date: "November 28, 2025",
+    tags: ["pet health", "health guide", "cat health symptoms", "cat health symptoms tips", "cat health symptoms guide"],
+    featured: true
+  },
+  {
+    id: "pet-allergy-management",
+    title: "Pet Allergy Management: Expert Tips and Professional Advice",
+    description: "Complete pet allergy management information for pets",
+    image: "/pet/2.jpg",
+    date: "November 28, 2025",
+    tags: ["pet allergy management", "pet allergy management tips", "pet allergy management guide"],
+    featured: true
+  },
+  {
+    id: "pet-weight-management",
+    title: "Everything You Need to Know About Pet Weight Management",
+    description: "Professional pet weight management advice and tips",
+    image: "/pet/3.jpg",
+    date: "November 28, 2025",
+    tags: ["pet weight management", "pet weight management tips", "pet weight management guide"],
+    featured: true
+  },
+  {
+    id: "dog-skin-conditions",
+    title: "The Ultimate Dog Skin Conditions Guide for Pet Parents",
+    description: "Essential dog skin conditions guide for pet care",
+    image: "/pet/4.jpg",
+    date: "November 28, 2025",
+    tags: ["dog skin conditions", "dog skin conditions tips", "dog skin conditions guide"],
+    featured: true
+  },
+  {
+    id: "cat-urinary-health",
+    title: "Understanding Cat Urinary Health - A Comprehensive Guide",
+    description: "Complete cat urinary health information for pets",
+    image: "https://cdn2.thecatapi.com/images/ag4.jpg",
+    date: "November 28, 2025",
+    tags: ["pet health", "health guide", "cat urinary health", "cat urinary health tips", "cat urinary health guide"],
+    featured: true
+  },
+  {
+    id: "pet-parasite-prevention",
+    title: "Understanding Pet Parasite Prevention - A Comprehensive Guide",
+    description: "Essential pet parasite prevention guide for pet care",
+    image: "/pet/5.jpg",
+    date: "November 28, 2025",
+    tags: ["pet parasite prevention", "pet parasite prevention tips", "pet parasite prevention guide"],
+    featured: true
+  },
+  {
+    id: "senior-pet-health-issues",
+    title: "The Ultimate Senior Pet Health Issues Guide for Pet Parents",
+    description: "Expert guide on senior pet health issues for pet owners",
+    image: "/pet/6.jpg",
+    date: "November 28, 2025",
+    tags: ["pet health", "health guide", "senior pet health issues", "senior pet health issues tips", "senior pet health issues guide"],
+    featured: true
+  },
+  {
+    id: "pet-emergency-signs",
+    title: "The Ultimate Pet Emergency Signs Guide for Pet Parents",
+    description: "Essential pet emergency signs guide for pet care",
+    image: "/pet/7.jpg",
+    date: "November 28, 2025",
+    tags: ["pet emergency signs", "pet emergency signs tips", "pet emergency signs guide"],
+    featured: true
+  },
+  {
+    id: "dog-grooming-tips",
+    title: "Dog Grooming Tips: Expert Tips and Professional Advice",
+    description: "Professional dog grooming tips advice and tips",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "dog grooming tips", "dog grooming tips tips", "dog grooming tips guide"],
+    featured: true
+  },
+  {
+    id: "cat-litter-box-training",
+    title: "Understanding Cat Litter Box Training - A Comprehensive Guide",
+    description: "Essential cat litter box training guide for pet care",
+    image: "https://cdn2.thecatapi.com/images/e35.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "cat litter box training", "cat litter box training tips", "cat litter box training guide"],
+    featured: true
+  },
+  {
+    id: "pet-nutrition-guide",
+    title: "The Ultimate Pet Nutrition Guide Guide for Pet Parents",
+    description: "Essential pet nutrition guide guide for pet care",
+    image: "/pet/1.jpg",
+    date: "November 28, 2025",
+    tags: ["pet nutrition guide", "pet nutrition guide tips", "pet nutrition guide guide"],
+    featured: true
+  },
+  {
+    id: "puppy-training-basics",
+    title: "Everything You Need to Know About Puppy Training Basics",
+    description: "Professional puppy training basics advice and tips",
+    image: "/pet/2.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "puppy training basics", "puppy training basics tips", "puppy training basics guide"],
+    featured: true
+  },
+  {
+    id: "senior-pet-care",
+    title: "Complete Guide to Senior Pet Care for Pet Owners",
+    description: "Essential senior pet care guide for pet care",
+    image: "/pet/3.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "senior pet care", "senior pet care tips", "senior pet care guide"],
+    featured: true
+  },
+  {
+    id: "pet-dental-health",
+    title: "Pet Dental Health: Expert Tips and Professional Advice",
+    description: "Professional pet dental health advice and tips",
+    image: "/pet/4.jpg",
+    date: "November 28, 2025",
+    tags: ["pet health", "health guide", "pet dental health", "pet dental health tips", "pet dental health guide"],
+    featured: true
+  },
+  {
+    id: "indoor-cat-exercise",
+    title: "The Ultimate Indoor Cat Exercise Guide for Pet Parents",
+    description: "Essential indoor cat exercise guide for pet care",
+    image: "https://cdn2.thecatapi.com/images/ag4.jpg",
+    date: "November 28, 2025",
+    tags: ["indoor cat exercise", "indoor cat exercise tips", "indoor cat exercise guide"],
+    featured: true
+  },
+  {
+    id: "dog-walking-safety",
+    title: "Understanding Dog Walking Safety - A Comprehensive Guide",
+    description: "Complete dog walking safety information for pets",
+    image: "/pet/5.jpg",
+    date: "November 28, 2025",
+    tags: ["dog walking safety", "dog walking safety tips", "dog walking safety guide"],
+    featured: true
+  },
+  {
+    id: "pet-first-aid",
+    title: "Understanding Pet First Aid - A Comprehensive Guide",
+    description: "Professional pet first aid advice and tips",
+    image: "/pet/6.jpg",
+    date: "November 28, 2025",
+    tags: ["pet first aid", "pet first aid tips", "pet first aid guide"],
+    featured: true
+  },
+  {
+    id: "healthy-pet-treats",
+    title: "Understanding Healthy Pet Treats - A Comprehensive Guide",
+    description: "Complete healthy pet treats information for pets",
+    image: "/pet/7.jpg",
+    date: "November 28, 2025",
+    tags: ["pet health", "health guide", "healthy pet treats", "healthy pet treats tips", "healthy pet treats guide"],
+    featured: true
+  },
+  {
+    id: "best-dog-breeds-for-families",
+    title: "Understanding Best Dog Breeds For Families - A Comprehensive Guide",
+    description: "Expert guide on best dog breeds for families for pet owners",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "best dog breeds for families", "best dog breeds for families tips", "best dog breeds for families guide"],
+    featured: true
+  },
+  {
+    id: "friendliest-dog-breeds",
+    title: "Friendliest Dog Breeds: Expert Tips and Professional Advice",
+    description: "Complete friendliest dog breeds information for pets",
+    image: "/pet/3.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "friendliest dog breeds", "friendliest dog breeds tips", "friendliest dog breeds guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-characteristics",
+    title: "Complete Guide to Dog Breed Characteristics for Pet Owners",
+    description: "Professional dog breed characteristics advice and tips",
+    image: "/pet/4.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed characteristics", "dog breed characteristics tips", "dog breed characteristics guide"],
+    featured: true
+  },
+  {
+    id: "rare-dog-breeds",
+    title: "Complete Guide to Rare Dog Breeds for Pet Owners",
+    description: "Essential rare dog breeds guide for pet care",
+    image: "/pet/5.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "rare dog breeds", "rare dog breeds tips", "rare dog breeds guide"],
+    featured: true
+  },
+  {
+    id: "dog-breeding-practices",
+    title: "Dog Breeding Practices: Expert Tips and Professional Advice",
+    description: "Complete dog breeding practices information for pets",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breeding practices", "dog breeding practices tips", "dog breeding practices guide"],
+    featured: true
+  },
+  {
+    id: "responsible-dog-breeding",
+    title: "The Ultimate Responsible Dog Breeding Guide for Pet Parents",
+    description: "Expert guide on responsible dog breeding for pet owners",
+    image: "/pet/3.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "responsible dog breeding", "responsible dog breeding tips", "responsible dog breeding guide"],
+    featured: true
+  },
+  {
+    id: "best-dog-breeds-for-apartments",
+    title: "Complete Guide to Best Dog Breeds For Apartments for Pet Owners",
+    description: "Complete best dog breeds for apartments information for pets",
+    image: "/pet/4.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "best dog breeds for apartments", "best dog breeds for apartments tips", "best dog breeds for apartments guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-temperament",
+    title: "Everything You Need to Know About Dog Breed Temperament",
+    description: "Professional dog breed temperament advice and tips",
+    image: "/pet/5.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed temperament", "dog breed temperament tips", "dog breed temperament guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-health-issues",
+    title: "Understanding Dog Breed Health Issues - A Comprehensive Guide",
+    description: "Essential dog breed health issues guide for pet care",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["pet health", "health guide", "breed guide", "pet breeding", "dog breed health issues"],
+    featured: true
+  },
+  {
+    id: "dog-breed-size-comparison",
+    title: "Complete Guide to Dog Breed Size Comparison for Pet Owners",
+    description: "Professional dog breed size comparison advice and tips",
+    image: "/pet/3.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed size comparison", "dog breed size comparison tips", "dog breed size comparison guide"],
+    featured: true
+  },
+  {
+    id: "best-dog-breeds-for-first-time-owners",
+    title: "Best Dog Breeds For First Time Owners: Expert Tips and Professional Advice",
+    description: "Professional best dog breeds for first time owners advice...",
+    image: "/pet/4.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "best dog breeds for first time owners", "best dog breeds for first time owners tips", "best dog breeds for first time owners guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-training-difficulty",
+    title: "The Ultimate Dog Breed Training Difficulty Guide for Pet Parents",
+    description: "Professional dog breed training difficulty advice and tips",
+    image: "/pet/5.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "breed guide", "pet breeding", "dog breed training difficulty"],
+    featured: true
+  },
+  {
+    id: "dog-breed-exercise-requirements",
+    title: "Everything You Need to Know About Dog Breed Exercise Requirements",
+    description: "Essential dog breed exercise requirements guide for pet care",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed exercise requirements", "dog breed exercise requirements tips", "dog breed exercise requirements guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-grooming-needs",
+    title: "The Ultimate Dog Breed Grooming Needs Guide for Pet Parents",
+    description: "Expert guide on dog breed grooming needs for pet owners",
+    image: "/pet/3.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "breed guide", "pet breeding", "dog breed grooming needs"],
+    featured: true
+  },
+  {
+    id: "dog-breed-lifespan",
+    title: "Understanding Dog Breed Lifespan - A Comprehensive Guide",
+    description: "Complete dog breed lifespan information for pets",
+    image: "/pet/4.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed lifespan", "dog breed lifespan tips", "dog breed lifespan guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-cost",
+    title: "The Ultimate Dog Breed Cost Guide for Pet Parents",
+    description: "Complete dog breed cost information for pets",
+    image: "/pet/5.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed cost", "dog breed cost tips", "dog breed cost guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-popularity",
+    title: "Complete Guide to Dog Breed Popularity for Pet Owners",
+    description: "Expert guide on dog breed popularity for pet owners",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed popularity", "dog breed popularity tips", "dog breed popularity guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-history",
+    title: "Dog Breed History: Expert Tips and Professional Advice",
+    description: "Professional dog breed history advice and tips",
+    image: "/pet/3.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed history", "dog breed history tips", "dog breed history guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-standards",
+    title: "The Ultimate Dog Breed Standards Guide for Pet Parents",
+    description: "Essential dog breed standards guide for pet care",
+    image: "/pet/4.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed standards", "dog breed standards tips", "dog breed standards guide"],
+    featured: true
+  },
+  {
+    id: "dog-breed-selection-guide",
+    title: "Complete Guide to Dog Breed Selection Guide for Pet Owners",
+    description: "Professional dog breed selection guide advice and tips",
+    image: "/pet/5.jpg",
+    date: "November 28, 2025",
+    tags: ["breed guide", "pet breeding", "dog breed selection guide", "dog breed selection guide tips", "dog breed selection guide guide"],
+    featured: true
+  },
+  {
+    id: "pet-grooming-tips",
+    title: "Pet Grooming Tips: Expert Tips and Professional Advice",
+    description: "Professional pet grooming tips advice and tips",
+    image: "/pet/1.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "pet grooming tips", "pet grooming tips tips", "pet grooming tips guide"],
+    featured: true
+  },
+  {
+    id: "dog-training-basics",
+    title: "The Ultimate Dog Training Basics Guide for Pet Parents",
+    description: "Essential dog training basics guide for pet care",
+    image: "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg",
+    date: "November 28, 2025",
+    tags: ["pet care", "care guide", "dog training basics", "dog training basics tips", "dog training basics guide"],
+    featured: true
+  },
+  {
     id: "pet-health-checkup",
     title: "Understanding Pet Health Checkup - A Comprehensive Guide",
     description: "Complete pet health checkup information for pets",
