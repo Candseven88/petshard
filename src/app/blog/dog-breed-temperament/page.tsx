@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Everything You Need to Know About Dog Breed Temperament",
-  description: "Professional dog breed temperament advice and tips",
-  keywords: ["dog breed temperament", "dog breed temperament tips", "dog breed temperament guide", "pet dog breed temperament", "dog breed temperament advice", "dog breed temperament care"],
+  title: "Dog Breed Temperament Types: Guide to Personality Traits",
+  description: "Explore dog breed temperament types including friendly, protective, independent, and energetic breeds. Learn which temperament matches your lifestyle.",
+  keywords: ["dog breed temperament", "dog temperament types", "friendly dog breeds", "protective dog breeds", "dog personality traits", "dog breed characteristics"],
   openGraph: {
-    title: "Everything You Need to Know About Dog Breed Temperament",
-    description: "Professional dog breed temperament advice and tips",
+    title: "Dog Breed Temperament Types: Guide to Personality Traits",
+    description: "Explore dog breed temperament types including friendly, protective, independent, and energetic breeds. Learn which temperament matches your lifestyle.",
     type: "article",
     url: "https://petshard.com/blog/dog-breed-temperament",
     siteName: "PetShard",
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
       url: "https://cdn2.thecatapi.com/images/ag4.jpg",
       width: 1200,
       height: 630,
-      alt: "Everything You Need to Know About Dog Breed Temperament"
+      alt: "Dog Breed Temperament Types: Guide to Personality Traits"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Everything You Need to Know About Dog Breed Temperament",
-    description: "Professional dog breed temperament advice and tips",
+    title: "Dog Breed Temperament Types: Guide to Personality Traits",
+    description: "Explore dog breed temperament types including friendly, protective, independent, and energetic breeds. Learn which temperament matches your lifestyle.",
     images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
   },
   alternates: {
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Everything You Need to Know About Dog Breed Temperament",
-  "description": "Professional dog breed temperament advice and tips",
+  "headline": "Dog Breed Temperament Types: Guide to Personality Traits",
+  "description": "Explore dog breed temperament types including friendly, protective, independent, and energetic breeds. Learn which temperament matches your lifestyle.",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -72,7 +72,7 @@ function DogBreedTemperamentGuideContent() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Everything You Need to Know About Dog Breed Temperament
+            Dog Breed Temperament Types: Guide to Personality Traits
           </h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-500">
@@ -102,17 +102,15 @@ function DogBreedTemperamentGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Professional dog breed temperament advice and tips
+              Understanding dog breed temperament is essential for choosing the right companion and building a strong relationship with your pet. Each dog breed has distinct personality traits shaped by centuries of selective breeding for specific purposes.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-4">
+              Dog breed temperament encompasses the natural behavioral tendencies, energy levels, social preferences, and emotional responses that define how a breed typically interacts with people, other animals, and their environment. Whether you\'re looking for a loyal family companion, a protective guardian, or an independent adventurer, understanding temperament types will help you find the perfect match.
             </p>
 
             <p className="text-lg leading-relaxed">
-              <p className="text-lg leading-relaxed mb-4">
-                When it comes to dog breed temperament, pet owners often face numerous questions and challenges. Understanding dog breed temperament is crucial for providing the best care for your beloved companion. This comprehensive guide will explore everything you need to know about dog breed temperament, offering expert insights and practical solutions.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Whether you\'re a new pet owner or have years of experience, mastering dog breed temperament can significantly improve your pet\'s quality of life. From basic concepts to advanced techniques, we\'ll cover all aspects of dog breed temperament to help you make informed decisions for your pet\'s wellbeing.
-              </p>
+              This comprehensive guide explores four major dog breed temperament types—friendly and social, protective and alert, independent and aloof, and energetic and playful—with specific breed examples, characteristics, and suitability for different lifestyles.
             </p>
           </div>
 

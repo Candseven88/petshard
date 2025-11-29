@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Ultimate Common Dog Diseases Guide for Pet Parents",
-  description: "Essential common dog diseases guide for pet care",
-  keywords: ["common dog diseases", "common dog diseases tips", "common dog diseases guide", "pet common dog diseases", "common dog diseases advice", "common dog diseases care"],
+  title: "Common Dog Diseases: Symptoms and When to Call the Vet",
+  description: "Learn about common dog diseases including hip dysplasia, heartworm, and ear infections. Understand symptoms, severity levels, and when to seek veterinary care.",
+  keywords: ["common dog diseases", "dog health problems", "dog illness symptoms", "dog diseases list", "canine diseases", "dog health conditions"],
   openGraph: {
-    title: "The Ultimate Common Dog Diseases Guide for Pet Parents",
-    description: "Essential common dog diseases guide for pet care",
+    title: "Common Dog Diseases: Symptoms and When to Call the Vet",
+    description: "Learn about common dog diseases including hip dysplasia, heartworm, and ear infections. Understand symptoms, severity levels, and when to seek veterinary care.",
     type: "article",
     url: "https://petshard.com/blog/common-dog-diseases",
     siteName: "PetShard",
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
       url: "https://cdn2.thecatapi.com/images/ag4.jpg",
       width: 1200,
       height: 630,
-      alt: "The Ultimate Common Dog Diseases Guide for Pet Parents"
+      alt: "Common Dog Diseases: Symptoms and When to Call the Vet"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Ultimate Common Dog Diseases Guide for Pet Parents",
-    description: "Essential common dog diseases guide for pet care",
+    title: "Common Dog Diseases: Symptoms and When to Call the Vet",
+    description: "Learn about common dog diseases including hip dysplasia, heartworm, and ear infections. Understand symptoms, severity levels, and when to seek veterinary care.",
     images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
   },
   alternates: {
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "The Ultimate Common Dog Diseases Guide for Pet Parents",
-  "description": "Essential common dog diseases guide for pet care",
+  "headline": "Common Dog Diseases: Symptoms and When to Call the Vet",
+  "description": "Learn about common dog diseases including hip dysplasia, heartworm, and ear infections. Understand symptoms, severity levels, and when to seek veterinary care.",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -72,7 +72,7 @@ function CommonDogDiseasesGuideContent() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            The Ultimate Common Dog Diseases Guide for Pet Parents
+            Common Dog Diseases: Symptoms and When to Call the Vet
           </h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-500">
@@ -102,16 +102,16 @@ function CommonDogDiseasesGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Essential common dog diseases guide for pet care
+              Understanding common dog diseases is essential for every dog owner. Early recognition of symptoms can mean the difference between a quick recovery and serious complications.
             </p>
 
             <p className="text-lg leading-relaxed">
               <p className="text-lg leading-relaxed mb-4">
-                When it comes to common dog diseases, pet owners often face numerous questions and challenges. Understanding common dog diseases is crucial for providing the best care for your beloved companion. This comprehensive guide will explore everything you need to know about common dog diseases, offering expert insights and practical solutions.
+                Dogs cannot tell us when they\'re feeling unwell, which is why recognizing the signs of illness is crucial. This comprehensive guide covers the most common dog diseases, their symptoms, severity levels, and when you should contact your veterinarian. By learning to identify these conditions early, you can help ensure your dog receives prompt treatment and the best possible care.
               </p>
 
               <p className="text-lg leading-relaxed mb-4">
-                Whether you\'re a new pet owner or have years of experience, mastering common dog diseases can significantly improve your pet\'s quality of life. From basic concepts to advanced techniques, we\'ll cover all aspects of common dog diseases to help you make informed decisions for your pet\'s wellbeing.
+                Whether you\'re a new dog owner or have years of experience, understanding these common health issues will help you make informed decisions about your dog\'s wellbeing. We\'ll cover specific diseases, their causes, symptoms, and actionable guidance for each situation.
               </p>
             </p>
           </div>
@@ -119,77 +119,173 @@ function CommonDogDiseasesGuideContent() {
           {/* ========== Core Content Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Understanding Common dog diseases
+              Common Dog Diseases and Conditions
             </h2>
 
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed mb-4">
-                Common Dog Diseases encompasses several important aspects that every pet owner should understand. The fundamentals of common dog diseases involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.
-              </p>
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">1. Hip Dysplasia</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> A genetic condition where the hip joint doesn\'t fit properly into the socket, causing pain and mobility issues.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Genetic predisposition, rapid growth, poor nutrition, or excessive exercise in young dogs.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild stiffness (mild) vs. severe lameness and inability to walk (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours if limping or reluctant to move. Immediate if unable to bear weight.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Professional veterinarians emphasize that effective common dog diseases requires patience, consistency, and proper knowledge. When dealing with common dog diseases, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">2. Heartworm Disease</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> A serious parasitic disease transmitted by mosquitoes that affects the heart and lungs.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Mosquito bites carrying heartworm larvae; preventable with medication.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Early stage with no symptoms (mild) vs. advanced with heart failure (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if coughing, difficulty breathing, or lethargy. Schedule testing annually.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Key factors to consider with common dog diseases include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">3. Ear Infections</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Inflammation of the ear canal, often caused by bacteria, yeast, or parasites.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Moisture in ears, allergies, ear mites, or poor ear hygiene.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild itching (mild) vs. severe pain and hearing loss (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours if scratching excessively or discharge present. Immediate if severe pain.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Research shows that proper common dog diseases management can prevent common issues and promote overall pet health. By following established protocols and staying informed about common dog diseases, you can ensure your pet receives the best possible care.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">4. Canine Diabetes</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> A metabolic disorder where the body cannot regulate blood sugar levels properly.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Genetic factors, obesity, pancreatitis, or age-related changes.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Manageable with treatment (mild) vs. diabetic ketoacidosis emergency (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours if increased thirst/urination. Immediate if vomiting or lethargy.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">5. Allergies</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Immune system overreaction to food, environmental, or contact allergens.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Food ingredients, pollen, dust mites, or contact with irritants.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild itching (mild) vs. severe swelling and difficulty breathing (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours for persistent itching. Immediate if swelling or breathing difficulty.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">6. Arthritis</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Inflammation of joints causing pain, stiffness, and reduced mobility.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Age, joint dysplasia, previous injuries, or obesity.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild stiffness after rest (mild) vs. severe lameness (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours if limping or reluctant to move. Discuss pain management options.</p>
+              </div>
             </div>
 
-            
-            <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8">
+            <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8 mt-8">
               <h3 className="text-lg font-bold text-yellow-800 mb-3">
-                🔗 Related Tools & Resources
+                💡 Important Note
               </h3>
-              <div className="space-y-2">
-                <Link href="/breed-identification" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  breed identification tool
-                </Link>
-                <Link href="/virtual-breeding" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  virtual breeding simulator
-                </Link>
-                <Link href="/pet-naming" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  pet naming suggestions
-                </Link>
-              </div>
+              <p className="text-yellow-900">
+                This guide is for informational purposes only and should not replace professional veterinary advice. When in doubt, always consult your veterinarian. Early diagnosis and treatment can prevent serious complications and improve your dog\'s quality of life.
+              </p>
             </div>
           </div>
 
-          {/* ========== Use Cases Section ========== */}
+          {/* ========== Disease Comparison Table ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Disease Severity Assessment Table</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-gray-300">
+                <thead className="bg-gray-100">
+                  <tr>
+                    <th className="border border-gray-300 p-3 text-left font-bold">Disease</th>
+                    <th className="border border-gray-300 p-3 text-left font-bold">Mild (Routine Vet Visit)</th>
+                    <th className="border border-gray-300 p-3 text-left font-bold">Moderate (Within 24 Hours)</th>
+                    <th className="border border-gray-300 p-3 text-left font-bold">Severe (Immediate/Emergency)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 p-3 font-semibold">Hip Dysplasia</td>
+                    <td className="border border-gray-300 p-3">Mild stiffness after rest</td>
+                    <td className="border border-gray-300 p-3">Noticeable limping, reluctance to jump</td>
+                    <td className="border border-gray-300 p-3">Unable to bear weight, severe pain</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 p-3 font-semibold">Heartworm</td>
+                    <td className="border border-gray-300 p-3">No symptoms, preventable</td>
+                    <td className="border border-gray-300 p-3">Mild cough, reduced activity</td>
+                    <td className="border border-gray-300 p-3">Severe cough, difficulty breathing, collapse</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 p-3 font-semibold">Ear Infection</td>
+                    <td className="border border-gray-300 p-3">Occasional scratching, mild odor</td>
+                    <td className="border border-gray-300 p-3">Frequent scratching, discharge present</td>
+                    <td className="border border-gray-300 p-3">Severe pain, head shaking, hearing loss</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 p-3 font-semibold">Diabetes</td>
+                    <td className="border border-gray-300 p-3">Increased thirst/urination</td>
+                    <td className="border border-gray-300 p-3">Weight loss, increased appetite</td>
+                    <td className="border border-gray-300 p-3">Vomiting, lethargy, diabetic ketoacidosis</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 p-3 font-semibold">Allergies</td>
+                    <td className="border border-gray-300 p-3">Mild itching, occasional scratching</td>
+                    <td className="border border-gray-300 p-3">Persistent itching, skin irritation</td>
+                    <td className="border border-gray-300 p-3">Severe swelling, difficulty breathing</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="border border-gray-300 p-3 font-semibold">Arthritis</td>
+                    <td className="border border-gray-300 p-3">Stiffness after rest, improves with activity</td>
+                    <td className="border border-gray-300 p-3">Noticeable limping, reluctance to exercise</td>
+                    <td className="border border-gray-300 p-3">Severe lameness, unable to move</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* ========== When to Call the Vet Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-              Practical Use Cases
+              When to Call Your Veterinarian
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  1. Use Case
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-red-50 p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                <h3 className="text-xl font-bold text-red-800 mb-4">
+                  🚨 Call Immediately (Emergency)
                 </h3>
-                <p className="text-gray-700">
-                  Daily common dog diseases routine for busy pet owners
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Difficulty breathing or gasping for air</li>
+                  <li>• Severe bleeding or trauma</li>
+                  <li>• Unconsciousness or unresponsiveness</li>
+                  <li>• Severe pain or inability to move</li>
+                  <li>• Seizures or convulsions</li>
+                  <li>• Suspected poisoning or toxin ingestion</li>
+                  <li>• Severe allergic reactions with swelling</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  2. Use Case
+              <div className="bg-orange-50 p-6 rounded-lg shadow-md border-t-4 border-orange-500">
+                <h3 className="text-xl font-bold text-orange-800 mb-4">
+                  ⚠️ Call Within 24 Hours
                 </h3>
-                <p className="text-gray-700">
-                  Emergency common dog diseases situations and quick solutions
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Persistent vomiting or diarrhea</li>
+                  <li>• Not eating for more than 12 hours</li>
+                  <li>• Limping or reluctance to move</li>
+                  <li>• Excessive thirst or urination</li>
+                  <li>• Persistent coughing or sneezing</li>
+                  <li>• Unusual behavior or aggression</li>
+                  <li>• Discharge from eyes, nose, or ears</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  3. Use Case
-                </h3>
-                <p className="text-gray-700">
-                  Seasonal common dog diseases considerations and adjustments
-                </p>
-              </div>
+            </div>
+
+            <div className="mt-6 bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+              <h3 className="text-xl font-bold text-blue-800 mb-4">
+                📅 Schedule a Routine Appointment
+              </h3>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Annual wellness exams and vaccinations</li>
+                <li>• Preventive heartworm and parasite testing</li>
+                <li>• Dental concerns or bad breath</li>
+                <li>• Weight changes or appetite variations</li>
+                <li>• Skin issues or excessive scratching</li>
+                <li>• Joint stiffness or mobility concerns</li>
+              </ul>
             </div>
           </div>
 
@@ -202,43 +298,93 @@ function CommonDogDiseasesGuideContent() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q1: What is the best approach to common dog diseases?
+                  Q1: How can I prevent common dog diseases?
                 </h3>
                 <p className="text-gray-700">
-                  The best approach to common dog diseases involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success.
+                  Prevention includes regular veterinary checkups, keeping vaccinations current, providing heartworm and parasite prevention, maintaining a healthy weight, and feeding a quality diet. Early detection through annual exams is crucial.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q2: How often should I address common dog diseases?
+                  Q2: Are certain dog breeds more prone to specific diseases?
                 </h3>
                 <p className="text-gray-700">
-                  The frequency of common dog diseases depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed.
+                  Yes, breed predispositions exist. Large breeds are more prone to hip dysplasia, floppy-eared breeds to ear infections, and certain breeds to diabetes or allergies. Discuss breed-specific health concerns with your veterinarian.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q3: What are common mistakes with common dog diseases?
+                  Q3: What should I do if my dog shows signs of illness?
                 </h3>
                 <p className="text-gray-700">
-                  Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues.
+                  Document the symptoms, note when they started, and contact your veterinarian. Provide specific details about behavior changes, appetite, bathroom habits, and any other observations. Don\'t wait if symptoms seem serious.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q4: When should I consult a professional about common dog diseases?
+                  Q4: How often should my dog see the vet?
                 </h3>
                 <p className="text-gray-700">
-                  Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper common dog diseases techniques.
+                  Healthy adult dogs should visit the vet annually for wellness exams. Senior dogs (over 7 years) should visit twice yearly. Puppies and dogs with health conditions may need more frequent visits. Discuss the best schedule with your veterinarian.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q5: Can common dog diseases vary between different pet breeds?
+                  Q5: Can I treat dog diseases at home?
                 </h3>
                 <p className="text-gray-700">
-                  Yes, common dog diseases can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning common dog diseases strategies.
+                  Some minor issues can be managed at home with proper care, but most diseases require professional diagnosis and treatment. Never give medications without veterinary guidance, as this can mask serious conditions or cause harm.
                 </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q6: What is the cost of treating common dog diseases?
+                </h3>
+                <p className="text-gray-700">
+                  Costs vary widely depending on the disease and treatment required. Prevention is typically much cheaper than treatment. Discuss costs with your veterinarian and consider pet insurance to help manage unexpected medical expenses.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q7: How do I know if my dog is in pain?
+                </h3>
+                <p className="text-gray-700">
+                  Signs of pain include limping, reluctance to move or jump, whimpering, aggression when touched, changes in eating habits, or unusual behavior. Dogs may also hide or become withdrawn. Any significant behavior change warrants a vet visit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* ========== Prevention & Management Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              Prevention and Health Management
+            </h2>
+
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Preventive Measures</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Regular Vet Checkups:</strong> Annual wellness exams catch problems early</li>
+                  <li>• <strong>Heartworm Prevention:</strong> Monthly medication prevents this serious disease</li>
+                  <li>• <strong>Parasite Control:</strong> Regular flea, tick, and worm treatments</li>
+                  <li>• <strong>Vaccinations:</strong> Keep vaccinations current as recommended</li>
+                  <li>• <strong>Proper Nutrition:</strong> High-quality diet supports immune function</li>
+                  <li>• <strong>Dental Care:</strong> Brush teeth regularly to prevent dental disease</li>
+                  <li>• <strong>Ear Hygiene:</strong> Regular cleaning prevents ear infections</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Lifestyle Factors</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Healthy Weight:</strong> Maintain ideal weight to reduce joint stress</li>
+                  <li>• <strong>Regular Exercise:</strong> Appropriate activity for age and breed</li>
+                  <li>• <strong>Stress Reduction:</strong> Provide safe spaces and minimize environmental changes</li>
+                  <li>• <strong>Environmental Enrichment:</strong> Toys, play, and mental stimulation</li>
+                  <li>• <strong>Fresh Water:</strong> Ensure constant access to clean water</li>
+                  <li>• <strong>Social Interaction:</strong> Regular playtime and bonding with your dog</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -249,36 +395,63 @@ function CommonDogDiseasesGuideContent() {
               Conclusion
             </h2>
             
+            <p className="text-lg leading-relaxed mb-4">
+              Understanding common dog diseases is one of the most important responsibilities of dog ownership. By learning to recognize the signs of illness and knowing when to seek veterinary care, you can help ensure your canine companion lives a long, healthy, and happy life.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-4">
+              Remember that each dog is an individual, and what\'s normal for one dog may be unusual for another. Pay attention to your dog\'s baseline behavior, eating habits, and activity level. Any significant changes warrant a call to your veterinarian.
+            </p>
+
             <p className="text-lg leading-relaxed">
-              <p className="text-lg leading-relaxed mb-4">
-                Mastering common dog diseases is an essential skill for every pet owner. By understanding the principles, implementing best practices, and staying consistent with your approach, you can ensure your pet receives optimal care.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Remember that common dog diseases is not a one-size-fits-all solution. Each pet is unique, and what works for one may need adjustment for another. Stay observant, be patient, and don\'t hesitate to seek professional guidance when needed.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                With proper knowledge and dedication, common dog diseases can become a natural part of your pet care routine, contributing to your pet\'s health, happiness, and overall quality of life.
-              </p>
+              Prevention is always better than treatment. Regular veterinary checkups, preventive medications, and a healthy lifestyle can prevent many common diseases. When in doubt, it\'s always better to have your dog checked by a professional. Your veterinarian is your partner in keeping your dog healthy.
             </p>
           </div>
 
-          {/* ========== Related Tools Section ========== */}
+          {/* ========== Related Articles Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Related Health Articles
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/blog/dog-breed-health-issues" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Dog Breed Health Issues</h3>
+                <p className="text-gray-600">Learn about breed-specific health concerns and predispositions.</p>
+              </Link>
+              
+              <Link href="/blog/pet-emergency-signs" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-red-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Emergency Signs</h3>
+                <p className="text-gray-600">Recognize critical symptoms that require immediate veterinary attention.</p>
+              </Link>
+
+              <Link href="/blog/pet-parasite-prevention" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-yellow-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Parasite Prevention</h3>
+                <p className="text-gray-600">Learn about parasites, prevention strategies, and treatment options.</p>
+              </Link>
+
+              <Link href="/blog/pet-dental-health" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Dental Health</h3>
+                <p className="text-gray-600">Understand dental care importance and signs of dental disease.</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* ========== Pet Care Tools Section ========== */}
           <div className="mb-12 bg-gradient-to-r from-pink-50 to-blue-50 p-8 rounded-xl">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
               Explore Our Pet Care Tools
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link href="/breed-identification" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">🔍 Breed Identification</h3>
-                <p className="text-gray-600">Upload a photo to identify your pet's breed with AI-powered analysis.</p>
-              </Link>
-              
               <Link href="/health-center" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">🏥 Health Center</h3>
                 <p className="text-gray-600">Get personalized health advice and symptom checking for your pet.</p>
+              </Link>
+              
+              <Link href="/pet-care-guide" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">📋 Pet Care Guide</h3>
+                <p className="text-gray-600">Comprehensive care instructions tailored to your pet's needs.</p>
               </Link>
             </div>
           </div>

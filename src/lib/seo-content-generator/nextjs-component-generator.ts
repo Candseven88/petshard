@@ -20,7 +20,9 @@ export class NextJSComponentGenerator {
     const componentName = this.generateComponentName(keyword);
     const slug = this.generateSlug(keyword);
     
-    return `import { Suspense } from "react";
+    return `"use client";
+
+import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";

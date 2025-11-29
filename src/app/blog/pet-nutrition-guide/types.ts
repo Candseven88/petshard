@@ -1,6 +1,6 @@
-// TypeScript interfaces for PetNutritionGuideGuide
+// TypeScript interfaces for Pet Nutrition Guide
 
-export interface PetNutritionGuideGuideData {
+export interface PetNutritionGuideData {
   title: string;
   description: string;
   content: string;

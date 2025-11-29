@@ -3,24 +3,17 @@
 import { CatHealthSymptomsGuideData, RelatedTool, FAQItem, UseCaseItem } from './types';
 
 export const articleData: CatHealthSymptomsGuideData = {
-  title: "The Ultimate Cat Health Symptoms Guide for Pet Parents",
-  description: "Essential cat health symptoms guide for pet care",
-  content: "Cat Health Symptoms encompasses several important aspects that every pet owner should understand. The fundamentals of cat health symptoms involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.\n\nProfessional veterinarians emphasize that effective cat health symptoms requires patience, consistency, and proper knowledge. When dealing with cat health symptoms, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.\n\nKey factors to consider with cat health symptoms include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies\n\nResearch shows that proper cat health symptoms management can prevent common issues and promote overall pet health. By following established protocols and staying informed about cat health symptoms, you can ensure your pet receives the best possible care.",
+  title: "Cat Health Symptoms: When to Call the Vet",
+  description: "Learn to recognize common cat health symptoms. Understand severity levels, causes, and when to seek veterinary care for your cat.",
+  content: "Recognizing cat health symptoms early can make the difference between a quick recovery and serious complications. Cats are masters at hiding illness, which means symptoms often appear only when a condition has progressed. This comprehensive guide covers the most common cat health symptoms, their severity levels, and when you should contact your veterinarian.",
   metadata: {
-    keywords: ["cat health symptoms", "cat health symptoms tips", "cat health symptoms guide", "pet cat health symptoms", "cat health symptoms advice", "cat health symptoms care"],
-    category: "Pet Care",
-    readTime: "12 min read"
+    keywords: ["cat health symptoms", "cat symptoms", "when to call vet", "cat illness signs", "cat health problems", "feline symptoms"],
+    category: "Pet Health",
+    readTime: "14 min read"
   }
 };
 
 export const relatedTools: RelatedTool[] = [
-  {
-    id: "breed-identification",
-    name: "Breed Identification",
-    description: "Upload a photo to identify your pet's breed with AI-powered analysis.",
-    url: "/breed-identification",
-    icon: "🔍"
-  },
   {
     id: "health-center",
     name: "Health Center",
@@ -39,38 +32,46 @@ export const relatedTools: RelatedTool[] = [
 
 export const faqItems: FAQItem[] = [
   {
-    question: "What is the best approach to cat health symptoms?",
-    answer: "The best approach to cat health symptoms involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success."
+    question: "Why do cats hide their illness?",
+    answer: "Cats are prey animals by instinct, so they hide signs of weakness or illness to avoid appearing vulnerable. This means symptoms often appear only when a condition is advanced. Regular vet checkups help catch problems early."
   },
   {
-    question: "How often should I address cat health symptoms?",
-    answer: "The frequency of cat health symptoms depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed."
+    question: "What should I do if my cat vomits occasionally?",
+    answer: "Occasional vomiting can be normal, especially if related to hairballs. However, if vomiting occurs more than once a week, contains blood, or is accompanied by other symptoms, contact your vet. Keep track of frequency and circumstances."
   },
   {
-    question: "What are common mistakes with cat health symptoms?",
-    answer: "Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues."
+    question: "How can I tell if my cat is in pain?",
+    answer: "Signs of pain include reluctance to move, hiding, changes in grooming habits, aggression when touched, or unusual vocalizations. Cats may also show decreased appetite or litter box avoidance. Any significant behavior change warrants a vet visit."
   },
   {
-    question: "When should I consult a professional about cat health symptoms?",
-    answer: "Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper cat health symptoms techniques."
+    question: "What is normal cat behavior vs. a sign of illness?",
+    answer: "Normal: Sleeping 12-16 hours daily, occasional grooming, regular eating and litter box use. Abnormal: Extreme lethargy, neglecting grooming, changes in eating/bathroom habits, or unusual aggression. Trust your instincts—you know your cat best."
   },
   {
-    question: "Can cat health symptoms vary between different pet breeds?",
-    answer: "Yes, cat health symptoms can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning cat health symptoms strategies."
+    question: "How often should my cat see the vet?",
+    answer: "Healthy adult cats should visit the vet annually for wellness exams. Senior cats (over 7 years) should visit twice yearly. Kittens and cats with health conditions may need more frequent visits. Discuss the best schedule with your veterinarian."
+  },
+  {
+    question: "Can I treat cat symptoms at home?",
+    answer: "Some minor issues like mild hairballs can be managed at home with proper diet and hydration. However, most symptoms require professional diagnosis. Never give medications without veterinary guidance, as this can mask serious conditions or cause harm."
+  },
+  {
+    question: "What should I tell my vet about my cat's symptoms?",
+    answer: "Provide specific details: when symptoms started, frequency, severity, any recent changes (diet, environment, stress), and what your cat normally acts like. Note any other symptoms you've observed. This information helps your vet make an accurate diagnosis."
   }
 ];
 
 export const useCaseItems: UseCaseItem[] = [
   {
-    title: "Use Case 1",
-    description: "Daily cat health symptoms routine for busy pet owners"
+    title: "Recognizing Emergency Situations",
+    description: "Knowing when your cat needs immediate veterinary attention can save their life"
   },
   {
-    title: "Use Case 2",
-    description: "Emergency cat health symptoms situations and quick solutions"
+    title: "Monitoring Daily Health",
+    description: "Tracking eating, bathroom habits, and behavior changes helps catch illness early"
   },
   {
-    title: "Use Case 3",
-    description: "Seasonal cat health symptoms considerations and adjustments"
+    title: "Understanding Severity Levels",
+    description: "Determining whether symptoms require immediate care or a routine appointment"
   }
 ];

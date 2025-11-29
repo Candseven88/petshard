@@ -3,14 +3,15 @@ import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { dentalIssues, dentalCareTimeline, faqItems, useCaseItems } from "./data";
 
 export const metadata: Metadata = {
-  title: "Pet Dental Health: Expert Tips and Professional Advice",
-  description: "Professional pet dental health advice and tips",
-  keywords: ["pet dental health", "pet dental health tips", "pet dental health guide", "pet pet dental health", "pet dental health advice", "pet dental health care"],
+  title: "Pet Dental Health: Complete Care Guide for Dogs and Cats",
+  description: "Learn essential pet dental health care. Understand common dental issues, prevention strategies, and when to seek professional dental treatment.",
+  keywords: ["pet dental health", "dog dental care", "cat dental health", "pet teeth cleaning", "dental disease prevention", "pet oral health"],
   openGraph: {
-    title: "Pet Dental Health: Expert Tips and Professional Advice",
-    description: "Professional pet dental health advice and tips",
+    title: "Pet Dental Health: Complete Care Guide for Dogs and Cats",
+    description: "Learn essential pet dental health care. Understand common dental issues, prevention strategies, and when to seek professional dental treatment.",
     type: "article",
     url: "https://petshard.com/blog/pet-dental-health",
     siteName: "PetShard",
@@ -18,13 +19,13 @@ export const metadata: Metadata = {
       url: "https://cdn2.thecatapi.com/images/ag4.jpg",
       width: 1200,
       height: 630,
-      alt: "Pet Dental Health: Expert Tips and Professional Advice"
+      alt: "Pet Dental Health: Complete Care Guide"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pet Dental Health: Expert Tips and Professional Advice",
-    description: "Professional pet dental health advice and tips",
+    title: "Pet Dental Health: Complete Care Guide for Dogs and Cats",
+    description: "Learn essential pet dental health care. Understand common dental issues, prevention strategies, and when to seek professional dental treatment.",
     images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
   },
   alternates: {
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Pet Dental Health: Expert Tips and Professional Advice",
-  "description": "Professional pet dental health advice and tips",
+  "headline": "Pet Dental Health: Complete Care Guide for Dogs and Cats",
+  "description": "Learn essential pet dental health care. Understand common dental issues, prevention strategies, and when to seek professional dental treatment.",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -102,16 +103,16 @@ function PetDentalHealthGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Professional pet dental health advice and tips
+              Pet dental health is one of the most overlooked aspects of pet care, yet it's crucial for your pet's overall wellbeing. Dental disease affects approximately 80% of pets over age three, making preventive care essential for every pet owner.
             </p>
 
             <p className="text-lg leading-relaxed">
               <p className="text-lg leading-relaxed mb-4">
-                When it comes to pet dental health, pet owners often face numerous questions and challenges. Understanding pet dental health is crucial for providing the best care for your beloved companion. This comprehensive guide will explore everything you need to know about pet dental health, offering expert insights and practical solutions.
+                Poor dental health can lead to serious complications including tooth loss, bone damage, and systemic infections that affect the heart, kidneys, and liver. This comprehensive guide covers common dental issues, prevention strategies, and professional care options to help you maintain your pet's oral health.
               </p>
 
               <p className="text-lg leading-relaxed mb-4">
-                Whether you\'re a new pet owner or have years of experience, mastering pet dental health can significantly improve your pet\'s quality of life. From basic concepts to advanced techniques, we\'ll cover all aspects of pet dental health to help you make informed decisions for your pet\'s wellbeing.
+                Whether you're a new pet owner or have years of experience, understanding pet dental health can significantly improve your pet's quality of life. We'll cover specific dental conditions, their symptoms, prevention measures, and when to seek professional veterinary care.
               </p>
             </p>
           </div>
@@ -119,43 +120,49 @@ function PetDentalHealthGuideContent() {
           {/* ========== Core Content Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Understanding Pet dental health
+              Common Dental Issues in Pets
             </h2>
 
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed mb-4">
-                Pet Dental Health encompasses several important aspects that every pet owner should understand. The fundamentals of pet dental health involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Professional veterinarians emphasize that effective pet dental health requires patience, consistency, and proper knowledge. When dealing with pet dental health, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Key factors to consider with pet dental health include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Research shows that proper pet dental health management can prevent common issues and promote overall pet health. By following established protocols and staying informed about pet dental health, you can ensure your pet receives the best possible care.
-              </p>
+            <div className="space-y-8">
+              {dentalIssues.map((issue, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">{index + 1}. {issue.title}</h3>
+                  <p className="text-gray-700 mb-2"><strong>Description:</strong> {issue.description}</p>
+                  <p className="text-gray-700 mb-2"><strong>Causes:</strong> {issue.causes}</p>
+                  <p className="text-gray-700 mb-2"><strong>Severity:</strong> {issue.severity}</p>
+                  <p className="text-gray-700"><strong>When to Call Vet:</strong> {issue.whenToCallVet}</p>
+                </div>
+              ))}
             </div>
 
-            
-            <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8">
+            <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8 mt-8">
               <h3 className="text-lg font-bold text-yellow-800 mb-3">
-                🔗 Related Tools & Resources
+                💡 Prevention Tips
               </h3>
-              <div className="space-y-2">
-                <Link href="/breed-identification" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  breed identification tool
-                </Link>
-                <Link href="/virtual-breeding" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  virtual breeding simulator
-                </Link>
-                <Link href="/pet-naming" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  pet naming suggestions
-                </Link>
-              </div>
+              <ul className="space-y-2 text-yellow-900">
+                <li>• Brush your pet's teeth daily or at least 3-4 times per week</li>
+                <li>• Use pet-specific toothpaste and toothbrushes</li>
+                <li>• Schedule annual professional dental cleanings</li>
+                <li>• Provide dental-friendly toys and treats</li>
+                <li>• Feed a balanced diet with appropriate texture</li>
+                <li>• Monitor for signs of dental disease regularly</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* ========== Dental Care Timeline Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+              Dental Care Timeline by Life Stage
+            </h2>
+
+            <div className="space-y-4">
+              {dentalCareTimeline.map((stage, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-400">
+                  <h3 className="text-lg font-bold text-gray-800 mb-2">{stage.age}</h3>
+                  <p className="text-gray-700">{stage.care}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -165,31 +172,18 @@ function PetDentalHealthGuideContent() {
               Practical Use Cases
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  1. Use Case
-                </h3>
-                <p className="text-gray-700">
-                  Daily pet dental health routine for busy pet owners
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  2. Use Case
-                </h3>
-                <p className="text-gray-700">
-                  Emergency pet dental health situations and quick solutions
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  3. Use Case
-                </h3>
-                <p className="text-gray-700">
-                  Seasonal pet dental health considerations and adjustments
-                </p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {useCaseItems.map((useCase, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
+                  <h3 className="text-lg font-bold text-gray-800 mb-3">
+                    {index + 1}. {useCase.title}
+                  </h3>
+                  <p className="text-gray-700 mb-2">{useCase.description}</p>
+                  {useCase.example && (
+                    <p className="text-gray-600 text-sm italic">Example: {useCase.example}</p>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
 
@@ -200,46 +194,16 @@ function PetDentalHealthGuideContent() {
             </h2>
 
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q1: What is the best approach to pet dental health?
-                </h3>
-                <p className="text-gray-700">
-                  The best approach to pet dental health involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q2: How often should I address pet dental health?
-                </h3>
-                <p className="text-gray-700">
-                  The frequency of pet dental health depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q3: What are common mistakes with pet dental health?
-                </h3>
-                <p className="text-gray-700">
-                  Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q4: When should I consult a professional about pet dental health?
-                </h3>
-                <p className="text-gray-700">
-                  Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper pet dental health techniques.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q5: Can pet dental health vary between different pet breeds?
-                </h3>
-                <p className="text-gray-700">
-                  Yes, pet dental health can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning pet dental health strategies.
-                </p>
-              </div>
+              {faqItems.map((item, index) => (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-lg font-bold text-gray-800 mb-3">
+                    Q{index + 1}: {item.question}
+                  </h3>
+                  <p className="text-gray-700">
+                    {item.answer}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -251,34 +215,63 @@ function PetDentalHealthGuideContent() {
             
             <p className="text-lg leading-relaxed">
               <p className="text-lg leading-relaxed mb-4">
-                Mastering pet dental health is an essential skill for every pet owner. By understanding the principles, implementing best practices, and staying consistent with your approach, you can ensure your pet receives optimal care.
+                Pet dental health is a critical component of overall pet wellness that deserves attention and care. By understanding common dental issues, implementing preventive measures, and maintaining regular professional care, you can help your pet avoid serious dental complications.
               </p>
 
               <p className="text-lg leading-relaxed mb-4">
-                Remember that pet dental health is not a one-size-fits-all solution. Each pet is unique, and what works for one may need adjustment for another. Stay observant, be patient, and don\'t hesitate to seek professional guidance when needed.
+                Start with daily brushing, provide appropriate dental toys and treats, and schedule annual professional cleanings. Remember that each pet is unique, and your veterinarian can provide personalized recommendations based on your pet's age, breed, and health status.
               </p>
 
               <p className="text-lg leading-relaxed mb-4">
-                With proper knowledge and dedication, pet dental health can become a natural part of your pet care routine, contributing to your pet\'s health, happiness, and overall quality of life.
+                With consistent effort and professional guidance, you can maintain your pet's dental health and contribute to their overall happiness and quality of life for years to come.
               </p>
             </p>
           </div>
 
-          {/* ========== Related Tools Section ========== */}
+          {/* ========== Related Articles Section ========== */}
           <div className="mb-12 bg-gradient-to-r from-pink-50 to-blue-50 p-8 rounded-xl">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Related Pet Health Articles
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/blog/pet-emergency-signs" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🚨 Pet Emergency Signs</h3>
+                <p className="text-gray-600">Learn to recognize emergency symptoms that require immediate veterinary attention.</p>
+              </Link>
+              
+              <Link href="/blog/pet-first-aid" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🏥 Pet First Aid</h3>
+                <p className="text-gray-600">Essential first aid procedures and techniques for common pet injuries.</p>
+              </Link>
+
+              <Link href="/blog/common-dog-diseases" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🐕 Common Dog Diseases</h3>
+                <p className="text-gray-600">Understand common health conditions affecting dogs and prevention strategies.</p>
+              </Link>
+
+              <Link href="/blog/cat-health-symptoms" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🐱 Cat Health Symptoms</h3>
+                <p className="text-gray-600">Recognize common cat health symptoms and when to seek veterinary care.</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* ========== Pet Care Tools Section ========== */}
+          <div className="mb-12 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
               Explore Our Pet Care Tools
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link href="/breed-identification" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">🔍 Breed Identification</h3>
-                <p className="text-gray-600">Upload a photo to identify your pet's breed with AI-powered analysis.</p>
+              <Link href="/health-center" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🏥 Pet Health Center</h3>
+                <p className="text-gray-600">Get personalized health advice and symptom checking for your pet.</p>
               </Link>
               
-              <Link href="/health-center" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">🏥 Health Center</h3>
-                <p className="text-gray-600">Get personalized health advice and symptom checking for your pet.</p>
+              <Link href="/pet-care-guide" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">📋 Pet Care Guide</h3>
+                <p className="text-gray-600">Comprehensive care instructions tailored to your pet's needs.</p>
               </Link>
             </div>
           </div>

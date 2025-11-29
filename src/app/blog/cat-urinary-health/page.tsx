@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Understanding Cat Urinary Health - A Comprehensive Guide",
-  description: "Complete cat urinary health information for pets",
-  keywords: ["cat urinary health", "cat urinary health tips", "cat urinary health guide", "pet cat urinary health", "cat urinary health advice", "cat urinary health care"],
+  title: "Cat Urinary Health: Symptoms, Prevention & When to Call the Vet",
+  description: "Learn about cat urinary tract issues, FLUTD symptoms, and prevention strategies. Understand when to seek veterinary care for your cat's urinary health.",
+  keywords: ["cat urinary health", "cat urinary tract infection", "FLUTD in cats", "cat urinary symptoms", "cat urinary problems", "feline urinary health"],
   openGraph: {
-    title: "Understanding Cat Urinary Health - A Comprehensive Guide",
-    description: "Complete cat urinary health information for pets",
+    title: "Cat Urinary Health: Symptoms, Prevention & When to Call the Vet",
+    description: "Learn about cat urinary tract issues, FLUTD symptoms, and prevention strategies. Understand when to seek veterinary care for your cat's urinary health.",
     type: "article",
     url: "https://petshard.com/blog/cat-urinary-health",
     siteName: "PetShard",
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
       url: "https://cdn2.thecatapi.com/images/ag4.jpg",
       width: 1200,
       height: 630,
-      alt: "Understanding Cat Urinary Health - A Comprehensive Guide"
+      alt: "Cat Urinary Health: Symptoms, Prevention & When to Call the Vet"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Understanding Cat Urinary Health - A Comprehensive Guide",
-    description: "Complete cat urinary health information for pets",
+    title: "Cat Urinary Health: Symptoms, Prevention & When to Call the Vet",
+    description: "Learn about cat urinary tract issues, FLUTD symptoms, and prevention strategies. Understand when to seek veterinary care for your cat's urinary health.",
     images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
   },
   alternates: {
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Understanding Cat Urinary Health - A Comprehensive Guide",
-  "description": "Complete cat urinary health information for pets",
+  "headline": "Cat Urinary Health: Symptoms, Prevention & When to Call the Vet",
+  "description": "Learn about cat urinary tract issues, FLUTD symptoms, and prevention strategies. Understand when to seek veterinary care for your cat's urinary health.",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -72,7 +72,7 @@ function CatUrinaryHealthGuideContent() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Understanding Cat Urinary Health - A Comprehensive Guide
+            Cat Urinary Health: Symptoms, Prevention & When to Call the Vet
           </h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-500">
@@ -102,16 +102,16 @@ function CatUrinaryHealthGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Complete cat urinary health information for pets
+              Cat urinary problems are among the most common health issues affecting feline companions. Understanding urinary tract health is essential for recognizing symptoms early and preventing serious complications.
             </p>
 
             <p className="text-lg leading-relaxed">
               <p className="text-lg leading-relaxed mb-4">
-                When it comes to cat urinary health, pet owners often face numerous questions and challenges. Understanding cat urinary health is crucial for providing the best care for your beloved companion. This comprehensive guide will explore everything you need to know about cat urinary health, offering expert insights and practical solutions.
+                Feline Lower Urinary Tract Disease (FLUTD) affects many cats and can cause significant discomfort. This comprehensive guide covers common urinary symptoms, their causes, prevention strategies, and when to seek veterinary care. By learning to recognize warning signs, you can help protect your cat's urinary health and overall wellbeing.
               </p>
 
               <p className="text-lg leading-relaxed mb-4">
-                Whether you\'re a new pet owner or have years of experience, mastering cat urinary health can significantly improve your pet\'s quality of life. From basic concepts to advanced techniques, we\'ll cover all aspects of cat urinary health to help you make informed decisions for your pet\'s wellbeing.
+                Whether your cat is experiencing urinary issues or you want to prevent problems, this guide provides practical information to help you make informed decisions about your cat's health. We'll cover specific symptoms, severity levels, and actionable prevention strategies.
               </p>
             </p>
           </div>
@@ -119,77 +119,170 @@ function CatUrinaryHealthGuideContent() {
           {/* ========== Core Content Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Understanding Cat urinary health
+              Common Cat Urinary Symptoms
             </h2>
 
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed mb-4">
-                Cat Urinary Health encompasses several important aspects that every pet owner should understand. The fundamentals of cat urinary health involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.
-              </p>
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">1. Straining to Urinate</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Difficulty or pain when urinating, often with little urine produced.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Urinary tract infection (UTI), bladder stones, FLUTD, or urethral blockage.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild straining (mild) vs. complete inability to urinate (emergency).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if unable to urinate. Within 24 hours for straining with normal output.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Professional veterinarians emphasize that effective cat urinary health requires patience, consistency, and proper knowledge. When dealing with cat urinary health, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">2. Frequent Urination</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Urinating more often than normal, sometimes in small amounts.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> UTI, diabetes, kidney disease, or behavioral issues.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Slightly increased frequency (mild) vs. constant urination attempts (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours if frequency change is noticeable.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Key factors to consider with cat urinary health include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">3. Blood in Urine</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Visible blood in urine or on litter, giving urine a pink or red appearance.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> UTI, bladder stones, FLUTD, or urethral trauma.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Light discoloration (moderate) vs. heavy bleeding (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours for any visible blood in urine.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Research shows that proper cat urinary health management can prevent common issues and promote overall pet health. By following established protocols and staying informed about cat urinary health, you can ensure your pet receives the best possible care.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">4. Urinating Outside the Litter Box</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Urinating in unusual locations around the home.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> FLUTD, UTI, litter box aversion, stress, or behavioral issues.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Occasional accidents (mild) vs. frequent inappropriate urination (moderate).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24-48 hours to rule out medical causes.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">5. Excessive Licking of Genital Area</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Frequent grooming or licking of the urinary area.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Irritation from UTI, FLUTD, or skin allergies.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Occasional licking (mild) vs. constant licking causing hair loss (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24-48 hours if excessive or accompanied by other symptoms.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">6. Painful Urination</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Vocalization or signs of pain during urination.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> UTI, bladder stones, FLUTD, or urethral inflammation.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild discomfort (mild) vs. severe pain preventing urination (emergency).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Within 24 hours for any signs of pain during urination.</p>
+              </div>
             </div>
 
-            
+            {/* Symptom Severity Table */}
+            <div className="mt-12 mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Urinary Symptom Severity Assessment Table</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-gray-300">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Symptom</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Mild (Routine Vet Visit)</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Moderate (Within 24 Hours)</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Severe (Immediate/Emergency)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Straining</td>
+                      <td className="border border-gray-300 p-3">Occasional, normal output</td>
+                      <td className="border border-gray-300 p-3">Frequent, reduced output</td>
+                      <td className="border border-gray-300 p-3">Unable to urinate, severe pain</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Frequency</td>
+                      <td className="border border-gray-300 p-3">Slightly increased visits</td>
+                      <td className="border border-gray-300 p-3">Noticeably frequent urination</td>
+                      <td className="border border-gray-300 p-3">Constant attempts, no output</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Blood in Urine</td>
+                      <td className="border border-gray-300 p-3">Light discoloration</td>
+                      <td className="border border-gray-300 p-3">Visible pink/red urine</td>
+                      <td className="border border-gray-300 p-3">Heavy bleeding, dark red</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Inappropriate Urination</td>
+                      <td className="border border-gray-300 p-3">Occasional accidents</td>
+                      <td className="border border-gray-300 p-3">Frequent outside box</td>
+                      <td className="border border-gray-300 p-3">Constant inappropriate urination</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Genital Licking</td>
+                      <td className="border border-gray-300 p-3">Occasional licking</td>
+                      <td className="border border-gray-300 p-3">Frequent licking</td>
+                      <td className="border border-gray-300 p-3">Constant, causing hair loss</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Pain During Urination</td>
+                      <td className="border border-gray-300 p-3">Mild discomfort signs</td>
+                      <td className="border border-gray-300 p-3">Noticeable pain, vocalization</td>
+                      <td className="border border-gray-300 p-3">Severe pain, unable to urinate</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8">
               <h3 className="text-lg font-bold text-yellow-800 mb-3">
-                🔗 Related Tools & Resources
+                💡 Important Note
               </h3>
-              <div className="space-y-2">
-                <Link href="/breed-identification" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  breed identification tool
-                </Link>
-                <Link href="/virtual-breeding" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  virtual breeding simulator
-                </Link>
-                <Link href="/pet-naming" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  pet naming suggestions
-                </Link>
-              </div>
+              <p className="text-yellow-900">
+                Urinary blockage in male cats is a medical emergency. If your male cat cannot urinate or is straining without producing urine, seek immediate veterinary care. This condition can be life-threatening if not treated promptly.
+              </p>
             </div>
           </div>
 
-          {/* ========== Use Cases Section ========== */}
+          {/* ========== When to Call the Vet Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-              Practical Use Cases
+              When to Call Your Veterinarian
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  1. Use Case
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-red-50 p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                <h3 className="text-xl font-bold text-red-800 mb-4">
+                  🚨 Call Immediately (Emergency)
                 </h3>
-                <p className="text-gray-700">
-                  Daily cat urinary health routine for busy pet owners
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Unable to urinate or straining without output</li>
+                  <li>• Severe pain during urination</li>
+                  <li>• Abdominal distension or pain</li>
+                  <li>• Lethargy or collapse</li>
+                  <li>• Vomiting with urinary symptoms</li>
+                  <li>• Urinary blockage suspected (especially males)</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  2. Use Case
+              <div className="bg-orange-50 p-6 rounded-lg shadow-md border-t-4 border-orange-500">
+                <h3 className="text-xl font-bold text-orange-800 mb-4">
+                  ⚠️ Call Within 24 Hours
                 </h3>
-                <p className="text-gray-700">
-                  Emergency cat urinary health situations and quick solutions
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Straining to urinate with normal output</li>
+                  <li>• Blood in urine</li>
+                  <li>• Frequent urination</li>
+                  <li>• Urinating outside litter box</li>
+                  <li>• Excessive genital licking</li>
+                  <li>• Signs of pain during urination</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  3. Use Case
-                </h3>
-                <p className="text-gray-700">
-                  Seasonal cat urinary health considerations and adjustments
-                </p>
-              </div>
+            </div>
+
+            <div className="mt-6 bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+              <h3 className="text-xl font-bold text-blue-800 mb-4">
+                📅 Schedule a Routine Appointment
+              </h3>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Annual wellness exams and urinalysis</li>
+                <li>• History of urinary issues (preventive care)</li>
+                <li>• Dietary changes for urinary health</li>
+                <li>• Follow-up after urinary treatment</li>
+                <li>• Senior cats (over 7 years) - twice yearly</li>
+              </ul>
             </div>
           </div>
 
@@ -202,43 +295,92 @@ function CatUrinaryHealthGuideContent() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q1: What is the best approach to cat urinary health?
+                  Q1: What is FLUTD and how common is it in cats?
                 </h3>
                 <p className="text-gray-700">
-                  The best approach to cat urinary health involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success.
+                  Feline Lower Urinary Tract Disease (FLUTD) is a group of conditions affecting the bladder and urethra. It affects approximately 1-3% of cats seen by veterinarians, making it one of the most common urinary issues in cats.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q2: How often should I address cat urinary health?
+                  Q2: Why are male cats more prone to urinary blockages?
                 </h3>
                 <p className="text-gray-700">
-                  The frequency of cat urinary health depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed.
+                  Male cats have a narrower and longer urethra than females, making them more susceptible to blockages from crystals, stones, or inflammation. Urinary blockage is a medical emergency requiring immediate veterinary attention.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q3: What are common mistakes with cat urinary health?
+                  Q3: How can I prevent urinary problems in my cat?
                 </h3>
                 <p className="text-gray-700">
-                  Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues.
+                  Prevention strategies include providing adequate fresh water, feeding a balanced diet, maintaining a clean litter box, reducing stress, and ensuring regular veterinary checkups. Some cats benefit from prescription urinary health diets.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q4: When should I consult a professional about cat urinary health?
+                  Q4: What role does diet play in cat urinary health?
                 </h3>
                 <p className="text-gray-700">
-                  Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper cat urinary health techniques.
+                  Diet significantly impacts urinary health. Proper nutrition helps maintain urinary pH balance and reduces crystal formation. Cats with urinary issues may benefit from prescription diets formulated to support urinary tract health.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q5: Can cat urinary health vary between different pet breeds?
+                  Q5: How much water should my cat drink daily?
                 </h3>
                 <p className="text-gray-700">
-                  Yes, cat urinary health can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning cat urinary health strategies.
+                  Cats should drink approximately 3.5-4.5 ounces of water per 5 pounds of body weight daily. Encourage water intake by providing fresh water in multiple locations, using water fountains, or adding water to food.
                 </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q6: Can stress cause urinary problems in cats?
+                </h3>
+                <p className="text-gray-700">
+                  Yes, stress is a significant factor in feline urinary issues. Environmental changes, new pets, or household stress can trigger or worsen urinary symptoms. Providing a calm, enriched environment helps reduce stress-related urinary problems.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q7: How often should I clean the litter box?
+                </h3>
+                <p className="text-gray-700">
+                  Clean the litter box daily and provide one box per cat plus one extra. Cats are more likely to use clean boxes, which helps prevent inappropriate urination and allows you to monitor urinary output and health.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* ========== Prevention & Management Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              Prevention and Health Management
+            </h2>
+
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Preventive Measures</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Adequate Hydration:</strong> Ensure constant access to fresh, clean water</li>
+                  <li>• <strong>Proper Diet:</strong> Feed high-quality food appropriate for urinary health</li>
+                  <li>• <strong>Litter Box Hygiene:</strong> Clean boxes daily and provide multiple boxes</li>
+                  <li>• <strong>Regular Vet Checkups:</strong> Annual wellness exams with urinalysis</li>
+                  <li>• <strong>Weight Management:</strong> Maintain healthy weight to reduce urinary issues</li>
+                  <li>• <strong>Stress Reduction:</strong> Provide a calm, enriched environment</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Lifestyle Factors</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Environmental Enrichment:</strong> Toys, climbing areas, and hiding spots</li>
+                  <li>• <strong>Multiple Resources:</strong> Multiple water bowls and litter boxes</li>
+                  <li>• <strong>Consistent Routine:</strong> Maintain regular feeding and play schedules</li>
+                  <li>• <strong>Temperature Control:</strong> Maintain comfortable indoor temperature</li>
+                  <li>• <strong>Minimize Changes:</strong> Reduce stress from household changes</li>
+                  <li>• <strong>Regular Exercise:</strong> Encourage play and activity to maintain health</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -249,36 +391,63 @@ function CatUrinaryHealthGuideContent() {
               Conclusion
             </h2>
             
+            <p className="text-lg leading-relaxed mb-4">
+              Understanding cat urinary health is essential for every cat owner. By recognizing early warning signs and taking preventive measures, you can help protect your feline companion from painful urinary problems.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-4">
+              Remember that urinary issues can develop quickly and require prompt veterinary attention. Don't hesitate to contact your vet if you notice any changes in your cat's urinary habits or signs of discomfort. Early intervention can prevent serious complications.
+            </p>
+
             <p className="text-lg leading-relaxed">
-              <p className="text-lg leading-relaxed mb-4">
-                Mastering cat urinary health is an essential skill for every pet owner. By understanding the principles, implementing best practices, and staying consistent with your approach, you can ensure your pet receives optimal care.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Remember that cat urinary health is not a one-size-fits-all solution. Each pet is unique, and what works for one may need adjustment for another. Stay observant, be patient, and don\'t hesitate to seek professional guidance when needed.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                With proper knowledge and dedication, cat urinary health can become a natural part of your pet care routine, contributing to your pet\'s health, happiness, and overall quality of life.
-              </p>
+              With proper hydration, nutrition, stress management, and regular veterinary care, you can significantly reduce your cat's risk of urinary problems and ensure they enjoy a healthy, comfortable life.
             </p>
           </div>
 
-          {/* ========== Related Tools Section ========== */}
+          {/* ========== Related Articles Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Related Health Articles
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/blog/cat-health-symptoms" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Cat Health Symptoms</h3>
+                <p className="text-gray-600">Learn to recognize common cat health symptoms and when to call the vet.</p>
+              </Link>
+              
+              <Link href="/blog/pet-emergency-signs" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-red-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Emergency Signs</h3>
+                <p className="text-gray-600">Recognize critical symptoms that require immediate veterinary attention.</p>
+              </Link>
+
+              <Link href="/blog/pet-dental-health" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Dental Health</h3>
+                <p className="text-gray-600">Understand dental care importance and signs of dental disease.</p>
+              </Link>
+
+              <Link href="/blog/pet-parasite-prevention" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-yellow-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Parasite Prevention</h3>
+                <p className="text-gray-600">Learn about parasites, prevention strategies, and treatment options.</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* ========== Pet Care Tools Section ========== */}
           <div className="mb-12 bg-gradient-to-r from-pink-50 to-blue-50 p-8 rounded-xl">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
               Explore Our Pet Care Tools
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link href="/breed-identification" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">🔍 Breed Identification</h3>
-                <p className="text-gray-600">Upload a photo to identify your pet's breed with AI-powered analysis.</p>
-              </Link>
-              
               <Link href="/health-center" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">🏥 Health Center</h3>
                 <p className="text-gray-600">Get personalized health advice and symptom checking for your pet.</p>
+              </Link>
+              
+              <Link href="/pet-care-guide" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">📋 Pet Care Guide</h3>
+                <p className="text-gray-600">Comprehensive care instructions tailored to your pet's needs.</p>
               </Link>
             </div>
           </div>

@@ -1,13 +1,13 @@
-// Data for HealthyPetTreatsGuide
+// Data for Healthy Pet Treats Guide
 
 import { HealthyPetTreatsGuideData, RelatedTool, FAQItem, UseCaseItem } from './types';
 
 export const articleData: HealthyPetTreatsGuideData = {
-  title: "Understanding Healthy Pet Treats - A Comprehensive Guide",
-  description: "Complete healthy pet treats information for pets",
-  content: "Healthy Pet Treats encompasses several important aspects that every pet owner should understand. The fundamentals of healthy pet treats involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.\n\nProfessional veterinarians emphasize that effective healthy pet treats requires patience, consistency, and proper knowledge. When dealing with healthy pet treats, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.\n\nKey factors to consider with healthy pet treats include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies\n\nResearch shows that proper healthy pet treats management can prevent common issues and promote overall pet health. By following established protocols and staying informed about healthy pet treats, you can ensure your pet receives the best possible care.",
+  title: "Healthy Pet Treats: Recipes, Guidelines, and Nutrition Tips",
+  description: "Discover healthy pet treat recipes, nutritional guidelines, and homemade treat options for dogs and cats. Learn which treats are safe and how to make nutritious treats at home.",
+  content: "Treats are an important part of pet care, offering opportunities for training, bonding, and rewarding good behavior. This comprehensive guide explores healthy treat options for your pet, including homemade recipes, nutritional guidelines, and safe treat practices. By understanding treat nutrition and portion control, you can reward your pet while maintaining their ideal weight and supporting their overall health.",
   metadata: {
-    keywords: ["healthy pet treats", "healthy pet treats tips", "healthy pet treats guide", "pet healthy pet treats", "healthy pet treats advice", "healthy pet treats care"],
+    keywords: ["healthy pet treats", "homemade pet treats", "dog treat recipes", "cat treat recipes", "pet treat nutrition", "safe pet treats"],
     category: "Pet Care",
     readTime: "12 min read"
   }
@@ -15,18 +15,18 @@ export const articleData: HealthyPetTreatsGuideData = {
 
 export const relatedTools: RelatedTool[] = [
   {
-    id: "breed-identification",
-    name: "Breed Identification",
-    description: "Upload a photo to identify your pet's breed with AI-powered analysis.",
-    url: "/breed-identification",
-    icon: "🔍"
+    id: "pet-nutrition-guide",
+    name: "Pet Nutrition Guide",
+    description: "Learn essential pet nutrition requirements, feeding guidelines, and dietary needs.",
+    url: "/blog/pet-nutrition-guide",
+    icon: "🍽️"
   },
   {
-    id: "health-center",
-    name: "Health Center",
-    description: "Get personalized health advice and symptom checking for your pet.",
-    url: "/health-center",
-    icon: "🏥"
+    id: "pet-weight-management",
+    name: "Pet Weight Management",
+    description: "Discover strategies for maintaining your pet's ideal weight and preventing obesity.",
+    url: "/blog/pet-weight-management",
+    icon: "⚖️"
   },
   {
     id: "pet-care-guide",
@@ -39,38 +39,46 @@ export const relatedTools: RelatedTool[] = [
 
 export const faqItems: FAQItem[] = [
   {
-    question: "What is the best approach to healthy pet treats?",
-    answer: "The best approach to healthy pet treats involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success."
+    question: "How many treats can I give my pet daily?",
+    answer: "Treats should not exceed 10% of your pet's daily caloric intake. For a 10-pound dog eating 400 calories daily, this means no more than 40 calories from treats. Adjust based on your pet's individual caloric needs and activity level."
   },
   {
-    question: "How often should I address healthy pet treats?",
-    answer: "The frequency of healthy pet treats depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed."
+    question: "Are homemade treats better than commercial treats?",
+    answer: "Homemade treats allow you to control ingredients and avoid artificial additives, but commercial treats offer convenience. Many pet owners use both—homemade treats for special occasions and quality commercial treats for daily use."
   },
   {
-    question: "What are common mistakes with healthy pet treats?",
-    answer: "Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues."
+    question: "Can I give my pet human food as treats?",
+    answer: "Some human foods are safe for pets, including plain cooked chicken, carrots, apples (without seeds), and green beans. Avoid chocolate, grapes, raisins, onions, garlic, avocado, and foods containing xylitol."
   },
   {
-    question: "When should I consult a professional about healthy pet treats?",
-    answer: "Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper healthy pet treats techniques."
+    question: "How long do homemade treats last?",
+    answer: "Homemade treats stored in an airtight container last 5 days in the refrigerator or up to 3 months in the freezer. Always label containers with the date prepared."
   },
   {
-    question: "Can healthy pet treats vary between different pet breeds?",
-    answer: "Yes, healthy pet treats can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning healthy pet treats strategies."
+    question: "What should I do if my pet has food allergies?",
+    answer: "If your pet has food allergies, work with your veterinarian to identify trigger ingredients. Choose treats made with novel proteins or limited ingredients. Always read labels carefully and introduce new treats gradually."
+  },
+  {
+    question: "Can treats help with training?",
+    answer: "Yes, treats are excellent training tools. Use small, low-calorie treats during training sessions to maintain your pet's focus and motivation. Keep treats tiny to avoid excessive calorie intake."
+  },
+  {
+    question: "Are frozen treats good for pets?",
+    answer: "Frozen treats like frozen yogurt or ice cubes are excellent, especially during hot weather. They provide hydration, mental stimulation, and can help soothe sore gums in teething puppies."
   }
 ];
 
 export const useCaseItems: UseCaseItem[] = [
   {
-    title: "Use Case 1",
-    description: "Daily healthy pet treats routine for busy pet owners"
+    title: "Training Rewards",
+    description: "Use small, low-calorie treats like freeze-dried meat or carrot sticks during training sessions. Keep treats tiny to avoid excessive calorie intake during multiple training repetitions."
   },
   {
-    title: "Use Case 2",
-    description: "Emergency healthy pet treats situations and quick solutions"
+    title: "Weight Management",
+    description: "For overweight pets, choose low-calorie options like carrot sticks, green beans, or apple slices. These provide satisfying crunch and volume without excessive calories."
   },
   {
-    title: "Use Case 3",
-    description: "Seasonal healthy pet treats considerations and adjustments"
+    title: "Enrichment and Bonding",
+    description: "Use frozen yogurt treats or puzzle toys filled with treats for mental stimulation. These activities strengthen your bond while providing entertainment and cognitive engagement."
   }
 ];

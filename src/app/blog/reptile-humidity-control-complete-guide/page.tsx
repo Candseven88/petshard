@@ -2,47 +2,46 @@ import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
-// Humidity control products data
-const humidityProducts = [
-  {
-    id: 1,
-    name: "Zoo Med HygroTherm Humidity & Temperature Controller",
-    type: "Digital Controller",
-    imageUrl: "https://www.thesprucepets.com/thmb/DWmPXX3FB2nkHBvvqo-asPo5BWQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Aquarium-digital-thermometer-59000ef63df78ca1591de6b0.jpg",
-    price: "$89.99",
-    affiliateLink: "https://amzn.to/reptile-controller",
-    description: "Professional-grade digital controller that automatically maintains perfect humidity levels with precise monitoring and adjustment capabilities."
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reptile Humidity Control: Complete Guide",
+  description: "Master reptile humidity control with our complete guide. Learn species-specific requirements, step-by-step setup instructions, and professional techniques for maintaining optimal humidity levels.",
+  keywords: ["reptile humidity control", "humidity requirements reptiles", "how to control humidity in reptile enclosure", "reptile humidity guide", "humidity control for reptiles"],
+  openGraph: {
+    title: "Reptile Humidity Control: Complete Guide",
+    description: "Master reptile humidity control with our complete guide. Learn species-specific requirements, step-by-step setup instructions, and professional techniques.",
+    type: "article",
+    url: "https://petshard.com/blog/reptile-humidity-control-complete-guide",
+    siteName: "PetShard",
+    images: [{
+      url: "https://images1.ratemyfishtank.com/photo/9/660x508c/47000/46502/23234-1-40-gallon-tank-102c3lb4buxgy.webp",
+      width: 1200,
+      height: 630,
+      alt: "Reptile terrarium with humidity control setup showing misting system and hygrometer"
+    }]
   },
-  {
-    id: 2,
-    name: "Reptile Fogger Humidifier System",
-    type: "Ultrasonic Fogger",
-    imageUrl: "https://images2.ratemyfishtank.com/photo/9/660x508c/47000/46621/23278-3-keeping-watch-19feykjbvtk0c.webp",
-    price: "$45.99",
-    affiliateLink: "https://amzn.to/reptile-fogger",
-    description: "Ultrasonic fogger creates fine mist to increase humidity naturally without over-wetting the substrate."
+  twitter: {
+    card: "summary_large_image",
+    title: "Reptile Humidity Control: Complete Guide",
+    description: "Master reptile humidity control with our complete guide. Learn species-specific requirements and professional techniques.",
+    images: ["https://images1.ratemyfishtank.com/photo/9/660x508c/47000/46502/23234-1-40-gallon-tank-102c3lb4buxgy.webp"]
   },
-  {
-    id: 3,
-    name: "Premium Cypress Mulch Substrate",
-    type: "Moisture-Retaining Substrate",
-    imageUrl: "https://images3.ratemyfishtank.com/photo/2/660x508c/47000/46620/23278-2-cichlids-hanging-out-1f1ezcza3etjy.webp",
-    price: "$24.99",
-    affiliateLink: "https://amzn.to/cypress-mulch",
-    description: "Natural cypress mulch that retains moisture effectively while preventing mold and maintaining proper humidity levels."
+  alternates: {
+    canonical: "https://petshard.com/blog/reptile-humidity-control-complete-guide"
   }
-];
-const accessories = [
-  {
-    name: "Digital Hygrometer with Probe",
-    affiliateLink: "https://amzn.to/digital-hygrometer",
-    description: "Accurate humidity monitoring is essential for successful reptile keeping."
-  },
-  {
-    name: "Reptile Safe Water Conditioner",
-    affiliateLink: "https://amzn.to/water-conditioner",
-    description: "Treat tap water to make it safe for misting and humidity systems."
-  }
+};
+
+// Humidity requirements table data
+const humidityRequirements = [
+  { species: "Ball Pythons", humidity: "50-60%", notes: "Requires humid hide with sphagnum moss" },
+  { species: "Bearded Dragons", humidity: "30-40%", notes: "Prefers dry environment, minimal misting" },
+  { species: "Corn Snakes", humidity: "40-50%", notes: "Moderate humidity, good ventilation needed" },
+  { species: "Leopard Geckos", humidity: "30-40%", notes: "Desert species, low humidity preferred" },
+  { species: "Green Tree Pythons", humidity: "70-80%", notes: "High humidity, frequent misting required" },
+  { species: "Crested Geckos", humidity: "60-80%", notes: "High humidity, daily misting essential" },
+  { species: "Iguanas", humidity: "60-80%", notes: "Tropical species, requires high humidity" },
+  { species: "Chameleons", humidity: "50-70%", notes: "Varies by species, good drainage critical" }
 ];
 function HumidityGuideContent() {
   return (
@@ -57,12 +56,12 @@ function HumidityGuideContent() {
             <span>Reptile Care</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            How to Maintain Perfect Humidity in Reptile Enclosures: Complete 2025 Guide
+            Reptile Humidity Control: Complete Guide
           </h1>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>November 27, 2024</span>
             <span>•</span>
-            <span>15 min read</span>
+            <span>12 min read</span>
             <span>•</span>
             <span>🦎 Reptile Care</span>
           </div>
@@ -70,7 +69,7 @@ function HumidityGuideContent() {
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
             src="https://images1.ratemyfishtank.com/photo/9/660x508c/47000/46502/23234-1-40-gallon-tank-102c3lb4buxgy.webp" 
-            alt="Reptile terrarium with proper humidity control setup showing misting system and hygrometer" 
+            alt="Reptile terrarium with humidity control setup showing misting system, hygrometer, and moisture-retaining substrate" 
             fill 
             className="object-cover"
             priority
@@ -84,171 +83,251 @@ function HumidityGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Struggling to keep humidity above 50% in your reptile enclosure? You're not alone. 
-              Humidity control is one of the most challenging aspects of reptile keeping, yet it's 
-              absolutely critical for your pet's health, proper shedding, and overall well-being.
+              Proper humidity control is essential for reptile health, affecting everything from shedding to respiratory function. 
+              Different reptile species require vastly different humidity levels, and maintaining the correct range is critical for preventing 
+              health problems and ensuring your pet thrives in captivity.
             </p>
-            <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-green-400">
+            <p className="text-lg leading-relaxed mb-4">
+              This guide provides step-by-step instructions for establishing and maintaining optimal humidity levels in any reptile enclosure. 
+              You'll learn proven methods, species-specific requirements, and professional techniques used by experienced reptile keepers.
+            </p>
+            <div className="bg-white rounded-lg p-5 border-l-4 border-green-400">
               <p className="text-lg font-medium text-gray-800">
-                <span className="text-green-600">Common Problem:</span> "I pour warm water in the corners 
-                of her enclosure but I still have a hard time keeping my humidity above 50%. What am I doing wrong?"
+                <strong>Key Point:</strong> Humidity control requires the right combination of substrate, equipment, and monitoring. 
+                Different species have dramatically different needs—what works for a ball python will harm a bearded dragon.
               </p>
             </div>
-            <p className="text-lg leading-relaxed">
-              This comprehensive guide will solve your humidity problems once and for all. We'll cover 
-              proven methods, common mistakes to avoid, and professional techniques that actually work 
-              for maintaining consistent humidity levels in any reptile enclosure.
-            </p>
           </div>
-          {/* ========== Core Explanation Section ========== */}
+          {/* ========== Care Basics Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Understanding Reptile Humidity Requirements
+              Why Humidity Control Matters
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  🌡️ Why Humidity Matters
+                  🌡️ Health Benefits
                 </h3>
                 <ul className="text-gray-700 space-y-2">
-                  <li>• Proper shedding process</li>
-                  <li>• Respiratory health</li>
-                  <li>• Skin condition maintenance</li>
-                  <li>• Stress reduction</li>
-                  <li>• Natural behavior patterns</li>
+                  <li>• Enables proper shedding without stuck skin</li>
+                  <li>• Prevents respiratory infections</li>
+                  <li>• Maintains healthy skin and scales</li>
+                  <li>• Reduces stress and promotes natural behavior</li>
+                  <li>• Supports proper hydration</li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-purple-400">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  📊 Species-Specific Requirements
+                  📊 Recommended Frequency
                 </h3>
                 <ul className="text-gray-700 space-y-2">
-                  <li>• Ball Pythons: 50-60%</li>
-                  <li>• Bearded Dragons: 30-40%</li>
-                  <li>• Corn Snakes: 40-50%</li>
-                  <li>• Leopard Geckos: 30-40%</li>
-                  <li>• Green Tree Pythons: 70-80%</li>
+                  <li>• Monitor humidity daily with hygrometer</li>
+                  <li>• Adjust misting 1-2 times daily as needed</li>
+                  <li>• Check substrate moisture weekly</li>
+                  <li>• Clean water bowls and misters daily</li>
+                  <li>• Replace substrate monthly or as needed</li>
                 </ul>
               </div>
             </div>
-            <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8">
-              <h3 className="text-lg font-bold text-yellow-800 mb-3">
-                ⚠️ Common Humidity Control Mistakes
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400 mb-8">
+              <h3 className="text-lg font-bold text-blue-800 mb-3">
+                ℹ️ When to Seek Professional Help
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <p className="text-gray-700 mb-3">
+                Contact a reptile veterinarian if you notice:
+              </p>
+              <ul className="text-gray-700 text-sm space-y-1">
+                <li>• Stuck shed that won't come off despite proper humidity</li>
+                <li>• Respiratory symptoms (wheezing, mucus around mouth)</li>
+                <li>• Skin infections or unusual discoloration</li>
+                <li>• Lethargy or loss of appetite related to humidity issues</li>
+              </ul>
+            </div>
+          </div>
+          {/* ========== Step-by-Step Guide Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+              Step-by-Step Humidity Control Guide
+            </h2>
+            
+            {/* Preparation Section */}
+            <div className="mb-8 bg-gray-50 p-6 rounded-lg">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">
+                Preparation: Supplies and Tools Needed
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">What NOT to Do:</h4>
-                  <ul className="text-gray-700 text-sm space-y-1">
-                    <li>• Pouring water directly into corners</li>
-                    <li>• Using only water bowls for humidity</li>
-                    <li>• Misting with cold water</li>
-                    <li>• Over-saturating substrate</li>
+                  <h4 className="font-semibold text-gray-800 mb-3">Essential Supplies:</h4>
+                  <ul className="text-gray-700 text-sm space-y-2">
+                    <li>• Digital hygrometer with probe</li>
+                    <li>• Moisture-retaining substrate (cypress mulch, coco coir, sphagnum moss)</li>
+                    <li>• Spray bottle or misting system</li>
+                    <li>• Water bowl or water dish</li>
+                    <li>• Thermometer for temperature monitoring</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Better Approaches:</h4>
-                  <ul className="text-gray-700 text-sm space-y-1">
-                    <li>• Use proper humidity controllers</li>
-                    <li>• Install misting systems</li>
-                    <li>• Choose moisture-retaining substrates</li>
-                    <li>• Monitor with digital hygrometers</li>
+                  <h4 className="font-semibold text-gray-800 mb-3">Optional Equipment:</h4>
+                  <ul className="text-gray-700 text-sm space-y-2">
+                    <li>• Automated misting system</li>
+                    <li>• Humidity controller with timer</li>
+                    <li>• Fogger or ultrasonic humidifier</li>
+                    <li>• HVAC tape for ventilation control</li>
+                    <li>• Humidity gauge for backup monitoring</li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-          {/* ========== Use Cases Section ========== */}
-          <div className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-              Proven Humidity Control Methods
-            </h2>
+
+            {/* Step 1 */}
             <div className="space-y-8">
               <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-400">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  1. Automated Humidity Controllers
+                  Step 1: Determine Your Species' Humidity Requirements
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  The most reliable method for maintaining consistent humidity levels. Digital controllers 
-                  automatically turn misting systems on and off based on preset humidity levels.
+                  Research your specific reptile species to understand its natural habitat and humidity needs. 
+                  Different species have dramatically different requirements—tropical species need 60-80% humidity, 
+                  while desert species need only 30-40%.
                 </p>
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <p className="text-sm text-green-800">
-                    <strong>Best for:</strong> High-humidity species, large enclosures, hands-off maintenance
+                <div className="bg-green-50 p-4 rounded-lg mb-4">
+                  <p className="text-sm text-green-800 mb-2">
+                    <strong>Pro Tip:</strong> Write down your species' humidity range and post it near your enclosure 
+                    for quick reference during daily monitoring.
                   </p>
                 </div>
+                <p className="text-gray-700 text-sm">
+                  <strong>Common Mistake:</strong> Assuming all reptiles need high humidity. Bearded dragons and leopard geckos 
+                  actually prefer dry environments and can develop respiratory infections if humidity is too high.
+                </p>
               </div>
+
+              {/* Step 2 */}
               <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-400">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  2. Substrate Moisture Management
+                  Step 2: Choose and Install Appropriate Substrate
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Using moisture-retaining substrates like cypress mulch, coconut fiber, or sphagnum moss 
-                  creates a natural humidity buffer that releases moisture gradually.
+                  Select a substrate that matches your species' needs. Moisture-retaining substrates like cypress mulch, 
+                  coconut fiber, and sphagnum moss gradually release humidity, while sand and bark chips dry out quickly.
                 </p>
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-sm text-blue-800">
-                    <strong>Best for:</strong> Moderate humidity needs, natural setups, budget-conscious keepers
+                <div className="bg-blue-50 p-4 rounded-lg mb-4">
+                  <p className="text-sm text-blue-800 mb-2">
+                    <strong>Pro Tip:</strong> Mix substrates for better results. A 70% cypress mulch and 30% sphagnum moss 
+                    blend works well for most moderate-humidity species.
                   </p>
                 </div>
+                <p className="text-gray-700 text-sm">
+                  <strong>Common Mistake:</strong> Using sand or aspen shavings for high-humidity species. These substrates 
+                  don't retain moisture and can cause humidity to drop rapidly.
+                </p>
               </div>
+
+              {/* Step 3 */}
               <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-purple-400">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  3. Strategic Ventilation Control
+                  Step 3: Install and Position a Digital Hygrometer
                 </h3>
                 <p className="text-gray-700 mb-4">
-                  Reducing air exchange by partially covering screen tops with HVAC tape or glass helps 
-                  retain humidity while maintaining necessary airflow for health.
+                  Place a digital hygrometer with a probe in your enclosure at your reptile's level. This allows you to 
+                  monitor humidity accurately throughout the day and identify when adjustments are needed.
                 </p>
-                <div className="bg-purple-50 p-4 rounded-lg">
-                  <p className="text-sm text-purple-800">
-                    <strong>Best for:</strong> Screen-top enclosures, dry climates, quick humidity boosts
+                <div className="bg-purple-50 p-4 rounded-lg mb-4">
+                  <p className="text-sm text-purple-800 mb-2">
+                    <strong>Pro Tip:</strong> Position the probe away from water bowls and misting areas to get an accurate 
+                    reading of the overall enclosure humidity, not just wet spots.
                   </p>
                 </div>
+                <p className="text-gray-700 text-sm">
+                  <strong>Common Mistake:</strong> Relying on visual inspection instead of using a hygrometer. You cannot 
+                  accurately judge humidity by looking at the enclosure.
+                </p>
+              </div>
+
+              {/* Step 4 */}
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  Step 4: Establish a Misting or Watering Schedule
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Create a daily routine for misting or watering based on your species' needs. Most moderate-humidity species 
+                  need misting 1-2 times daily, while high-humidity species may need 2-3 times daily. Use room-temperature 
+                  water and mist in the morning and evening.
+                </p>
+                <div className="bg-yellow-50 p-4 rounded-lg mb-4">
+                  <p className="text-sm text-yellow-800 mb-2">
+                    <strong>Pro Tip:</strong> Mist in the morning and evening to mimic natural dew cycles. This also allows 
+                    the enclosure to dry slightly between mistings, preventing mold and bacterial growth.
+                  </p>
+                </div>
+                <p className="text-gray-700 text-sm">
+                  <strong>Common Mistake:</strong> Misting with cold water or misting too frequently, which can cause 
+                  respiratory infections and mold growth.
+                </p>
+              </div>
+
+              {/* Step 5 */}
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  Step 5: Monitor, Adjust, and Maintain
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Check your hygrometer daily and adjust your misting schedule based on readings. If humidity is too low, 
+                  mist more frequently or add more moisture-retaining substrate. If humidity is too high, reduce misting 
+                  frequency or improve ventilation.
+                </p>
+                <div className="bg-red-50 p-4 rounded-lg mb-4">
+                  <p className="text-sm text-red-800 mb-2">
+                    <strong>Pro Tip:</strong> Keep a humidity log for 2-3 weeks to identify patterns. This helps you 
+                    understand how your enclosure responds to different adjustments.
+                  </p>
+                </div>
+                <p className="text-gray-700 text-sm">
+                  <strong>Common Mistake:</strong> Making drastic changes all at once. Adjust humidity gradually over several 
+                  days to avoid stressing your reptile.
+                </p>
               </div>
             </div>
           </div>
-          {/* ========== Product Recommendations ========== */}
+          {/* ========== Humidity Requirements Table ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-              Top Humidity Control Products (2025)
+              Species-Specific Humidity Requirements
             </h2>
-            <div className="grid grid-cols-1 gap-8">
-              {humidityProducts.map((product, index) => (
-                <div key={product.id} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border-l-4 border-green-400">
-                  <div className="flex flex-col lg:flex-row gap-6">
-                    <div className="lg:w-1/3">
-                      <div className="relative h-48 w-full rounded-lg overflow-hidden">
-                        <Image
-                          src={product.imageUrl}
-                          alt={product.name}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    </div>
-                    <div className="lg:w-2/3">
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">
-                        #{index + 1} {product.name}
-                      </h3>
-                      <div className="flex items-center gap-2 mb-4">
-                        <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
-                          {product.type}
-                        </span>
-                        <span className="text-2xl font-bold text-green-600">{product.price}</span>
-                      </div>
-                      <p className="text-gray-700 mb-4">{product.description}</p>
-                      <a
-                        href={product.affiliateLink}
-                        target="_blank"
-                        rel="nofollow noopener"
-                        className="inline-flex items-center bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold"
-                      >
-                        Check Current Price
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse bg-white rounded-lg shadow-md">
+                <thead>
+                  <tr className="bg-green-600 text-white">
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Species</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Humidity Range</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Special Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {humidityRequirements.map((req, index) => (
+                    <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                      <td className="border border-gray-300 px-4 py-3 font-semibold text-gray-800">{req.species}</td>
+                      <td className="border border-gray-300 px-4 py-3 text-gray-700">{req.humidity}</td>
+                      <td className="border border-gray-300 px-4 py-3 text-gray-700">{req.notes}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-6 bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400">
+              <h3 className="text-lg font-bold text-blue-800 mb-3">
+                📋 Using This Table
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Find your reptile species in the table above to determine its ideal humidity range. 
+                Use this as your target when adjusting your enclosure's humidity levels. Remember that 
+                humidity can fluctuate throughout the day—aim to keep it within the recommended range 
+                for at least 80% of the day.
+              </p>
+              <p className="text-gray-700 text-sm">
+                <strong>Important:</strong> If your species isn't listed, research its natural habitat. 
+                Tropical species generally need 60-80% humidity, while desert species need 30-40%.
+              </p>
             </div>
           </div>
           {/* ========== FAQ Section ========== */}
@@ -263,38 +342,38 @@ function HumidityGuideContent() {
                 </h3>
                 <p className="text-gray-700">
                   Rapid humidity loss usually indicates too much ventilation or inadequate substrate moisture retention. 
-                  Try partially covering screen tops and switching to moisture-retaining substrates like cypress mulch 
-                  or coconut fiber mixed with sphagnum moss.
+                  Try partially covering screen tops with HVAC tape, switching to moisture-retaining substrates like cypress mulch, 
+                  and increasing substrate depth to 3-4 inches.
                 </p>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-green-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q: Is 40% humidity too low for ball pythons?
+                  Q: What does stuck shed look like and how do I fix it?
                 </h3>
                 <p className="text-gray-700">
-                  Yes, ball pythons require 50-60% humidity for proper health and shedding. Low humidity can cause 
-                  stuck sheds, respiratory issues, and stress. Increase humidity gradually using a combination of 
-                  substrate moisture and controlled misting.
+                  Stuck shed appears as flaky, peeling skin that doesn't come off naturally. Fix it by increasing humidity 
+                  to the proper range for your species, providing a humid hide, and offering warm baths. If stuck shed persists 
+                  around eyes or toes, contact a reptile veterinarian.
                 </p>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-purple-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q: Can I use a regular room humidifier for my reptile enclosure?
+                  Q: Can high humidity cause health problems?
                 </h3>
                 <p className="text-gray-700">
-                  Room humidifiers aren't ideal for reptile enclosures as they can't target specific areas and may 
-                  create uneven humidity distribution. Reptile-specific foggers and misting systems provide better 
-                  control and prevent over-humidification.
+                  Yes, excessively high humidity (above 80%) can cause respiratory infections, mold growth, and bacterial infections. 
+                  Desert species are especially susceptible. Ensure proper ventilation and monitor humidity daily to keep it within 
+                  your species' recommended range.
                 </p>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-yellow-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q: How often should I mist my reptile's enclosure?
+                  Q: How do I prevent mold in a high-humidity enclosure?
                 </h3>
                 <p className="text-gray-700">
-                  Misting frequency depends on your species' needs and enclosure setup. Generally, 1-2 times daily 
-                  for moderate humidity species, or use automated systems for consistent results. Always monitor 
-                  with a digital hygrometer rather than guessing.
+                  Prevent mold by ensuring adequate airflow (at least 2-3 air changes per hour), removing uneaten food promptly, 
+                  cleaning water bowls daily, and replacing substrate monthly. Avoid over-saturating substrate and allow it to 
+                  dry slightly between mistings.
                 </p>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-red-400">
@@ -303,34 +382,132 @@ function HumidityGuideContent() {
                 </h3>
                 <p className="text-gray-700">
                   Cypress mulch, coconut fiber (coco coir), and sphagnum moss are excellent for humidity retention. 
-                  Avoid cedar, pine, or sand substrates which don't hold moisture well. A 70/30 mix of cypress mulch 
-                  and coconut fiber works well for most species.
+                  A 70% cypress mulch and 30% sphagnum moss blend works well for most moderate-humidity species. 
+                  Avoid cedar and pine, which are toxic to reptiles.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-indigo-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q: Should I use a humidifier or misting system?
+                </h3>
+                <p className="text-gray-700">
+                  Manual misting is effective for most keepers and allows you to observe your reptile during the process. 
+                  Automated misting systems are better for high-humidity species or if you travel frequently. Foggers work well 
+                  for arboreal species. Choose based on your species' needs and your schedule.
+                </p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-pink-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q: How do I know if my hygrometer is accurate?
+                </h3>
+                <p className="text-gray-700">
+                  Test your hygrometer using the salt test: place it in a sealed bag with salt and water for 6-8 hours. 
+                  It should read 75% humidity. If it's significantly off, replace it. Digital hygrometers with probes are 
+                  generally more accurate than analog gauges.
                 </p>
               </div>
             </div>
           </div>
-          {/* ========== Essential Accessories ========== */}
+          {/* ========== Species-Specific Variations ========== */}
           <div className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              🛠️ Essential Accessories
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+              Species-Specific Humidity Control Variations
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {accessories.map((product, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-md p-6 border-t-4 border-pink-400">
-                  <h3 className="text-lg font-bold text-gray-800 mb-4">{product.name}</h3>
-                  <p className="text-gray-700 mb-4">{product.description}</p>
-                  <a
-                    href={product.affiliateLink}
-                    target="_blank"
-                    rel="nofollow noopener"
-                    className="inline-flex items-center bg-pink-600 text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition-colors font-semibold"
-                  >
-                    View on Amazon
-                  </a>
-                </div>
-              ))}
+            <div className="space-y-6">
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  🐍 High-Humidity Species (Ball Pythons, Green Tree Pythons, Crested Geckos)
+                </h3>
+                <p className="text-gray-700 mb-3">
+                  These species require 60-80% humidity and benefit from:
+                </p>
+                <ul className="text-gray-700 space-y-2 mb-3">
+                  <li>• Thick layers of moisture-retaining substrate (3-4 inches)</li>
+                  <li>• Humid hides filled with sphagnum moss</li>
+                  <li>• Daily misting 2-3 times per day</li>
+                  <li>• Reduced ventilation (partially covered enclosures)</li>
+                  <li>• Large water bowls for soaking</li>
+                </ul>
+                <p className="text-gray-700 text-sm">
+                  <strong>Special Consideration:</strong> Monitor for mold and mildew. Ensure adequate airflow 
+                  to prevent fungal infections while maintaining humidity.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  🦎 Moderate-Humidity Species (Corn Snakes, King Snakes, Some Chameleons)
+                </h3>
+                <p className="text-gray-700 mb-3">
+                  These species require 40-60% humidity and benefit from:
+                </p>
+                <ul className="text-gray-700 space-y-2 mb-3">
+                  <li>• Moderate substrate depth (2-3 inches)</li>
+                  <li>• Mix of moisture-retaining and dry substrates</li>
+                  <li>• Misting 1-2 times daily</li>
+                  <li>• Good ventilation with screen tops</li>
+                  <li>• Humid hide on one side, dry area on the other</li>
+                </ul>
+                <p className="text-gray-700 text-sm">
+                  <strong>Special Consideration:</strong> Provide a humid hide so your reptile can choose 
+                  its preferred microclimate within the enclosure.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-yellow-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  🦗 Low-Humidity Species (Bearded Dragons, Leopard Geckos, Desert Snakes)
+                </h3>
+                <p className="text-gray-700 mb-3">
+                  These species require 30-40% humidity and benefit from:
+                </p>
+                <ul className="text-gray-700 space-y-2 mb-3">
+                  <li>• Minimal substrate depth (1-2 inches)</li>
+                  <li>• Dry substrates like sand or aspen shavings</li>
+                  <li>• Minimal misting (only for shedding assistance)</li>
+                  <li>• Maximum ventilation with screen tops</li>
+                  <li>• Small water bowl for drinking only</li>
+                </ul>
+                <p className="text-gray-700 text-sm">
+                  <strong>Special Consideration:</strong> High humidity can cause respiratory infections 
+                  in desert species. Ensure proper ventilation and avoid over-misting.
+                </p>
+              </div>
             </div>
           </div>
+          {/* ========== Professional Help Guide ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              When to Seek Professional Help
+            </h2>
+            <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400 mb-6">
+              <h3 className="text-lg font-bold text-blue-800 mb-4">
+                Contact a Reptile Veterinarian If:
+              </h3>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Your reptile has stuck shed that won't come off despite proper humidity</li>
+                <li>• You notice respiratory symptoms (wheezing, mucus, open-mouth breathing)</li>
+                <li>• Your reptile develops skin infections or unusual discoloration</li>
+                <li>• Humidity control is causing lethargy or loss of appetite</li>
+                <li>• You're unsure about your species' specific humidity requirements</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-lg font-bold text-gray-800 mb-3">
+                Finding a Reptile Veterinarian
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Look for veterinarians with specific reptile experience. Many general veterinarians lack reptile expertise. 
+                Check online reviews, ask local reptile clubs for recommendations, and call ahead to confirm they treat your 
+                species. Expect to pay $50-150 for an initial consultation.
+              </p>
+              <p className="text-gray-700 text-sm">
+                <strong>Frequency Recommendations:</strong> Schedule a wellness check annually for healthy reptiles, 
+                or immediately if you notice health issues related to humidity.
+              </p>
+            </div>
+          </div>
+
           {/* ========== Conclusion Section ========== */}
           <div className="mb-12 bg-gray-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
@@ -338,43 +515,78 @@ function HumidityGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Maintaining proper humidity in reptile enclosures doesn't have to be a constant struggle. 
-              By understanding your species' specific needs, using the right equipment, and avoiding 
-              common mistakes, you can create a stable, healthy environment for your reptile.
+              Proper humidity control is fundamental to reptile health and requires understanding your species' specific needs, 
+              choosing appropriate substrates, and monitoring consistently. By following the five-step process outlined in this guide, 
+              you can create a stable, healthy environment where your reptile thrives.
             </p>
-            <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-400">
+            <div className="bg-green-50 p-5 rounded-lg border-l-4 border-green-400 mb-4">
               <p className="text-lg">
-                <strong>Key Takeaway:</strong> Consistent humidity control requires the right combination 
-                of substrate, equipment, and monitoring. Invest in quality tools and your reptile will thrive.
+                <strong>Key Takeaways:</strong>
               </p>
+              <ul className="text-gray-700 mt-3 space-y-2">
+                <li>• Different species have dramatically different humidity needs</li>
+                <li>• Use a digital hygrometer to monitor humidity accurately</li>
+                <li>• Moisture-retaining substrates are essential for high-humidity species</li>
+                <li>• Establish a consistent misting schedule based on your species' needs</li>
+                <li>• Monitor and adjust gradually to maintain optimal humidity levels</li>
+              </ul>
             </div>
+            <p className="text-lg leading-relaxed">
+              Start with the basics: identify your species' humidity range, choose appropriate substrate, install a hygrometer, 
+              and establish a misting routine. Monitor daily and adjust as needed. With proper humidity control, your reptile 
+              will shed properly, breathe easily, and live a healthy, stress-free life.
+            </p>
           </div>
           {/* ========== Related Resources ========== */}
           <div className="mt-12">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Link 
+                href="/blog/pet-first-aid" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-red-100 p-3 rounded-full">
+                  <span className="text-2xl">🏥</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Pet First Aid</h4>
+                  <p className="text-gray-600">Emergency care procedures for reptiles</p>
+                </div>
+              </Link>
+              <Link 
                 href="/pet-health-center" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
               >
                 <div className="bg-green-100 p-3 rounded-full">
-                  <span className="text-2xl">🏥</span>
+                  <span className="text-2xl">🩺</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Pet Health Center</h4>
-                  <p className="text-gray-600">Expert health advice for all pets</p>
+                  <p className="text-gray-600">Symptom checker and health guidance</p>
+                </div>
+              </Link>
+              <Link 
+                href="/blog/pet-breed-identification" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <span className="text-2xl">🔍</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Pet Breed Identification</h4>
+                  <p className="text-gray-600">Identify your reptile species</p>
                 </div>
               </Link>
               <Link 
                 href="/pet-care-guide" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
               >
-                <div className="bg-blue-100 p-3 rounded-full">
+                <div className="bg-purple-100 p-3 rounded-full">
                   <span className="text-2xl">📚</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Pet Care Guide</h4>
-                  <p className="text-gray-600">Complete care instructions</p>
+                  <p className="text-gray-600">Complete reptile care instructions</p>
                 </div>
               </Link>
             </div>
@@ -387,8 +599,8 @@ function HumidityGuideContent() {
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "BlogPosting",
-              "headline": "How to Maintain Perfect Humidity in Reptile Enclosures: Complete 2025 Guide",
-              "description": "Solve reptile humidity problems with proven methods, professional equipment recommendations, and expert techniques for maintaining consistent humidity levels.",
+              "headline": "Reptile Humidity Control: Complete Guide",
+              "description": "Master reptile humidity control with our complete guide. Learn species-specific requirements, step-by-step setup instructions, and professional techniques for maintaining optimal humidity levels.",
               "url": "https://www.petshard.online/blog/reptile-humidity-control-complete-guide",
               "datePublished": "2024-11-27",
               "author": {

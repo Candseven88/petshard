@@ -2,6 +2,36 @@ import { Suspense } from "react";
 import Layout from "@/components/layout/Layout";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pet Loss Grief Support: Coping Strategies & Healing",
+  description: "Compassionate guide to pet loss grief with healthy coping strategies, memorial ideas, and professional support resources for healing after losing a beloved pet.",
+  keywords: ["pet loss grief", "pet loss support", "coping with pet death", "pet memorial", "pet bereavement", "grieving pet loss"],
+  openGraph: {
+    title: "Pet Loss Grief Support: Coping Strategies & Healing",
+    description: "Compassionate guide to pet loss grief with healthy coping strategies, memorial ideas, and professional support resources for healing after losing a beloved pet.",
+    type: "article",
+    url: "https://petshard.com/blog/pet-loss-grief-support-guide",
+    siteName: "PetShard",
+    images: [{
+      url: "https://cdn2.thecatapi.com/images/e35.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Pet Loss Grief Support: Coping Strategies & Healing"
+    }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pet Loss Grief Support: Coping Strategies & Healing",
+    description: "Compassionate guide to pet loss grief with healthy coping strategies, memorial ideas, and professional support resources for healing after losing a beloved pet.",
+    images: ["https://cdn2.thecatapi.com/images/e35.jpg"]
+  },
+  alternates: {
+    canonical: "https://petshard.com/blog/pet-loss-grief-support-guide"
+  }
+};
+
 // Grief support products data
 const griefProducts = [
   {
@@ -182,6 +212,10 @@ function PetLossGriefGuideContent() {
               🐾 Helping Your Other Pets Cope with Loss
             </h2>
             
+            <p className="text-gray-700 mb-6">
+              If you have other pets, they may also experience grief. Learn how to recognize and support them through this difficult transition. For more information about multi-pet households, see our <Link href="/blog/multi-cat-household-management-guide" className="text-blue-600 hover:text-blue-800 font-medium">multi-cat household management guide</Link>.
+            </p>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-lg font-bold text-gray-800 mb-3">Signs of Pet Grief:</h3>
@@ -283,7 +317,7 @@ function PetLossGriefGuideContent() {
             
             <div className="space-y-4">
               <p className="text-gray-700">
-                There's no universal timeline for when to get another pet. Consider these factors:
+                There's no universal timeline for when to get another pet. Consider these factors. When you're ready, our <Link href="/blog/pet-breed-identification" className="text-blue-600 hover:text-blue-800 font-medium">pet breed identification guide</Link> can help you explore different breeds and find the right match for your family.
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -326,7 +360,64 @@ function PetLossGriefGuideContent() {
               </p>
             </div>
           </div>
+          {/* ========== Related Content Section ========== */}
+          <div className="mb-12 bg-gray-50 p-8 rounded-xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+              Related Resources
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Pet Health & Care</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/blog/senior-pet-health-issues" className="text-blue-600 hover:text-blue-800 font-medium">
+                      Senior Pet Health Issues
+                    </Link>
+                    <p className="text-sm text-gray-600 mt-1">Learn about age-related health issues and end-of-life care considerations</p>
+                  </li>
+                  <li>
+                    <Link href="/blog/pet-emergency-signs" className="text-blue-600 hover:text-blue-800 font-medium">
+                      Pet Emergency Signs
+                    </Link>
+                    <p className="text-sm text-gray-600 mt-1">Recognize critical symptoms that require immediate veterinary attention</p>
+                  </li>
+                  <li>
+                    <Link href="/blog/pet-first-aid" className="text-blue-600 hover:text-blue-800 font-medium">
+                      Pet First Aid Guide
+                    </Link>
+                    <p className="text-sm text-gray-600 mt-1">Essential first aid procedures for common pet emergencies</p>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Pet Care & Support</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/blog/pet-dental-health" className="text-blue-600 hover:text-blue-800 font-medium">
+                      Pet Dental Health
+                    </Link>
+                    <p className="text-sm text-gray-600 mt-1">Maintain your pet's oral health and prevent dental complications</p>
+                  </li>
+                  <li>
+                    <Link href="/blog/senior-pet-care" className="text-blue-600 hover:text-blue-800 font-medium">
+                      Senior Pet Care Guide
+                    </Link>
+                    <p className="text-sm text-gray-600 mt-1">Comprehensive care strategies for aging pets</p>
+                  </li>
+                  <li>
+                    <Link href="/blog/pet-allergy-management" className="text-blue-600 hover:text-blue-800 font-medium">
+                      Pet Allergy Management
+                    </Link>
+                    <p className="text-sm text-gray-600 mt-1">Identify and manage common pet allergies and sensitivities</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+
         {/* ========== Structured Data (JSON-LD) ========== */}
         <script
           type="application/ld+json"
@@ -334,8 +425,8 @@ function PetLossGriefGuideContent() {
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "BlogPosting",
-              "headline": "Pet Loss Grief Support: Coping with Saying Goodbye to Your Beloved Companion",
-              "description": "Compassionate guide to pet loss grief with healthy coping strategies, memorial ideas, and support resources for healing after losing a beloved pet.",
+              "headline": "Pet Loss Grief Support: Coping Strategies & Healing",
+              "description": "Compassionate guide to pet loss grief with coping strategies, memorial ideas, and support resources for healing after losing a beloved pet.",
               "url": "https://www.petshard.online/blog/pet-loss-grief-support-guide",
               "datePublished": "2024-11-27",
               "author": {

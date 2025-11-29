@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pet Allergy Management: Expert Tips and Professional Advice",
-  description: "Complete pet allergy management information for pets",
-  keywords: ["pet allergy management", "pet allergy management tips", "pet allergy management guide", "pet pet allergy management", "pet allergy management advice", "pet allergy management care"],
+  title: "Pet Allergy Management: Types, Symptoms, and Treatment Guide",
+  description: "Learn to manage pet allergies effectively. Understand allergy types, recognize symptoms, and discover treatment options for dogs and cats.",
+  keywords: ["pet allergies", "dog allergies", "cat allergies", "allergy management", "pet allergy symptoms", "allergy treatment"],
   openGraph: {
-    title: "Pet Allergy Management: Expert Tips and Professional Advice",
-    description: "Complete pet allergy management information for pets",
+    title: "Pet Allergy Management: Types, Symptoms, and Treatment Guide",
+    description: "Learn to manage pet allergies effectively. Understand allergy types, recognize symptoms, and discover treatment options for dogs and cats.",
     type: "article",
     url: "https://petshard.com/blog/pet-allergy-management",
     siteName: "PetShard",
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
       url: "https://cdn2.thecatapi.com/images/ag4.jpg",
       width: 1200,
       height: 630,
-      alt: "Pet Allergy Management: Expert Tips and Professional Advice"
+      alt: "Pet Allergy Management: Types, Symptoms, and Treatment Guide"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pet Allergy Management: Expert Tips and Professional Advice",
-    description: "Complete pet allergy management information for pets",
+    title: "Pet Allergy Management: Types, Symptoms, and Treatment Guide",
+    description: "Learn to manage pet allergies effectively. Understand allergy types, recognize symptoms, and discover treatment options for dogs and cats.",
     images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
   },
   alternates: {
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Pet Allergy Management: Expert Tips and Professional Advice",
-  "description": "Complete pet allergy management information for pets",
+  "headline": "Pet Allergy Management: Types, Symptoms, and Treatment Guide",
+  "description": "Learn to manage pet allergies effectively. Understand allergy types, recognize symptoms, and discover treatment options for dogs and cats.",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -72,7 +72,7 @@ function PetAllergyManagementGuideContent() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Pet Allergy Management: Expert Tips and Professional Advice
+            Pet Allergy Management: Types, Symptoms, and Treatment Guide
           </h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-500">
@@ -87,7 +87,7 @@ function PetAllergyManagementGuideContent() {
         <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
           <Image 
             src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="Pet Allergy Management: Expert Tips and Professional Advice" 
+            alt="Pet Allergy Management: Types, Symptoms, and Treatment Guide" 
             fill 
             className="object-cover"
             priority
@@ -102,16 +102,16 @@ function PetAllergyManagementGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Complete pet allergy management information for pets
+              Pet allergies affect millions of dogs and cats worldwide, causing discomfort and affecting quality of life. Recognizing allergy symptoms early and implementing effective management strategies can significantly improve your pet\'s wellbeing.
             </p>
 
             <p className="text-lg leading-relaxed">
               <p className="text-lg leading-relaxed mb-4">
-                When it comes to pet allergy management, pet owners often face numerous questions and challenges. Understanding pet allergy management is crucial for providing the best care for your beloved companion. This comprehensive guide will explore everything you need to know about pet allergy management, offering expert insights and practical solutions.
+                Pet allergies come in several types—food allergies, environmental allergies, and contact allergies—each requiring different management approaches. This comprehensive guide covers allergy types, symptoms, severity levels, and practical management strategies to help you keep your pet comfortable and healthy.
               </p>
 
               <p className="text-lg leading-relaxed mb-4">
-                Whether you\'re a new pet owner or have years of experience, mastering pet allergy management can significantly improve your pet\'s quality of life. From basic concepts to advanced techniques, we\'ll cover all aspects of pet allergy management to help you make informed decisions for your pet\'s wellbeing.
+                Whether your pet is experiencing itching, digestive issues, or respiratory symptoms, understanding the underlying cause is the first step toward effective treatment. We\'ll help you identify allergy symptoms, understand when to seek veterinary care, and explore management options that work best for your pet.
               </p>
             </p>
           </div>
@@ -119,76 +119,195 @@ function PetAllergyManagementGuideContent() {
           {/* ========== Core Content Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Understanding Pet allergy management
+              Types of Pet Allergies
             </h2>
 
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed mb-4">
-                Pet Allergy Management encompasses several important aspects that every pet owner should understand. The fundamentals of pet allergy management involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.
-              </p>
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">1. Food Allergies</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Adverse reactions to specific food ingredients, most commonly beef, chicken, dairy, wheat, or soy.</p>
+                <p className="text-gray-700 mb-2"><strong>Common Symptoms:</strong> Itching (especially face and paws), vomiting, diarrhea, chronic ear infections, or skin infections.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild (occasional itching) to severe (severe digestive upset or anaphylaxis in rare cases).</p>
+                <p className="text-gray-700"><strong>Management:</strong> Elimination diet, hypoallergenic food, limited ingredient diet, or prescription hydrolyzed protein diet.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Professional veterinarians emphasize that effective pet allergy management requires patience, consistency, and proper knowledge. When dealing with pet allergy management, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">2. Environmental Allergies (Atopy)</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Reactions to airborne allergens like pollen, dust mites, mold, or pet dander.</p>
+                <p className="text-gray-700 mb-2"><strong>Common Symptoms:</strong> Seasonal or year-round itching, sneezing, coughing, watery eyes, or respiratory issues.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild (seasonal sneezing) to severe (chronic skin infections from constant scratching).</p>
+                <p className="text-gray-700"><strong>Management:</strong> Air purifiers, regular bathing, antihistamines, corticosteroids, or immunotherapy (allergy shots).</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Key factors to consider with pet allergy management include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">3. Contact Allergies</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Reactions to direct contact with allergens like certain fabrics, cleaning products, or plants.</p>
+                <p className="text-gray-700 mb-2"><strong>Common Symptoms:</strong> Localized itching or rash at contact points, redness, or hair loss in affected areas.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Usually mild to moderate, localized to contact areas.</p>
+                <p className="text-gray-700"><strong>Management:</strong> Identify and avoid allergen, use hypoallergenic bedding, switch to pet-safe cleaning products.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Research shows that proper pet allergy management management can prevent common issues and promote overall pet health. By following established protocols and staying informed about pet allergy management, you can ensure your pet receives the best possible care.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-green-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">4. Flea Allergy Dermatitis (FAD)</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Allergic reaction to flea saliva, even from a single flea bite.</p>
+                <p className="text-gray-700 mb-2"><strong>Common Symptoms:</strong> Intense itching, hair loss, scabs, and skin infections, especially on lower back and tail.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Can range from mild to severe depending on flea exposure.</p>
+                <p className="text-gray-700"><strong>Management:</strong> Year-round flea prevention, regular bathing, environmental flea control, and treating secondary infections.</p>
+              </div>
             </div>
 
-            
+            {/* Allergy Symptom Guide Table */}
+            <div className="mt-12 mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Allergy Symptom Guide</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-gray-300">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Allergy Type</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Primary Symptoms</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Onset Pattern</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Common Triggers</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Food Allergies</td>
+                      <td className="border border-gray-300 p-3">Itching, vomiting, diarrhea</td>
+                      <td className="border border-gray-300 p-3">Year-round, consistent</td>
+                      <td className="border border-gray-300 p-3">Beef, chicken, dairy, wheat</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Environmental</td>
+                      <td className="border border-gray-300 p-3">Itching, sneezing, coughing</td>
+                      <td className="border border-gray-300 p-3">Seasonal or year-round</td>
+                      <td className="border border-gray-300 p-3">Pollen, dust, mold, dander</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Contact Allergies</td>
+                      <td className="border border-gray-300 p-3">Localized rash, itching</td>
+                      <td className="border border-gray-300 p-3">Upon contact, localized</td>
+                      <td className="border border-gray-300 p-3">Fabrics, chemicals, plants</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Flea Allergy</td>
+                      <td className="border border-gray-300 p-3">Intense itching, hair loss</td>
+                      <td className="border border-gray-300 p-3">Seasonal or year-round</td>
+                      <td className="border border-gray-300 p-3">Flea bites, flea saliva</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8">
               <h3 className="text-lg font-bold text-yellow-800 mb-3">
-                🔗 Related Tools & Resources
+                💡 Important Note
               </h3>
-              <div className="space-y-2">
-                <Link href="/breed-identification" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  breed identification tool
-                </Link>
-                <Link href="/virtual-breeding" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  virtual breeding simulator
-                </Link>
-                <Link href="/pet-naming" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  pet naming suggestions
-                </Link>
-              </div>
+              <p className="text-yellow-900">
+                This guide is for informational purposes only and should not replace professional veterinary advice. Allergies can be complex and may require professional diagnosis through elimination diets, allergy testing, or trial treatments. Always consult your veterinarian for proper diagnosis and treatment.
+              </p>
             </div>
           </div>
 
-          {/* ========== Use Cases Section ========== */}
+          {/* ========== When to Call the Vet Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-              Practical Use Cases
+              When to Call Your Veterinarian
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  1. Use Case
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-red-50 p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                <h3 className="text-xl font-bold text-red-800 mb-4">
+                  🚨 Call Immediately (Emergency)
                 </h3>
-                <p className="text-gray-700">
-                  Daily pet allergy management routine for busy pet owners
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Severe swelling of face, throat, or tongue</li>
+                  <li>• Difficulty breathing or wheezing</li>
+                  <li>• Severe vomiting or diarrhea</li>
+                  <li>• Collapse or loss of consciousness</li>
+                  <li>• Severe allergic reaction (anaphylaxis)</li>
+                  <li>• Uncontrollable scratching causing bleeding</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  2. Use Case
+              <div className="bg-orange-50 p-6 rounded-lg shadow-md border-t-4 border-orange-500">
+                <h3 className="text-xl font-bold text-orange-800 mb-4">
+                  ⚠️ Call Within 24 Hours
                 </h3>
-                <p className="text-gray-700">
-                  Emergency pet allergy management situations and quick solutions
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Persistent itching affecting sleep or eating</li>
+                  <li>• Signs of skin infection (oozing, odor)</li>
+                  <li>• Chronic ear infections or discharge</li>
+                  <li>• Persistent vomiting or diarrhea</li>
+                  <li>• Hair loss or bald patches</li>
+                  <li>• Respiratory symptoms (coughing, sneezing)</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  3. Use Case
-                </h3>
-                <p className="text-gray-700">
-                  Seasonal pet allergy management considerations and adjustments
-                </p>
+            </div>
+
+            <div className="mt-6 bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+              <h3 className="text-xl font-bold text-blue-800 mb-4">
+                📅 Schedule a Routine Appointment
+              </h3>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Mild seasonal itching or sneezing</li>
+                <li>• Occasional digestive upset</li>
+                <li>• Suspected food allergy (for elimination diet)</li>
+                <li>• Annual allergy screening or prevention</li>
+                <li>• Discussing allergy testing options</li>
+                <li>• Preventive flea and parasite control</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* ========== Allergy Management Strategies Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              Allergy Management Strategies
+            </h2>
+
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Dietary Management</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Elimination Diet:</strong> Remove suspected allergens for 8-12 weeks to identify triggers</li>
+                  <li>• <strong>Limited Ingredient Diet:</strong> Feed only essential proteins and carbohydrates</li>
+                  <li>• <strong>Hydrolyzed Protein Diet:</strong> Prescription diet with broken-down proteins</li>
+                  <li>• <strong>Novel Protein Diet:</strong> Use proteins your pet hasn\'t eaten before (venison, duck, kangaroo)</li>
+                  <li>• <strong>Probiotic Supplements:</strong> Support digestive health and immune function</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Environmental Management</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Air Purifiers:</strong> Use HEPA filters to reduce airborne allergens</li>
+                  <li>• <strong>Regular Bathing:</strong> Bathe 1-2 times weekly to remove allergens from skin and coat</li>
+                  <li>• <strong>Hypoallergenic Bedding:</strong> Use washable, allergen-free bedding materials</li>
+                  <li>• <strong>Humidity Control:</strong> Maintain 40-50% humidity to reduce dust mites and mold</li>
+                  <li>• <strong>Frequent Vacuuming:</strong> Use HEPA vacuum cleaners to reduce dust and allergens</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Medical Management</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Antihistamines:</strong> Reduce allergic reactions (diphenhydramine, cetirizine)</li>
+                  <li>• <strong>Corticosteroids:</strong> Reduce inflammation and itching (prednisone, dexamethasone)</li>
+                  <li>• <strong>Topical Treatments:</strong> Medicated shampoos, sprays, or ointments for skin relief</li>
+                  <li>• <strong>Immunotherapy:</strong> Allergy shots to desensitize immune system over time</li>
+                  <li>• <strong>Omega-3 Supplements:</strong> Support skin health and reduce inflammation</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Preventive Measures</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Year-Round Flea Prevention:</strong> Prevent flea allergy dermatitis with monthly treatments</li>
+                  <li>• <strong>Regular Grooming:</strong> Brush coat regularly to remove allergens and check for skin issues</li>
+                  <li>• <strong>Parasite Control:</strong> Regular deworming and parasite prevention</li>
+                  <li>• <strong>Stress Reduction:</strong> Minimize stress which can worsen allergic reactions</li>
+                  <li>• <strong>Veterinary Monitoring:</strong> Regular checkups to catch allergies early</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -202,42 +321,58 @@ function PetAllergyManagementGuideContent() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q1: What is the best approach to pet allergy management?
+                  Q1: How do I know if my pet has a food allergy vs. food intolerance?
                 </h3>
                 <p className="text-gray-700">
-                  The best approach to pet allergy management involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success.
+                  Food allergies involve immune system reactions and cause itching, skin issues, or respiratory symptoms. Food intolerances cause digestive upset (vomiting, diarrhea) without immune involvement. Your vet can help distinguish between the two through elimination diets and testing.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q2: How often should I address pet allergy management?
+                  Q2: How long does an elimination diet take to show results?
                 </h3>
                 <p className="text-gray-700">
-                  The frequency of pet allergy management depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed.
+                  Most elimination diets require 8-12 weeks to see significant improvement. Some pets may show results in 4-6 weeks, while others take longer. Consistency is crucial—avoid treats, table scraps, and flavored medications during this period.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q3: What are common mistakes with pet allergy management?
+                  Q3: Can allergies develop suddenly in adult pets?
                 </h3>
                 <p className="text-gray-700">
-                  Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues.
+                  Yes, allergies can develop at any age. Environmental allergies often appear between 1-3 years old, while food allergies can develop after years of eating the same food. Flea allergy dermatitis can occur suddenly after a single flea bite.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q4: When should I consult a professional about pet allergy management?
+                  Q4: Are certain dog or cat breeds more prone to allergies?
                 </h3>
                 <p className="text-gray-700">
-                  Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper pet allergy management techniques.
+                  Yes, some breeds are genetically predisposed to allergies. Dogs like Retrievers, Bulldogs, and Terriers are more prone to allergies. Cats with allergies are less breed-specific but Siamese and Persians may be more susceptible. Discuss breed-specific risks with your vet.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q5: Can pet allergy management vary between different pet breeds?
+                  Q5: What is allergy testing and how accurate is it?
                 </h3>
                 <p className="text-gray-700">
-                  Yes, pet allergy management can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning pet allergy management strategies.
+                  Allergy testing (blood tests or intradermal skin tests) identifies specific allergens. Accuracy varies: blood tests are 60-80% accurate, while intradermal tests are 70-90% accurate. Results should guide treatment but aren\'t definitive—elimination diets remain the gold standard for food allergies.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q6: Can I treat my pet\'s allergies at home without veterinary care?
+                </h3>
+                <p className="text-gray-700">
+                  While some management strategies (bathing, environmental changes) can help, professional diagnosis is essential. Untreated allergies can lead to secondary infections, chronic skin damage, and complications. Always consult your vet before starting treatment.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q7: Are there natural remedies for pet allergies?
+                </h3>
+                <p className="text-gray-700">
+                  Some natural supplements like omega-3 fatty acids, probiotics, and quercetin may help reduce inflammation. However, effectiveness varies and they shouldn\'t replace veterinary treatment. Always discuss natural remedies with your vet before use to ensure safety and proper dosing.
                 </p>
               </div>
             </div>
@@ -249,36 +384,63 @@ function PetAllergyManagementGuideContent() {
               Conclusion
             </h2>
             
+            <p className="text-lg leading-relaxed mb-4">
+              Pet allergies are manageable with proper identification, diagnosis, and treatment. Whether your pet suffers from food allergies, environmental allergies, or flea allergy dermatitis, understanding the type of allergy is the first step toward effective management.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-4">
+              Work closely with your veterinarian to identify triggers, implement appropriate management strategies, and monitor your pet\'s response to treatment. Allergy management often requires patience and experimentation to find what works best for your individual pet.
+            </p>
+
             <p className="text-lg leading-relaxed">
-              <p className="text-lg leading-relaxed mb-4">
-                Mastering pet allergy management is an essential skill for every pet owner. By understanding the principles, implementing best practices, and staying consistent with your approach, you can ensure your pet receives optimal care.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Remember that pet allergy management is not a one-size-fits-all solution. Each pet is unique, and what works for one may need adjustment for another. Stay observant, be patient, and don\'t hesitate to seek professional guidance when needed.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                With proper knowledge and dedication, pet allergy management can become a natural part of your pet care routine, contributing to your pet\'s health, happiness, and overall quality of life.
-              </p>
+              With consistent care, proper preventive measures, and professional guidance, you can significantly improve your pet\'s comfort and quality of life. Remember that early intervention and regular monitoring help prevent complications and ensure your pet stays healthy and happy.
             </p>
           </div>
 
-          {/* ========== Related Tools Section ========== */}
+          {/* ========== Related Articles Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Related Health Articles
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/blog/cat-health-symptoms" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Cat Health Symptoms</h3>
+                <p className="text-gray-600">Learn to recognize common cat health symptoms and when to call the vet.</p>
+              </Link>
+              
+              <Link href="/blog/common-dog-diseases" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-red-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Common Dog Diseases</h3>
+                <p className="text-gray-600">Understand common dog diseases, symptoms, and prevention strategies.</p>
+              </Link>
+
+              <Link href="/blog/dog-skin-conditions" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Dog Skin Conditions</h3>
+                <p className="text-gray-600">Explore common skin conditions in dogs and their management.</p>
+              </Link>
+
+              <Link href="/blog/pet-parasite-prevention" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-yellow-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Parasite Prevention</h3>
+                <p className="text-gray-600">Learn about parasites, prevention strategies, and treatment options.</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* ========== Pet Care Tools Section ========== */}
           <div className="mb-12 bg-gradient-to-r from-pink-50 to-blue-50 p-8 rounded-xl">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
               Explore Our Pet Care Tools
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link href="/breed-identification" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">🔍 Breed Identification</h3>
-                <p className="text-gray-600">Upload a photo to identify your pet's breed with AI-powered analysis.</p>
-              </Link>
-              
               <Link href="/health-center" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">🏥 Health Center</h3>
                 <p className="text-gray-600">Get personalized health advice and symptom checking for your pet.</p>
+              </Link>
+              
+              <Link href="/pet-care-guide" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">📋 Pet Care Guide</h3>
+                <p className="text-gray-600">Comprehensive care instructions tailored to your pet's needs.</p>
               </Link>
             </div>
           </div>

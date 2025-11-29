@@ -3,24 +3,17 @@
 import { CatUrinaryHealthGuideData, RelatedTool, FAQItem, UseCaseItem } from './types';
 
 export const articleData: CatUrinaryHealthGuideData = {
-  title: "Understanding Cat Urinary Health - A Comprehensive Guide",
-  description: "Complete cat urinary health information for pets",
-  content: "Cat Urinary Health encompasses several important aspects that every pet owner should understand. The fundamentals of cat urinary health involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.\n\nProfessional veterinarians emphasize that effective cat urinary health requires patience, consistency, and proper knowledge. When dealing with cat urinary health, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.\n\nKey factors to consider with cat urinary health include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies\n\nResearch shows that proper cat urinary health management can prevent common issues and promote overall pet health. By following established protocols and staying informed about cat urinary health, you can ensure your pet receives the best possible care.",
+  title: "Cat Urinary Health: Symptoms, Prevention & When to Call the Vet",
+  description: "Learn about cat urinary tract issues, FLUTD symptoms, and prevention strategies. Understand when to seek veterinary care for your cat's urinary health.",
+  content: "Cat urinary problems are among the most common health issues affecting feline companions. Understanding urinary tract health is essential for recognizing symptoms early and preventing serious complications.\n\nFeline Lower Urinary Tract Disease (FLUTD) affects many cats and can cause significant discomfort. Common symptoms include straining to urinate, frequent urination, blood in urine, and urinating outside the litter box.\n\nKey factors to consider with cat urinary health include:\n- Adequate hydration and water intake\n- Proper nutrition and diet\n- Litter box hygiene and maintenance\n- Stress reduction and environmental enrichment\n- Regular veterinary checkups\n\nResearch shows that proper cat urinary health management can prevent common issues and promote overall pet health. By following established protocols and staying informed about cat urinary health, you can ensure your pet receives the best possible care.",
   metadata: {
-    keywords: ["cat urinary health", "cat urinary health tips", "cat urinary health guide", "pet cat urinary health", "cat urinary health advice", "cat urinary health care"],
+    keywords: ["cat urinary health", "cat urinary tract infection", "FLUTD in cats", "cat urinary symptoms", "cat urinary problems", "feline urinary health"],
     category: "Pet Care",
     readTime: "12 min read"
   }
 };
 
 export const relatedTools: RelatedTool[] = [
-  {
-    id: "breed-identification",
-    name: "Breed Identification",
-    description: "Upload a photo to identify your pet's breed with AI-powered analysis.",
-    url: "/breed-identification",
-    icon: "🔍"
-  },
   {
     id: "health-center",
     name: "Health Center",
@@ -39,38 +32,46 @@ export const relatedTools: RelatedTool[] = [
 
 export const faqItems: FAQItem[] = [
   {
-    question: "What is the best approach to cat urinary health?",
-    answer: "The best approach to cat urinary health involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success."
+    question: "What is FLUTD and how common is it in cats?",
+    answer: "Feline Lower Urinary Tract Disease (FLUTD) is a group of conditions affecting the bladder and urethra. It affects approximately 1-3% of cats seen by veterinarians, making it one of the most common urinary issues in cats."
   },
   {
-    question: "How often should I address cat urinary health?",
-    answer: "The frequency of cat urinary health depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed."
+    question: "Why are male cats more prone to urinary blockages?",
+    answer: "Male cats have a narrower and longer urethra than females, making them more susceptible to blockages from crystals, stones, or inflammation. Urinary blockage is a medical emergency requiring immediate veterinary attention."
   },
   {
-    question: "What are common mistakes with cat urinary health?",
-    answer: "Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues."
+    question: "How can I prevent urinary problems in my cat?",
+    answer: "Prevention strategies include providing adequate fresh water, feeding a balanced diet, maintaining a clean litter box, reducing stress, and ensuring regular veterinary checkups. Some cats benefit from prescription urinary health diets."
   },
   {
-    question: "When should I consult a professional about cat urinary health?",
-    answer: "Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper cat urinary health techniques."
+    question: "What role does diet play in cat urinary health?",
+    answer: "Diet significantly impacts urinary health. Proper nutrition helps maintain urinary pH balance and reduces crystal formation. Cats with urinary issues may benefit from prescription diets formulated to support urinary tract health."
   },
   {
-    question: "Can cat urinary health vary between different pet breeds?",
-    answer: "Yes, cat urinary health can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning cat urinary health strategies."
+    question: "How much water should my cat drink daily?",
+    answer: "Cats should drink approximately 3.5-4.5 ounces of water per 5 pounds of body weight daily. Encourage water intake by providing fresh water in multiple locations, using water fountains, or adding water to food."
+  },
+  {
+    question: "Can stress cause urinary problems in cats?",
+    answer: "Yes, stress is a significant factor in feline urinary issues. Environmental changes, new pets, or household stress can trigger or worsen urinary symptoms. Providing a calm, enriched environment helps reduce stress-related urinary problems."
+  },
+  {
+    question: "How often should I clean the litter box?",
+    answer: "Clean the litter box daily and provide one box per cat plus one extra. Cats are more likely to use clean boxes, which helps prevent inappropriate urination and allows you to monitor urinary output and health."
   }
 ];
 
 export const useCaseItems: UseCaseItem[] = [
   {
-    title: "Use Case 1",
-    description: "Daily cat urinary health routine for busy pet owners"
+    title: "Recognizing Urinary Symptoms",
+    description: "Learning to identify straining, frequency changes, and blood in urine"
   },
   {
-    title: "Use Case 2",
-    description: "Emergency cat urinary health situations and quick solutions"
+    title: "Emergency Response",
+    description: "Knowing when to seek immediate veterinary care for urinary blockage"
   },
   {
-    title: "Use Case 3",
-    description: "Seasonal cat urinary health considerations and adjustments"
+    title: "Prevention Strategies",
+    description: "Implementing hydration, diet, and stress management for urinary health"
   }
 ];

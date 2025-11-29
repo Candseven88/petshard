@@ -1,76 +1,114 @@
-// Data for SeniorPetCareGuide
-
-import { SeniorPetCareGuideData, RelatedTool, FAQItem, UseCaseItem } from './types';
-
-export const articleData: SeniorPetCareGuideData = {
-  title: "Complete Guide to Senior Pet Care for Pet Owners",
-  description: "Essential senior pet care guide for pet care",
-  content: "Senior Pet Care encompasses several important aspects that every pet owner should understand. The fundamentals of senior pet care involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.\n\nProfessional veterinarians emphasize that effective senior pet care requires patience, consistency, and proper knowledge. When dealing with senior pet care, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.\n\nKey factors to consider with senior pet care include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies\n\nResearch shows that proper senior pet care management can prevent common issues and promote overall pet health. By following established protocols and staying informed about senior pet care, you can ensure your pet receives the best possible care.",
+export const seniorPetCareData = {
+  title: "Senior Pet Care: Complete Guide for Aging Dogs and Cats",
+  slug: "senior-pet-care",
+  category: "pet-care",
+  priority: 3,
+  
   metadata: {
-    keywords: ["senior pet care", "senior pet care tips", "senior pet care guide", "pet senior pet care", "senior pet care advice", "senior pet care care"],
-    category: "Pet Care",
-    readTime: "12 min read"
+    titleTag: "Senior Pet Care: Complete Guide for Aging Dogs and Cats",
+    metaDescription: "Learn comprehensive senior pet care strategies. Discover age-specific health management, nutrition, exercise, and comfort measures for aging dogs and cats.",
+    keywords: ["senior pet care", "aging dog care", "aging cat care", "senior pet health", "elderly pet care", "senior pet nutrition"],
+    canonicalUrl: "https://petshard.com/blog/senior-pet-care",
+  },
+
+  content: {
+    introduction: "As your beloved pet enters their senior years, their care needs change significantly. Senior dogs and cats require specialized attention to maintain quality of life, manage age-related health conditions, and ensure comfort during their golden years.",
+    
+    mainSections: [
+      {
+        title: "When Does Your Pet Become Senior?",
+        content: "The age at which pets are considered 'senior' varies by species and size. Generally, dogs are considered senior at 7-10 years old, with larger breeds aging faster than smaller breeds. Cats typically become senior at 11-14 years old."
+      },
+      {
+        title: "Common Senior Pet Health Issues",
+        content: "Senior pets commonly experience arthritis, cognitive dysfunction, kidney disease, dental disease, vision and hearing loss, and incontinence. Understanding these conditions helps you provide appropriate care and management."
+      },
+      {
+        title: "Senior Pet Care Checklist",
+        content: "Monthly, quarterly, and annual care tasks help ensure your senior pet receives comprehensive care. Regular monitoring and veterinary visits are essential for early detection of health issues."
+      },
+      {
+        title: "Nutrition and Exercise",
+        content: "Senior pets require adjusted nutrition with reduced calories, higher fiber, and joint-supporting supplements. Exercise should be modified to low-impact activities with shorter duration and more frequent breaks."
+      },
+      {
+        title: "Creating a Comfortable Environment",
+        content: "Provide orthopedic bedding, accessibility modifications, adequate lighting, and easy access to bathroom facilities. Mental stimulation and consistent routines support cognitive health."
+      }
+    ],
+
+    faqQuestions: [
+      {
+        question: "How often should I take my senior pet to the veterinarian?",
+        answer: "Senior pets should have wellness exams at least twice yearly. More frequent visits may be necessary if your pet has chronic health conditions."
+      },
+      {
+        question: "What supplements are beneficial for senior pets?",
+        answer: "Common beneficial supplements include glucosamine and chondroitin for joint health, omega-3 fatty acids for coat and cognitive health, and antioxidants for overall wellness."
+      },
+      {
+        question: "How do I know if my senior pet is in pain?",
+        answer: "Signs of pain include limping, reluctance to move, decreased appetite, behavioral changes, excessive licking of joints, and vocalization."
+      },
+      {
+        question: "Should I change my senior pet's diet?",
+        answer: "Yes, senior pets benefit from age-appropriate nutrition. Senior formulas contain adjusted protein, fat, and calorie levels, plus joint-supporting supplements."
+      },
+      {
+        question: "How can I help my senior pet with incontinence?",
+        answer: "Provide more frequent bathroom breaks, use washable pads, consider medications prescribed by your veterinarian, and maintain patience."
+      },
+      {
+        question: "When should I consider end-of-life care?",
+        answer: "When your senior pet experiences chronic pain, loss of appetite, inability to move comfortably, or loss of interest in life, discuss quality of life with your veterinarian."
+      },
+      {
+        question: "How can I keep my senior pet mentally stimulated?",
+        answer: "Provide puzzle toys, gentle play sessions, social interaction, and consistent routines. Mental stimulation helps prevent cognitive decline."
+      }
+    ],
+
+    relatedArticles: [
+      {
+        title: "Senior Pet Health Issues",
+        slug: "senior-pet-health-issues",
+        description: "Learn about age-related health conditions and how to manage them effectively."
+      },
+      {
+        title: "Pet Nutrition Guide",
+        slug: "pet-nutrition-guide",
+        description: "Discover complete nutrition requirements for pets at all life stages."
+      },
+      {
+        title: "Pet Dental Health",
+        slug: "pet-dental-health",
+        description: "Learn essential dental care to maintain your pet's oral health."
+      },
+      {
+        title: "Pet Emergency Signs",
+        slug: "pet-emergency-signs",
+        description: "Recognize critical symptoms that require immediate veterinary attention."
+      }
+    ],
+
+    tools: [
+      {
+        title: "Pet Care Guide",
+        slug: "pet-care-guide",
+        description: "Get personalized care advice for your senior pet's specific needs.",
+        icon: "📋"
+      },
+      {
+        title: "Health Center",
+        slug: "health-center",
+        description: "Get health guidance and symptom checking for your aging pet.",
+        icon: "🏥"
+      }
+    ]
+  },
+
+  requirements: {
+    references: ["1.1", "1.2", "4.1", "5.1", "6.1"],
+    description: "Rewrite with senior pet care guide, add age-specific care checklist, optimize metadata, add internal links to health articles"
   }
 };
-
-export const relatedTools: RelatedTool[] = [
-  {
-    id: "breed-identification",
-    name: "Breed Identification",
-    description: "Upload a photo to identify your pet's breed with AI-powered analysis.",
-    url: "/breed-identification",
-    icon: "🔍"
-  },
-  {
-    id: "health-center",
-    name: "Health Center",
-    description: "Get personalized health advice and symptom checking for your pet.",
-    url: "/health-center",
-    icon: "🏥"
-  },
-  {
-    id: "pet-care-guide",
-    name: "Pet Care Guide",
-    description: "Comprehensive care instructions tailored to your pet's needs.",
-    url: "/pet-care-guide",
-    icon: "📋"
-  }
-];
-
-export const faqItems: FAQItem[] = [
-  {
-    question: "What is the best approach to senior pet care?",
-    answer: "The best approach to senior pet care involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success."
-  },
-  {
-    question: "How often should I address senior pet care?",
-    answer: "The frequency of senior pet care depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed."
-  },
-  {
-    question: "What are common mistakes with senior pet care?",
-    answer: "Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues."
-  },
-  {
-    question: "When should I consult a professional about senior pet care?",
-    answer: "Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper senior pet care techniques."
-  },
-  {
-    question: "Can senior pet care vary between different pet breeds?",
-    answer: "Yes, senior pet care can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning senior pet care strategies."
-  }
-];
-
-export const useCaseItems: UseCaseItem[] = [
-  {
-    title: "Use Case 1",
-    description: "Daily senior pet care routine for busy pet owners"
-  },
-  {
-    title: "Use Case 2",
-    description: "Emergency senior pet care situations and quick solutions"
-  },
-  {
-    title: "Use Case 3",
-    description: "Seasonal senior pet care considerations and adjustments"
-  }
-];

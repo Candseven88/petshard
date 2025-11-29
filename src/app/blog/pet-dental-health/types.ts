@@ -1,4 +1,4 @@
-// TypeScript interfaces for PetDentalHealthGuide
+// TypeScript interfaces for Pet Dental Health Guide
 
 export interface PetDentalHealthGuideData {
   title: string;
@@ -9,6 +9,19 @@ export interface PetDentalHealthGuideData {
     category: string;
     readTime: string;
   };
+}
+
+export interface DentalIssue {
+  title: string;
+  description: string;
+  causes: string;
+  severity: string;
+  whenToCallVet: string;
+}
+
+export interface DentalCareTimeline {
+  age: string;
+  care: string;
 }
 
 export interface RelatedTool {

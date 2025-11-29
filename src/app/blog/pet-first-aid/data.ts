@@ -3,11 +3,11 @@
 import { PetFirstAidGuideData, RelatedTool, FAQItem, UseCaseItem } from './types';
 
 export const articleData: PetFirstAidGuideData = {
-  title: "Understanding Pet First Aid - A Comprehensive Guide",
-  description: "Professional pet first aid advice and tips",
-  content: "Pet First Aid encompasses several important aspects that every pet owner should understand. The fundamentals of pet first aid involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.\n\nProfessional veterinarians emphasize that effective pet first aid requires patience, consistency, and proper knowledge. When dealing with pet first aid, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.\n\nKey factors to consider with pet first aid include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies\n\nResearch shows that proper pet first aid management can prevent common issues and promote overall pet health. By following established protocols and staying informed about pet first aid, you can ensure your pet receives the best possible care.",
+  title: "Pet First Aid: Essential Procedures and Emergency Response Guide",
+  description: "Learn critical pet first aid procedures, CPR techniques, wound care, and emergency response. Step-by-step guide with first aid checklist for dogs and cats.",
+  content: "Pet first aid can save your pet\'s life in critical moments. This comprehensive guide covers essential pet first aid procedures including CPR, severe bleeding control, choking response, treating shock, and wound cleaning. Learn step-by-step instructions for common emergencies, how to assemble a pet first aid kit, and when to seek professional veterinary care.",
   metadata: {
-    keywords: ["pet first aid", "pet first aid tips", "pet first aid guide", "pet pet first aid", "pet first aid advice", "pet first aid care"],
+    keywords: ["pet first aid", "pet CPR", "pet first aid procedures", "emergency pet care", "pet wound care", "pet first aid kit", "pet first aid checklist"],
     category: "Pet Care",
     readTime: "12 min read"
   }
@@ -15,11 +15,11 @@ export const articleData: PetFirstAidGuideData = {
 
 export const relatedTools: RelatedTool[] = [
   {
-    id: "breed-identification",
-    name: "Breed Identification",
-    description: "Upload a photo to identify your pet's breed with AI-powered analysis.",
-    url: "/breed-identification",
-    icon: "🔍"
+    id: "pet-emergency-signs",
+    name: "Pet Emergency Signs",
+    description: "Learn critical signs that require immediate veterinary attention.",
+    url: "/blog/pet-emergency-signs",
+    icon: "🚨"
   },
   {
     id: "health-center",
@@ -29,48 +29,56 @@ export const relatedTools: RelatedTool[] = [
     icon: "🏥"
   },
   {
-    id: "pet-care-guide",
-    name: "Pet Care Guide",
-    description: "Comprehensive care instructions tailored to your pet's needs.",
-    url: "/pet-care-guide",
-    icon: "📋"
+    id: "pet-emergency-escape",
+    name: "Emergency Escape Guide",
+    description: "Prepare for emergencies with procedures to keep your pet safe.",
+    url: "/blog/pet-emergency-escape-guide",
+    icon: "🏃"
   }
 ];
 
 export const faqItems: FAQItem[] = [
   {
-    question: "What is the best approach to pet first aid?",
-    answer: "The best approach to pet first aid involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success."
+    question: "How do I know if my pet needs emergency care?",
+    answer: "Signs requiring immediate emergency care include difficulty breathing, unconsciousness, severe bleeding, choking, seizures, inability to urinate or defecate, pale gums, and signs of extreme pain. When in doubt, contact your emergency vet."
   },
   {
-    question: "How often should I address pet first aid?",
-    answer: "The frequency of pet first aid depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed."
+    question: "Should I perform CPR on my pet?",
+    answer: "Yes, if your pet is unconscious and not breathing, CPR can be life-saving. However, it\'s best learned through hands-on training. Many veterinary clinics offer pet CPR certification courses. Even without formal training, attempting CPR is better than doing nothing."
   },
   {
-    question: "What are common mistakes with pet first aid?",
-    answer: "Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues."
+    question: "What should I do if my pet is poisoned?",
+    answer: "Call your veterinarian or poison control immediately. Have the substance container available. Do not induce vomiting unless specifically instructed by a professional. Time is critical with poisoning cases, so seek help immediately."
   },
   {
-    question: "When should I consult a professional about pet first aid?",
-    answer: "Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper pet first aid techniques."
+    question: "How do I transport an injured pet safely?",
+    answer: "Keep your pet calm and still. Use a carrier or blanket to immobilize them. Support the head and spine if possible. Drive carefully to avoid jostling. If spinal injury is suspected, minimize movement. Have someone call ahead to the emergency vet."
   },
   {
-    question: "Can pet first aid vary between different pet breeds?",
-    answer: "Yes, pet first aid can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning pet first aid strategies."
+    question: "Can I treat wounds at home or should I see a vet?",
+    answer: "Minor cuts and scrapes can be treated at home with proper cleaning and bandaging. However, deep wounds, puncture wounds, wounds that won\'t stop bleeding, or wounds showing signs of infection require veterinary care. When in doubt, have a vet evaluate the wound."
+  },
+  {
+    question: "How often should I update my pet first aid kit?",
+    answer: "Check your first aid kit every 6 months. Replace expired items, replenish used supplies, and update emergency contact information. Keep the kit in an easily accessible location that all family members know about."
+  },
+  {
+    question: "Should I take a pet first aid course?",
+    answer: "Absolutely. Hands-on training is invaluable for learning proper techniques and building confidence. Many veterinary clinics, animal shelters, and organizations like the Red Cross offer pet first aid and CPR certification courses. The investment is worth it for your pet\'s safety."
   }
 ];
 
 export const useCaseItems: UseCaseItem[] = [
   {
-    title: "Use Case 1",
-    description: "Daily pet first aid routine for busy pet owners"
+    title: "Hit by Car",
+    description: "Treat for shock, control bleeding, immobilize spine if possible, transport immediately to emergency vet."
   },
   {
-    title: "Use Case 2",
-    description: "Emergency pet first aid situations and quick solutions"
+    title: "Choking on Object",
+    description: "Perform abdominal thrusts, remove object if visible, monitor breathing, seek vet care even if resolved."
   },
   {
-    title: "Use Case 3",
-    description: "Seasonal pet first aid considerations and adjustments"
+    title: "Severe Bleeding",
+    description: "Apply direct pressure, elevate limb, apply tourniquet if needed, transport to emergency vet."
   }
 ];

@@ -74,8 +74,8 @@ export interface GenerationConfig {
 export const DEFAULT_CONFIG: GenerationConfig = {
   minWordCount: 800,
   maxWordCount: 1200,
-  minKeywordDensity: 6,
-  maxKeywordDensity: 10,
+  minKeywordDensity: 0.5,
+  maxKeywordDensity: 3.0,
   minFAQItems: 5,
   minUseCases: 3,
   minInternalLinks: 2,

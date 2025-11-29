@@ -89,8 +89,16 @@ export class ContentQualityValidator {
   }
 
   private countKeywordOccurrences(text: string, keyword: string): number {
-    const regex = new RegExp(keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
-    return (text.match(regex) || []).length;
+    // Escape special regex characters
+    const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`\\b${escapedKeyword}\\b`, 'gi');
+    const matches = text.match(regex) || [];
+    
+    // Calculate density as percentage
+    const wordCount = this.countWords(text);
+    const density = (matches.length / wordCount) * 100;
+    
+    return Math.round(density * 100) / 100;
   }
 
   private validateWordCount(wordCount: number, errors: string[]): boolean {

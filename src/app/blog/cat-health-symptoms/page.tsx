@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Ultimate Cat Health Symptoms Guide for Pet Parents",
-  description: "Essential cat health symptoms guide for pet care",
-  keywords: ["cat health symptoms", "cat health symptoms tips", "cat health symptoms guide", "pet cat health symptoms", "cat health symptoms advice", "cat health symptoms care"],
+  title: "Cat Health Symptoms: When to Call the Vet",
+  description: "Learn to recognize common cat health symptoms. Understand severity levels, causes, and when to seek veterinary care for your cat.",
+  keywords: ["cat health symptoms", "cat symptoms", "when to call vet", "cat illness signs", "cat health problems", "feline symptoms"],
   openGraph: {
-    title: "The Ultimate Cat Health Symptoms Guide for Pet Parents",
-    description: "Essential cat health symptoms guide for pet care",
+    title: "Cat Health Symptoms: When to Call the Vet",
+    description: "Learn to recognize common cat health symptoms. Understand severity levels, causes, and when to seek veterinary care for your cat.",
     type: "article",
     url: "https://petshard.com/blog/cat-health-symptoms",
     siteName: "PetShard",
@@ -18,13 +18,13 @@ export const metadata: Metadata = {
       url: "https://cdn2.thecatapi.com/images/ag4.jpg",
       width: 1200,
       height: 630,
-      alt: "The Ultimate Cat Health Symptoms Guide for Pet Parents"
+      alt: "Cat Health Symptoms: When to Call the Vet"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Ultimate Cat Health Symptoms Guide for Pet Parents",
-    description: "Essential cat health symptoms guide for pet care",
+    title: "Cat Health Symptoms: When to Call the Vet",
+    description: "Learn to recognize common cat health symptoms. Understand severity levels, causes, and when to seek veterinary care for your cat.",
     images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
   },
   alternates: {
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "The Ultimate Cat Health Symptoms Guide for Pet Parents",
-  "description": "Essential cat health symptoms guide for pet care",
+  "headline": "Cat Health Symptoms: When to Call the Vet",
+  "description": "Learn to recognize common cat health symptoms. Understand severity levels, causes, and when to seek veterinary care for your cat.",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -72,7 +72,7 @@ function CatHealthSymptomsGuideContent() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            The Ultimate Cat Health Symptoms Guide for Pet Parents
+            Cat Health Symptoms: When to Call the Vet
           </h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-500">
@@ -102,16 +102,16 @@ function CatHealthSymptomsGuideContent() {
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Essential cat health symptoms guide for pet care
+              Recognizing cat health symptoms early can make the difference between a quick recovery and serious complications. As a cat owner, understanding what signs indicate your feline friend needs veterinary attention is essential for their wellbeing.
             </p>
 
             <p className="text-lg leading-relaxed">
               <p className="text-lg leading-relaxed mb-4">
-                When it comes to cat health symptoms, pet owners often face numerous questions and challenges. Understanding cat health symptoms is crucial for providing the best care for your beloved companion. This comprehensive guide will explore everything you need to know about cat health symptoms, offering expert insights and practical solutions.
+                Cats are masters at hiding illness, which means symptoms often appear only when a condition has progressed. This comprehensive guide covers the most common cat health symptoms, their severity levels, and when you should contact your veterinarian. By learning to recognize these signs early, you can help ensure your cat receives prompt treatment.
               </p>
 
               <p className="text-lg leading-relaxed mb-4">
-                Whether you\'re a new pet owner or have years of experience, mastering cat health symptoms can significantly improve your pet\'s quality of life. From basic concepts to advanced techniques, we\'ll cover all aspects of cat health symptoms to help you make informed decisions for your pet\'s wellbeing.
+                Whether you\'re a new cat owner or have years of experience, this guide will help you understand what\'s normal and what requires professional attention. We\'ll cover specific symptoms, their possible causes, and actionable guidance for each situation.
               </p>
             </p>
           </div>
@@ -119,77 +119,173 @@ function CatHealthSymptomsGuideContent() {
           {/* ========== Core Content Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Understanding Cat health symptoms
+              Common Cat Health Symptoms
             </h2>
 
-            <div className="space-y-6">
-              <p className="text-lg leading-relaxed mb-4">
-                Cat Health Symptoms encompasses several important aspects that every pet owner should understand. The fundamentals of cat health symptoms involve recognizing key indicators, understanding proper techniques, and implementing best practices consistently.
-              </p>
+            <div className="space-y-8">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">1. Vomiting</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Expulsion of stomach contents, occurring once or multiple times.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Hairballs, food intolerance, gastritis, kidney disease, hyperthyroidism, or intestinal parasites.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Occasional vomiting (mild) vs. frequent vomiting (moderate to severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if vomiting is frequent, contains blood, or accompanied by lethargy. Within 24 hours if occasional.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Professional veterinarians emphasize that effective cat health symptoms requires patience, consistency, and proper knowledge. When dealing with cat health symptoms, it\'s essential to consider your pet\'s individual needs, breed characteristics, and health status.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-red-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">2. Diarrhea</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Loose or watery stools, occurring more frequently than normal.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Dietary changes, food allergies, parasites, bacterial infections, or inflammatory bowel disease.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Occasional loose stools (mild) vs. persistent diarrhea with blood (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if bloody or accompanied by vomiting. Within 24-48 hours if persistent.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Key factors to consider with cat health symptoms include:\n- Proper timing and frequency\n- Environmental considerations\n- Individual pet requirements\n- Safety precautions and guidelines\n- Long-term maintenance strategies
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">3. Urinary Issues</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Straining to urinate, frequent urination, or inability to urinate.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Urinary tract infection, bladder stones, feline lower urinary tract disease (FLUTD), or kidney disease.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Mild straining (mild) vs. complete inability to urinate (emergency).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if unable to urinate or in severe pain. Within 24 hours for straining or frequent urination.</p>
+              </div>
 
-              <p className="text-lg leading-relaxed mb-4">
-                Research shows that proper cat health symptoms management can prevent common issues and promote overall pet health. By following established protocols and staying informed about cat health symptoms, you can ensure your pet receives the best possible care.
-              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-orange-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">4. Loss of Appetite</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Reduced food intake or complete refusal to eat.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Dental disease, nausea, stress, illness, or medication side effects.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Eating less than usual (mild) vs. not eating for 24+ hours (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if not eating for more than 24 hours. Within 24 hours if eating significantly less.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">5. Lethargy and Weakness</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Unusual tiredness, lack of energy, or reluctance to move.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Infection, anemia, hyperthyroidism, kidney disease, or pain.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Sleeping more than usual (mild) vs. unable to stand or move (severe).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if severe. Within 24 hours if persistent lethargy.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-yellow-400">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">6. Respiratory Issues</h3>
+                <p className="text-gray-700 mb-2"><strong>Description:</strong> Coughing, sneezing, wheezing, or difficulty breathing.</p>
+                <p className="text-gray-700 mb-2"><strong>Possible Causes:</strong> Upper respiratory infection, asthma, allergies, or heart disease.</p>
+                <p className="text-gray-700 mb-2"><strong>Severity:</strong> Occasional sneezing (mild) vs. labored breathing (emergency).</p>
+                <p className="text-gray-700"><strong>When to Call Vet:</strong> Immediate if difficulty breathing. Within 24 hours for persistent coughing or sneezing.</p>
+              </div>
             </div>
 
-            
+            {/* Symptom Severity Table */}
+            <div className="mt-12 mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Symptom Severity Assessment Table</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse border border-gray-300">
+                  <thead className="bg-gray-100">
+                    <tr>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Symptom</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Mild (Routine Vet Visit)</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Moderate (Within 24 Hours)</th>
+                      <th className="border border-gray-300 p-3 text-left font-bold">Severe (Immediate/Emergency)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Vomiting</td>
+                      <td className="border border-gray-300 p-3">Occasional, no other symptoms</td>
+                      <td className="border border-gray-300 p-3">Frequent, mild lethargy</td>
+                      <td className="border border-gray-300 p-3">Bloody, with severe lethargy</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Diarrhea</td>
+                      <td className="border border-gray-300 p-3">Loose stools, eating normally</td>
+                      <td className="border border-gray-300 p-3">Persistent, mild dehydration</td>
+                      <td className="border border-gray-300 p-3">Bloody, severe dehydration</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Urinary Issues</td>
+                      <td className="border border-gray-300 p-3">Mild straining, normal output</td>
+                      <td className="border border-gray-300 p-3">Frequent straining, reduced output</td>
+                      <td className="border border-gray-300 p-3">Unable to urinate, severe pain</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Loss of Appetite</td>
+                      <td className="border border-gray-300 p-3">Eating less, alert and active</td>
+                      <td className="border border-gray-300 p-3">Minimal eating, mild lethargy</td>
+                      <td className="border border-gray-300 p-3">No eating for 24+ hours</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Lethargy</td>
+                      <td className="border border-gray-300 p-3">Sleeping more, responsive</td>
+                      <td className="border border-gray-300 p-3">Very sleepy, slow to respond</td>
+                      <td className="border border-gray-300 p-3">Unable to stand or move</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50">
+                      <td className="border border-gray-300 p-3 font-semibold">Respiratory Issues</td>
+                      <td className="border border-gray-300 p-3">Occasional sneezing/coughing</td>
+                      <td className="border border-gray-300 p-3">Frequent sneezing/coughing</td>
+                      <td className="border border-gray-300 p-3">Difficulty breathing, gasping</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
             <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 mb-8">
               <h3 className="text-lg font-bold text-yellow-800 mb-3">
-                🔗 Related Tools & Resources
+                💡 Important Note
               </h3>
-              <div className="space-y-2">
-                <Link href="/breed-identification" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  breed identification tool
-                </Link>
-                <Link href="/virtual-breeding" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  virtual breeding simulator
-                </Link>
-                <Link href="/pet-naming" className="block text-yellow-700 hover:text-yellow-900 font-medium">
-                  pet naming suggestions
-                </Link>
-              </div>
+              <p className="text-yellow-900">
+                This guide is for informational purposes only and should not replace professional veterinary advice. When in doubt, always consult your veterinarian. Cats can deteriorate quickly, so it\'s better to err on the side of caution.
+              </p>
             </div>
           </div>
 
-          {/* ========== Use Cases Section ========== */}
+          {/* ========== When to Call the Vet Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-              Practical Use Cases
+              When to Call Your Veterinarian
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  1. Use Case
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-red-50 p-6 rounded-lg shadow-md border-t-4 border-red-500">
+                <h3 className="text-xl font-bold text-red-800 mb-4">
+                  🚨 Call Immediately (Emergency)
                 </h3>
-                <p className="text-gray-700">
-                  Daily cat health symptoms routine for busy pet owners
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Difficulty breathing or gasping for air</li>
+                  <li>• Unable to urinate or defecate</li>
+                  <li>• Severe bleeding or trauma</li>
+                  <li>• Unconsciousness or unresponsiveness</li>
+                  <li>• Severe pain or inability to move</li>
+                  <li>• Seizures or convulsions</li>
+                  <li>• Suspected poisoning or toxin ingestion</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  2. Use Case
+              <div className="bg-orange-50 p-6 rounded-lg shadow-md border-t-4 border-orange-500">
+                <h3 className="text-xl font-bold text-orange-800 mb-4">
+                  ⚠️ Call Within 24 Hours
                 </h3>
-                <p className="text-gray-700">
-                  Emergency cat health symptoms situations and quick solutions
-                </p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Persistent vomiting or diarrhea</li>
+                  <li>• Not eating for more than 12 hours</li>
+                  <li>• Straining to urinate or defecate</li>
+                  <li>• Excessive thirst or urination</li>
+                  <li>• Persistent coughing or sneezing</li>
+                  <li>• Unusual behavior or aggression</li>
+                  <li>• Discharge from eyes, nose, or ears</li>
+                </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  3. Use Case
-                </h3>
-                <p className="text-gray-700">
-                  Seasonal cat health symptoms considerations and adjustments
-                </p>
-              </div>
+            </div>
+
+            <div className="mt-6 bg-blue-50 p-6 rounded-lg shadow-md border-t-4 border-blue-500">
+              <h3 className="text-xl font-bold text-blue-800 mb-4">
+                📅 Schedule a Routine Appointment
+              </h3>
+              <ul className="text-gray-700 space-y-2">
+                <li>• Occasional vomiting or hairballs</li>
+                <li>• Mild lethargy or behavior changes</li>
+                <li>• Skin issues or excessive scratching</li>
+                <li>• Dental concerns or bad breath</li>
+                <li>• Weight changes or appetite variations</li>
+                <li>• Annual wellness exams and vaccinations</li>
+              </ul>
             </div>
           </div>
 
@@ -202,43 +298,92 @@ function CatHealthSymptomsGuideContent() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q1: What is the best approach to cat health symptoms?
+                  Q1: Why do cats hide their illness?
                 </h3>
                 <p className="text-gray-700">
-                  The best approach to cat health symptoms involves understanding your pet\'s individual needs and following established best practices. Consistency and patience are key factors for success.
+                  Cats are prey animals by instinct, so they hide signs of weakness or illness to avoid appearing vulnerable. This means symptoms often appear only when a condition is advanced. Regular vet checkups help catch problems early.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q2: How often should I address cat health symptoms?
+                  Q2: What should I do if my cat vomits occasionally?
                 </h3>
                 <p className="text-gray-700">
-                  The frequency of cat health symptoms depends on various factors including your pet\'s age, breed, and health status. Most experts recommend regular monitoring and adjustment as needed.
+                  Occasional vomiting can be normal, especially if related to hairballs. However, if vomiting occurs more than once a week, contains blood, or is accompanied by other symptoms, contact your vet. Keep track of frequency and circumstances.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q3: What are common mistakes with cat health symptoms?
+                  Q3: How can I tell if my cat is in pain?
                 </h3>
                 <p className="text-gray-700">
-                  Common mistakes include inconsistency, ignoring individual pet needs, and not seeking professional advice when needed. Proper education and preparation can prevent most issues.
+                  Signs of pain include reluctance to move, hiding, changes in grooming habits, aggression when touched, or unusual vocalizations. Cats may also show decreased appetite or litter box avoidance. Any significant behavior change warrants a vet visit.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q4: When should I consult a professional about cat health symptoms?
+                  Q4: What is normal cat behavior vs. a sign of illness?
                 </h3>
                 <p className="text-gray-700">
-                  Consult a veterinarian or pet care professional if you notice unusual behaviors, persistent issues, or if you\'re unsure about proper cat health symptoms techniques.
+                  Normal: Sleeping 12-16 hours daily, occasional grooming, regular eating and litter box use. Abnormal: Extreme lethargy, neglecting grooming, changes in eating/bathroom habits, or unusual aggression. Trust your instincts—you know your cat best.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Q5: Can cat health symptoms vary between different pet breeds?
+                  Q5: How often should my cat see the vet?
                 </h3>
                 <p className="text-gray-700">
-                  Yes, cat health symptoms can vary significantly between breeds due to genetic factors, size differences, and breed-specific characteristics. Always consider your pet\'s breed when planning cat health symptoms strategies.
+                  Healthy adult cats should visit the vet annually for wellness exams. Senior cats (over 7 years) should visit twice yearly. Kittens and cats with health conditions may need more frequent visits. Discuss the best schedule with your veterinarian.
                 </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q6: Can I treat cat symptoms at home?
+                </h3>
+                <p className="text-gray-700">
+                  Some minor issues like mild hairballs can be managed at home with proper diet and hydration. However, most symptoms require professional diagnosis. Never give medications without veterinary guidance, as this can mask serious conditions or cause harm.
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                  Q7: What should I tell my vet about my cat\'s symptoms?
+                </h3>
+                <p className="text-gray-700">
+                  Provide specific details: when symptoms started, frequency, severity, any recent changes (diet, environment, stress), and what your cat normally acts like. Note any other symptoms you\'ve observed. This information helps your vet make an accurate diagnosis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* ========== Prevention & Management Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              Prevention and Health Management
+            </h2>
+
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Preventive Measures</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Regular Vet Checkups:</strong> Annual wellness exams catch problems early</li>
+                  <li>• <strong>Proper Nutrition:</strong> High-quality diet supports immune function</li>
+                  <li>• <strong>Fresh Water:</strong> Ensure constant access to clean water</li>
+                  <li>• <strong>Exercise:</strong> Regular play maintains healthy weight and muscle</li>
+                  <li>• <strong>Dental Care:</strong> Brush teeth regularly to prevent dental disease</li>
+                  <li>• <strong>Parasite Prevention:</strong> Regular flea, tick, and worm treatments</li>
+                  <li>• <strong>Vaccinations:</strong> Keep vaccinations current as recommended</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-3">Lifestyle Factors</h3>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• <strong>Stress Reduction:</strong> Provide safe spaces and minimize environmental changes</li>
+                  <li>• <strong>Environmental Enrichment:</strong> Toys, scratching posts, and climbing areas</li>
+                  <li>• <strong>Litter Box Hygiene:</strong> Clean boxes daily to prevent urinary issues</li>
+                  <li>• <strong>Temperature Control:</strong> Maintain comfortable indoor temperature</li>
+                  <li>• <strong>Social Interaction:</strong> Regular playtime and bonding with your cat</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -249,36 +394,63 @@ function CatHealthSymptomsGuideContent() {
               Conclusion
             </h2>
             
+            <p className="text-lg leading-relaxed mb-4">
+              Understanding cat health symptoms is one of the most important responsibilities of cat ownership. By learning to recognize the signs of illness and knowing when to seek veterinary care, you can help ensure your feline companion lives a long, healthy, and happy life.
+            </p>
+
+            <p className="text-lg leading-relaxed mb-4">
+              Remember that cats are individuals, and what\'s normal for one cat may be unusual for another. Pay attention to your cat\'s baseline behavior, eating habits, and litter box use. Any significant changes warrant a call to your veterinarian.
+            </p>
+
             <p className="text-lg leading-relaxed">
-              <p className="text-lg leading-relaxed mb-4">
-                Mastering cat health symptoms is an essential skill for every pet owner. By understanding the principles, implementing best practices, and staying consistent with your approach, you can ensure your pet receives optimal care.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                Remember that cat health symptoms is not a one-size-fits-all solution. Each pet is unique, and what works for one may need adjustment for another. Stay observant, be patient, and don\'t hesitate to seek professional guidance when needed.
-              </p>
-
-              <p className="text-lg leading-relaxed mb-4">
-                With proper knowledge and dedication, cat health symptoms can become a natural part of your pet care routine, contributing to your pet\'s health, happiness, and overall quality of life.
-              </p>
+              When in doubt, it\'s always better to have your cat checked by a professional. Early detection and treatment of health issues can prevent serious complications and provide your cat with the best possible care. Your veterinarian is your partner in keeping your cat healthy.
             </p>
           </div>
 
-          {/* ========== Related Tools Section ========== */}
+          {/* ========== Related Articles Section ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+              Related Health Articles
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link href="/blog/cat-urinary-health" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Cat Urinary Health</h3>
+                <p className="text-gray-600">Learn about urinary tract issues, prevention, and when to seek help.</p>
+              </Link>
+              
+              <Link href="/blog/pet-emergency-signs" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-red-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Emergency Signs</h3>
+                <p className="text-gray-600">Recognize critical symptoms that require immediate veterinary attention.</p>
+              </Link>
+
+              <Link href="/blog/pet-dental-health" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-green-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Dental Health</h3>
+                <p className="text-gray-600">Understand dental care importance and signs of dental disease.</p>
+              </Link>
+
+              <Link href="/blog/pet-parasite-prevention" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-yellow-400">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">🔗 Pet Parasite Prevention</h3>
+                <p className="text-gray-600">Learn about parasites, prevention strategies, and treatment options.</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* ========== Pet Care Tools Section ========== */}
           <div className="mb-12 bg-gradient-to-r from-pink-50 to-blue-50 p-8 rounded-xl">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">
               Explore Our Pet Care Tools
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Link href="/breed-identification" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">🔍 Breed Identification</h3>
-                <p className="text-gray-600">Upload a photo to identify your pet's breed with AI-powered analysis.</p>
-              </Link>
-              
               <Link href="/health-center" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">🏥 Health Center</h3>
                 <p className="text-gray-600">Get personalized health advice and symptom checking for your pet.</p>
+              </Link>
+              
+              <Link href="/pet-care-guide" className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">📋 Pet Care Guide</h3>
+                <p className="text-gray-600">Comprehensive care instructions tailored to your pet's needs.</p>
               </Link>
             </div>
           </div>
