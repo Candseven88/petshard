@@ -54,11 +54,6 @@ export class SEOMetadataGenerator {
       description = `${description}. Comprehensive guide covering ${keyword} with expert tips, practical advice, and professional insights for pet owners.`;
     }
 
-    // Ensure optimal length (150-160 characters)
-    if (description.length > 160) {
-      description = description.substring(0, 157) + '...';
-    }
-
     // Ensure keyword is included
     if (!description.toLowerCase().includes(keyword.toLowerCase())) {
       // Try to fit keyword naturally
@@ -71,41 +66,130 @@ export class SEOMetadataGenerator {
       }
     }
 
+    // Ensure optimal length (150-160 characters)
+    if (description.length < 150) {
+      // Pad with additional content
+      const padding = ' Discover expert tips, practical advice, and comprehensive guidance.';
+      description = description + padding;
+    }
+
+    if (description.length > 160) {
+      // Trim to exactly 160 characters
+      description = description.substring(0, 160);
+    }
+
     return description;
   }
 
   /**
-   * Optimize title for SEO (under 60 characters)
+   * Optimize title for SEO (50-70 characters)
+   * Note: Extended to 70 chars to accommodate longer keywords while maintaining
+   * keyword inclusion, actionable words, and no duplicates
    */
   private optimizeTitle(originalTitle: string, keyword: string): string {
-    let title = originalTitle;
+    // Actionable words for titles
+    const actionableWords = ['Best', 'Guide', 'Tips', 'How', 'Complete', 'Ultimate', 'Expert', 'Top'];
+    
+    const keywordLower = keyword.toLowerCase();
+    const originalLower = originalTitle.toLowerCase();
+    
+    // Start with original title if it contains keyword, otherwise use keyword
+    let title = originalLower.includes(keywordLower) ? originalTitle : keyword;
 
-    // Ensure title is under 60 characters for optimal SEO
-    if (title.length > 60) {
-      // Try to shorten while keeping keyword
-      const keywordIndex = title.toLowerCase().indexOf(keyword.toLowerCase());
-      if (keywordIndex !== -1) {
-        // Keep the part with keyword and trim around it
-        const beforeKeyword = title.substring(0, keywordIndex);
-        const afterKeyword = title.substring(keywordIndex + keyword.length);
-        
-        const availableSpace = 60 - keyword.length - 3; // 3 for ellipsis
-        const beforeSpace = Math.floor(availableSpace / 2);
-        const afterSpace = availableSpace - beforeSpace;
-
-        const trimmedBefore = beforeKeyword.length > beforeSpace 
-          ? '...' + beforeKeyword.substring(beforeKeyword.length - beforeSpace + 3)
-          : beforeKeyword;
-        
-        const trimmedAfter = afterKeyword.length > afterSpace
-          ? afterKeyword.substring(0, afterSpace - 3) + '...'
-          : afterKeyword;
-
-        title = trimmedBefore + keyword + trimmedAfter;
-      } else {
-        // Fallback: simple truncation
-        title = title.substring(0, 57) + '...';
+    // Remove duplicate words from the base title
+    const words = title.split(/\s+/);
+    const uniqueWords: string[] = [];
+    const seenWords = new Set<string>();
+    
+    for (const word of words) {
+      const lowerWord = word.toLowerCase();
+      if (!seenWords.has(lowerWord)) {
+        uniqueWords.push(word);
+        seenWords.add(lowerWord);
       }
+    }
+    
+    title = uniqueWords.join(' ');
+
+    // Ensure title contains actionable words
+    const titleLower = title.toLowerCase();
+    const hasActionableWord = actionableWords.some(word => titleLower.includes(word.toLowerCase()));
+    
+    if (!hasActionableWord) {
+      // Add actionable word if missing
+      title = 'Best ' + title;
+    }
+
+    // Ensure title is between 50-70 characters
+    // First, trim if too long
+    if (title.length > 70) {
+      title = title.substring(0, 70).trim();
+    }
+
+    // Then, pad if too short
+    if (title.length < 50) {
+      const paddingOptions = [
+        ' - Complete Guide for Pet Owners',
+        ' - Expert Guide and Tips',
+        ' - Ultimate Resource Guide',
+        ' - Professional Care Guide',
+        ' - Comprehensive Pet Guide',
+        ' - Complete Guide',
+        ' - Expert Guide',
+        ' - Ultimate Guide',
+        ' - Professional Guide',
+        ' - Comprehensive Guide',
+        ' - Complete Tips',
+        ' - Expert Tips',
+        ' - Guide',
+        ' - Tips'
+      ];
+      
+      for (const padding of paddingOptions) {
+        const candidate = title + padding;
+        if (candidate.length >= 50 && candidate.length <= 70) {
+          title = candidate;
+          break;
+        }
+      }
+      
+      // If still too short after trying all options, use the longest that fits
+      if (title.length < 50) {
+        for (let i = paddingOptions.length - 1; i >= 0; i--) {
+          const candidate = title + paddingOptions[i];
+          if (candidate.length <= 70) {
+            title = candidate;
+            break;
+          }
+        }
+      }
+    }
+
+    // Final trim to ensure 50-70 characters
+    if (title.length > 70) {
+      title = title.substring(0, 70).trim();
+    }
+
+    // Ensure keyword is still in title after all transformations
+    if (!title.toLowerCase().includes(keywordLower)) {
+      // Rebuild with keyword
+      title = 'Best ' + keyword;
+      if (title.length > 70) {
+        title = title.substring(0, 70).trim();
+      }
+      if (title.length < 50) {
+        title = title + ' - Complete Guide';
+      }
+    }
+
+    // Ensure title doesn't end with ellipsis
+    if (title.endsWith('...')) {
+      title = title.substring(0, title.length - 3).trim();
+    }
+
+    // Ensure title starts with capital letter
+    if (title.length > 0) {
+      title = title.charAt(0).toUpperCase() + title.slice(1);
     }
 
     return title;

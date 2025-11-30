@@ -7,7 +7,7 @@ const blogPosts = [
     id: "pet-vaccination-schedule",
     title: "The Ultimate Pet Vaccination Schedule Guide for Pet Parents",
     description: "Expert guide on pet vaccination schedule for pet owners",
-    image: "/pet/1.jpg",
+    image: "https://images.unsplash.com/photo-1587300411107-ec8b1a1b0d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet vaccination schedule", "pet vaccination schedule tips", "pet vaccination schedule guide"],
     featured: true
@@ -25,7 +25,7 @@ const blogPosts = [
     id: "cat-health-symptoms",
     title: "The Ultimate Cat Health Symptoms Guide for Pet Parents",
     description: "Essential cat health symptoms guide for pet care",
-    image: "https://cdn2.thecatapi.com/images/e35.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet health", "health guide", "cat health symptoms", "cat health symptoms tips", "cat health symptoms guide"],
     featured: true
@@ -34,7 +34,7 @@ const blogPosts = [
     id: "pet-allergy-management",
     title: "Pet Allergy Management: Expert Tips and Professional Advice",
     description: "Complete pet allergy management information for pets",
-    image: "/pet/2.jpg",
+    image: "https://images.unsplash.com/photo-1552053831-71594a27c62d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet allergy management", "pet allergy management tips", "pet allergy management guide"],
     featured: true
@@ -43,7 +43,7 @@ const blogPosts = [
     id: "pet-weight-management",
     title: "Everything You Need to Know About Pet Weight Management",
     description: "Professional pet weight management advice and tips",
-    image: "/pet/3.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet weight management", "pet weight management tips", "pet weight management guide"],
     featured: true
@@ -52,7 +52,7 @@ const blogPosts = [
     id: "dog-skin-conditions",
     title: "The Ultimate Dog Skin Conditions Guide for Pet Parents",
     description: "Essential dog skin conditions guide for pet care",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["dog skin conditions", "dog skin conditions tips", "dog skin conditions guide"],
     featured: true
@@ -61,7 +61,7 @@ const blogPosts = [
     id: "cat-urinary-health",
     title: "Understanding Cat Urinary Health - A Comprehensive Guide",
     description: "Complete cat urinary health information for pets",
-    image: "https://cdn2.thecatapi.com/images/ag4.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet health", "health guide", "cat urinary health", "cat urinary health tips", "cat urinary health guide"],
     featured: true
@@ -70,7 +70,7 @@ const blogPosts = [
     id: "pet-parasite-prevention",
     title: "Understanding Pet Parasite Prevention - A Comprehensive Guide",
     description: "Essential pet parasite prevention guide for pet care",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet parasite prevention", "pet parasite prevention tips", "pet parasite prevention guide"],
     featured: true
@@ -79,7 +79,7 @@ const blogPosts = [
     id: "senior-pet-health-issues",
     title: "The Ultimate Senior Pet Health Issues Guide for Pet Parents",
     description: "Expert guide on senior pet health issues for pet owners",
-    image: "/pet/6.jpg",
+    image: "https://images.unsplash.com/photo-1606214174585-fe31582dc1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet health", "health guide", "senior pet health issues", "senior pet health issues tips", "senior pet health issues guide"],
     featured: true
@@ -88,7 +88,7 @@ const blogPosts = [
     id: "pet-emergency-signs",
     title: "The Ultimate Pet Emergency Signs Guide for Pet Parents",
     description: "Essential pet emergency signs guide for pet care",
-    image: "/pet/7.jpg",
+    image: "https://images.unsplash.com/photo-1587300411107-ec8b1a1b0d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet emergency signs", "pet emergency signs tips", "pet emergency signs guide"],
     featured: true
@@ -106,7 +106,7 @@ const blogPosts = [
     id: "cat-litter-box-training",
     title: "Understanding Cat Litter Box Training - A Comprehensive Guide",
     description: "Essential cat litter box training guide for pet care",
-    image: "https://cdn2.thecatapi.com/images/e35.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet care", "care guide", "cat litter box training", "cat litter box training tips", "cat litter box training guide"],
     featured: true
@@ -115,7 +115,7 @@ const blogPosts = [
     id: "pet-nutrition-guide",
     title: "The Ultimate Pet Nutrition Guide Guide for Pet Parents",
     description: "Essential pet nutrition guide guide for pet care",
-    image: "/pet/1.jpg",
+    image: "https://images.unsplash.com/photo-1587300411107-ec8b1a1b0d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet nutrition guide", "pet nutrition guide tips", "pet nutrition guide guide"],
     featured: true
@@ -124,7 +124,7 @@ const blogPosts = [
     id: "puppy-training-basics",
     title: "Everything You Need to Know About Puppy Training Basics",
     description: "Professional puppy training basics advice and tips",
-    image: "/pet/2.jpg",
+    image: "https://images.unsplash.com/photo-1552053831-71594a27c62d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet care", "care guide", "puppy training basics", "puppy training basics tips", "puppy training basics guide"],
     featured: true
@@ -133,7 +133,7 @@ const blogPosts = [
     id: "senior-pet-care",
     title: "Complete Guide to Senior Pet Care for Pet Owners",
     description: "Essential senior pet care guide for pet care",
-    image: "/pet/3.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet care", "care guide", "senior pet care", "senior pet care tips", "senior pet care guide"],
     featured: true
@@ -142,7 +142,7 @@ const blogPosts = [
     id: "pet-dental-health",
     title: "Pet Dental Health: Expert Tips and Professional Advice",
     description: "Professional pet dental health advice and tips",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet health", "health guide", "pet dental health", "pet dental health tips", "pet dental health guide"],
     featured: true
@@ -151,7 +151,7 @@ const blogPosts = [
     id: "indoor-cat-exercise",
     title: "The Ultimate Indoor Cat Exercise Guide for Pet Parents",
     description: "Essential indoor cat exercise guide for pet care",
-    image: "https://cdn2.thecatapi.com/images/ag4.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["indoor cat exercise", "indoor cat exercise tips", "indoor cat exercise guide"],
     featured: true
@@ -160,7 +160,7 @@ const blogPosts = [
     id: "dog-walking-safety",
     title: "Understanding Dog Walking Safety - A Comprehensive Guide",
     description: "Complete dog walking safety information for pets",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["dog walking safety", "dog walking safety tips", "dog walking safety guide"],
     featured: true
@@ -169,7 +169,7 @@ const blogPosts = [
     id: "pet-first-aid",
     title: "Understanding Pet First Aid - A Comprehensive Guide",
     description: "Professional pet first aid advice and tips",
-    image: "/pet/6.jpg",
+    image: "https://images.unsplash.com/photo-1606214174585-fe31582dc1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet first aid", "pet first aid tips", "pet first aid guide"],
     featured: true
@@ -178,7 +178,7 @@ const blogPosts = [
     id: "healthy-pet-treats",
     title: "Understanding Healthy Pet Treats - A Comprehensive Guide",
     description: "Complete healthy pet treats information for pets",
-    image: "/pet/7.jpg",
+    image: "https://images.unsplash.com/photo-1587300411107-ec8b1a1b0d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet health", "health guide", "healthy pet treats", "healthy pet treats tips", "healthy pet treats guide"],
     featured: true
@@ -196,7 +196,7 @@ const blogPosts = [
     id: "friendliest-dog-breeds",
     title: "Friendliest Dog Breeds: Expert Tips and Professional Advice",
     description: "Complete friendliest dog breeds information for pets",
-    image: "/pet/3.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "friendliest dog breeds", "friendliest dog breeds tips", "friendliest dog breeds guide"],
     featured: true
@@ -205,7 +205,7 @@ const blogPosts = [
     id: "dog-breed-characteristics",
     title: "Complete Guide to Dog Breed Characteristics for Pet Owners",
     description: "Professional dog breed characteristics advice and tips",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed characteristics", "dog breed characteristics tips", "dog breed characteristics guide"],
     featured: true
@@ -214,7 +214,7 @@ const blogPosts = [
     id: "rare-dog-breeds",
     title: "Complete Guide to Rare Dog Breeds for Pet Owners",
     description: "Essential rare dog breeds guide for pet care",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "rare dog breeds", "rare dog breeds tips", "rare dog breeds guide"],
     featured: true
@@ -232,7 +232,7 @@ const blogPosts = [
     id: "responsible-dog-breeding",
     title: "The Ultimate Responsible Dog Breeding Guide for Pet Parents",
     description: "Expert guide on responsible dog breeding for pet owners",
-    image: "/pet/3.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "responsible dog breeding", "responsible dog breeding tips", "responsible dog breeding guide"],
     featured: true
@@ -241,7 +241,7 @@ const blogPosts = [
     id: "best-dog-breeds-for-apartments",
     title: "Complete Guide to Best Dog Breeds For Apartments for Pet Owners",
     description: "Complete best dog breeds for apartments information for pets",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "best dog breeds for apartments", "best dog breeds for apartments tips", "best dog breeds for apartments guide"],
     featured: true
@@ -250,7 +250,7 @@ const blogPosts = [
     id: "dog-breed-temperament",
     title: "Everything You Need to Know About Dog Breed Temperament",
     description: "Professional dog breed temperament advice and tips",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed temperament", "dog breed temperament tips", "dog breed temperament guide"],
     featured: true
@@ -268,7 +268,7 @@ const blogPosts = [
     id: "dog-breed-size-comparison",
     title: "Complete Guide to Dog Breed Size Comparison for Pet Owners",
     description: "Professional dog breed size comparison advice and tips",
-    image: "/pet/3.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed size comparison", "dog breed size comparison tips", "dog breed size comparison guide"],
     featured: true
@@ -277,7 +277,7 @@ const blogPosts = [
     id: "best-dog-breeds-for-first-time-owners",
     title: "Best Dog Breeds For First Time Owners: Expert Tips and Professional Advice",
     description: "Professional best dog breeds for first time owners advice...",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "best dog breeds for first time owners", "best dog breeds for first time owners tips", "best dog breeds for first time owners guide"],
     featured: true
@@ -286,7 +286,7 @@ const blogPosts = [
     id: "dog-breed-training-difficulty",
     title: "The Ultimate Dog Breed Training Difficulty Guide for Pet Parents",
     description: "Professional dog breed training difficulty advice and tips",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet care", "care guide", "breed guide", "pet breeding", "dog breed training difficulty"],
     featured: true
@@ -304,7 +304,7 @@ const blogPosts = [
     id: "dog-breed-grooming-needs",
     title: "The Ultimate Dog Breed Grooming Needs Guide for Pet Parents",
     description: "Expert guide on dog breed grooming needs for pet owners",
-    image: "/pet/3.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet care", "care guide", "breed guide", "pet breeding", "dog breed grooming needs"],
     featured: true
@@ -313,7 +313,7 @@ const blogPosts = [
     id: "dog-breed-lifespan",
     title: "Understanding Dog Breed Lifespan - A Comprehensive Guide",
     description: "Complete dog breed lifespan information for pets",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed lifespan", "dog breed lifespan tips", "dog breed lifespan guide"],
     featured: true
@@ -322,7 +322,7 @@ const blogPosts = [
     id: "dog-breed-cost",
     title: "The Ultimate Dog Breed Cost Guide for Pet Parents",
     description: "Complete dog breed cost information for pets",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed cost", "dog breed cost tips", "dog breed cost guide"],
     featured: true
@@ -340,7 +340,7 @@ const blogPosts = [
     id: "dog-breed-history",
     title: "Dog Breed History: Expert Tips and Professional Advice",
     description: "Professional dog breed history advice and tips",
-    image: "/pet/3.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed history", "dog breed history tips", "dog breed history guide"],
     featured: true
@@ -349,7 +349,7 @@ const blogPosts = [
     id: "dog-breed-standards",
     title: "The Ultimate Dog Breed Standards Guide for Pet Parents",
     description: "Essential dog breed standards guide for pet care",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed standards", "dog breed standards tips", "dog breed standards guide"],
     featured: true
@@ -358,7 +358,7 @@ const blogPosts = [
     id: "dog-breed-selection-guide",
     title: "Complete Guide to Dog Breed Selection Guide for Pet Owners",
     description: "Professional dog breed selection guide advice and tips",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["breed guide", "pet breeding", "dog breed selection guide", "dog breed selection guide tips", "dog breed selection guide guide"],
     featured: true
@@ -367,7 +367,7 @@ const blogPosts = [
     id: "pet-grooming-tips",
     title: "Pet Grooming Tips: Expert Tips and Professional Advice",
     description: "Professional pet grooming tips advice and tips",
-    image: "/pet/1.jpg",
+    image: "https://images.unsplash.com/photo-1587300411107-ec8b1a1b0d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 28, 2025",
     tags: ["pet care", "care guide", "pet grooming tips", "pet grooming tips tips", "pet grooming tips guide"],
     featured: true
@@ -385,7 +385,7 @@ const blogPosts = [
     id: "pet-health-checkup",
     title: "Understanding Pet Health Checkup - A Comprehensive Guide",
     description: "Complete pet health checkup information for pets",
-    image: "/pet/8.jpg",
+    image: "https://images.unsplash.com/photo-1552053831-71594a27c62d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2025",
     tags: ["pet health", "health guide", "pet health checkup", "pet health checkup tips", "pet health checkup guide"],
     featured: true
@@ -394,7 +394,7 @@ const blogPosts = [
     id: "pet-breed",
     title: "The Ultimate Pet Breed Guide for Pet Parents",
     description: "Professional pet breed advice and tips with practical sol...",
-    image: "/pet/1.jpg",
+    image: "https://images.unsplash.com/photo-1587300411107-ec8b1a1b0d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2025",
     tags: ["breed guide", "pet breeding", "pet breed", "pet breed tips", "pet breed guide"],
     featured: true
@@ -403,7 +403,7 @@ const blogPosts = [
     id: "pet-breed-identification",
     title: "The Ultimate Pet Breed Identification Guide for Pet Parents",
     description: "Expert guide on pet breed identification for pet owners",
-    image: "/pet/2.jpg",
+    image: "https://images.unsplash.com/photo-1552053831-71594a27c62d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2025",
     tags: ["breed guide", "pet breeding", "pet breed identification", "pet breed identification tips", "pet breed identification guide"],
     featured: true
@@ -412,7 +412,7 @@ const blogPosts = [
     id: "pet-naming",
     title: "Complete Guide to Pet Naming for Pet Owners",
     description: "Complete pet naming information for pets",
-    image: "/pet/4.jpg",
+    image: "https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2025",
     tags: ["pet naming", "pet naming tips", "pet naming guide"],
     featured: true
@@ -421,7 +421,7 @@ const blogPosts = [
     id: "pet-breeder",
     title: "Everything You Need to Know About Pet Breeder",
     description: "Essential pet breeder guide for pet care",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2025",
     tags: ["breed guide", "pet breeding", "pet breeder", "pet breeder tips", "pet breeder guide"],
     featured: true
@@ -430,7 +430,7 @@ const blogPosts = [
     id: "pet-breeding",
     title: "Pet Breeding: Expert Tips and Professional Advice",
     description: "Expert guide on pet breeding for pet owners",
-    image: "/pet/6.jpg",
+    image: "https://images.unsplash.com/photo-1606214174585-fe31582dc1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2025",
     tags: ["breed guide", "pet breeding", "pet breeding tips", "pet breeding guide"],
     featured: true
@@ -439,7 +439,7 @@ const blogPosts = [
     id: "ai-tools-comparison",
     title: "Best AI Tools for Content Creation in 2024: A Comprehensive Comparison",
     description: "Discover the most innovative AI tools for creative projects, from horror content creation to pet care analysis. Compare features, pricing, and find the perfect tool for your needs.",
-    image: "/pet/7.jpg",
+    image: "https://images.unsplash.com/photo-1587300411107-ec8b1a1b0d4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "December 15, 2024",
     tags: ["AI tools", "comparison", "creative content", "technology"],
     featured: true
@@ -448,7 +448,7 @@ const blogPosts = [
     id: "pet-loss-grief-support-guide",
     title: "Pet Loss Grief Support: Coping with Saying Goodbye to Your Beloved Companion",
     description: "Compassionate guide to pet loss grief with healthy coping strategies, memorial ideas, and support resources for healing after losing a beloved pet.",
-    image: "https://cdn2.thecatapi.com/images/e35.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2024",
     tags: ["pet loss", "grief support", "pet memorial", "emotional healing", "pet bereavement"],
     featured: true
@@ -475,7 +475,7 @@ const blogPosts = [
     id: "multi-cat-household-management-guide",
     title: "Multi-Cat Household Management: Preventing Conflicts and Creating Harmony",
     description: "Expert guide to managing multiple cats, preventing conflicts, and creating harmony in multi-cat households with proven strategies and solutions.",
-    image: "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2024",
     tags: ["multi-cat care", "cat behavior", "pet conflicts", "cat harmony", "household management"],
     featured: true
@@ -484,7 +484,7 @@ const blogPosts = [
     id: "cat-litter-box-problems-solutions",
     title: "Cat Litter Box Problems: Complete Solutions Guide for Inappropriate Elimination",
     description: "Solve cat litter box problems with proven solutions for inappropriate elimination, carpet peeing, and multi-cat household conflicts.",
-    image: "https://cdn2.thecatapi.com/images/bpc.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "November 27, 2024",
     tags: ["cat behavior", "litter box problems", "inappropriate elimination", "cat training", "behavioral issues"],
     featured: true
@@ -547,7 +547,7 @@ const blogPosts = [
     id: "pet-ranking",
     title: "Pet Popularity Contest: Vote for the Cutest Pets",
     description: "Join our viral pet ranking game inspired by teaspill! Vote between adorable cats and dogs to help crown the cutest pet.",
-    image: "/pet/9.jpg",
+    image: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "August 1, 2023",
     tags: ["pet contest", "teaspill", "viral", "pet ranking"],
     featured: true
@@ -556,7 +556,7 @@ const blogPosts = [
     id: "pet-health-risks-lyme-legionnaires",
     title: "Pet Health Risks: Lyme Disease and Legionnaires",
     description: "Learn about these zoonotic diseases, how they affect your pets, and prevention strategies.",
-    image: "/pet/5.jpg",
+    image: "https://images.unsplash.com/photo-1618826411640-d6df44dd3f7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     date: "August 1, 2023",
     tags: ["health", "disease prevention", "pet care"],
     featured: true
@@ -579,12 +579,14 @@ function BlogContent() {
               key={post.id}
               className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full"
             >
-              <div className="relative h-48 w-full overflow-hidden">
+              <div className="relative h-48 w-full overflow-hidden bg-gray-200">
                 <Image 
                   src={post.image} 
                   alt={post.title} 
                   fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  priority={false}
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">

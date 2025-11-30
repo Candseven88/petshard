@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://petshard.com/blog/pet-emergency-signs",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/ag4.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
       alt: "Pet Emergency Signs: When to Seek Immediate Veterinary Care"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pet Emergency Signs: When to Seek Immediate Veterinary Care",
     description: "Learn critical pet emergency signs that require immediate veterinary attention. Recognize symptoms, understand severity levels, and know when to call the vet.",
-    images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/pet-emergency-signs"
@@ -83,16 +83,6 @@ function PetEmergencySignsGuideContent() {
             <span>🐾 Pet Care</span>
           </div>
         </header>
-
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="The Ultimate Pet Emergency Signs Guide for Pet Parents" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
 
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">

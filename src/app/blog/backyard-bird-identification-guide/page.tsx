@@ -54,15 +54,6 @@ function BirdIdentificationGuideContent() {
             <span>🐦 Bird Watching</span>
           </div>
         </header>
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn.shopify.com/s/files/1/0311/3149/files/shutterstock_601059413_97867db7-ccf6-45e3-b082-d4af94f1777f.jpg?v=1573605721" 
-            alt="Backyard bird identification guide showing colorful birds at feeder" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-green-50 p-8 rounded-xl">

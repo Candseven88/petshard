@@ -46,15 +46,6 @@ function PetEmergencyGuideContent() {
             <span>🚨 Emergency Care</span>
           </div>
         </header>
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg" 
-            alt="Pet owner searching for escaped pet with flashlight during emergency situation" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-red-50 p-8 rounded-xl">

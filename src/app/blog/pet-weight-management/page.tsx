@@ -84,16 +84,6 @@ function PetWeightManagementContent() {
           </div>
         </header>
 
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://images.unsplash.com/photo-1587300411107-ec8b827193b2?w=1200&h=630&fit=crop" 
-            alt="Pet weight management and healthy exercise for dogs and cats" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
-
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-blue-50 p-8 rounded-xl">

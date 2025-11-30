@@ -216,15 +216,6 @@ function ArticleContent() {
           </div>
         </header>
         {/* Featured Image */}
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="/pet/5.jpg" 
-            alt="Dog in outdoor environment" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         {/* Article Content - Improved Readability */}
         <div className="prose prose-lg max-w-none">
           {/* Introduction Section */}

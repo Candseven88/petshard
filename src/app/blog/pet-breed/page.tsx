@@ -5,17 +5,17 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Ultimate Pet Breed Guide for Pet Parents",
-  description: "Professional pet breed advice and tips with practical sol...",
-  keywords: ["pet breed", "pet breed tips", "pet breed guide", "pet pet breed", "pet breed advice", "pet breed care"],
+  title: "Pet Breed Guide: Understanding Dog and Cat Breeds",
+  description: "Comprehensive pet breed guide covering dog and cat breeds, characteristics, temperament, health issues, and how to choose the right breed for your lifestyle.",
+  keywords: ["pet breed", "dog breeds", "cat breeds", "breed characteristics", "breed guide", "choosing a pet breed"],
   openGraph: {
-    title: "The Ultimate Pet Breed Guide for Pet Parents",
-    description: "Professional pet breed advice and tips with practical sol...",
+    title: "Pet Breed Guide: Understanding Dog and Cat Breeds",
+    description: "Learn about different pet breeds, their characteristics, temperament, and health considerations to choose the perfect pet for your family.",
     type: "article",
     url: "https://petshard.com/blog/pet-breed",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/ag4.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
       alt: "The Ultimate Pet Breed Guide for Pet Parents"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Ultimate Pet Breed Guide for Pet Parents",
     description: "Professional pet breed advice and tips with practical sol...",
-    images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/pet-breed"
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "The Ultimate Pet Breed Guide for Pet Parents",
-  "description": "Professional pet breed advice and tips with practical sol...",
+  "headline": "Pet Breed Guide: Understanding Dog and Cat Breeds",
+  "description": "Comprehensive guide to pet breeds including characteristics, temperament, health issues, and breed selection tips",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -83,16 +83,6 @@ function PetBreedGuideContent() {
             <span>🐾 Pet Care</span>
           </div>
         </header>
-
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="The Ultimate Pet Breed Guide for Pet Parents" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
 
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://petshard.com/blog/dog-breed-temperament",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/ag4.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
       alt: "Dog Breed Temperament Types: Guide to Personality Traits"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dog Breed Temperament Types: Guide to Personality Traits",
     description: "Explore dog breed temperament types including friendly, protective, independent, and energetic breeds. Learn which temperament matches your lifestyle.",
-    images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/dog-breed-temperament"
@@ -83,16 +83,6 @@ function DogBreedTemperamentGuideContent() {
             <span>🐾 Pet Care</span>
           </div>
         </header>
-
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="Everything You Need to Know About Dog Breed Temperament" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
 
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">

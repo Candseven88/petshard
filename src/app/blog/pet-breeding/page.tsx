@@ -5,17 +5,17 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pet Breeding: Expert Tips and Professional Advice",
-  description: "Expert guide on pet breeding for pet owners",
-  keywords: ["pet breeding", "pet breeding tips", "pet breeding guide", "pet pet breeding", "pet breeding advice", "pet breeding care"],
+  title: "Responsible Pet Breeding Guide: Health, Ethics & Best Practices",
+  description: "Complete guide to responsible pet breeding including health screening, genetic testing, ethical considerations, and breeding best practices.",
+  keywords: ["pet breeding", "responsible breeding", "dog breeding", "cat breeding", "breeding ethics", "genetic health"],
   openGraph: {
-    title: "Pet Breeding: Expert Tips and Professional Advice",
-    description: "Expert guide on pet breeding for pet owners",
+    title: "Responsible Pet Breeding Guide: Health, Ethics & Best Practices",
+    description: "Learn about responsible pet breeding practices, health screening, and ethical considerations for breeders.",
     type: "article",
     url: "https://petshard.com/blog/pet-breeding",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/ag4.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
       alt: "Pet Breeding: Expert Tips and Professional Advice"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pet Breeding: Expert Tips and Professional Advice",
     description: "Expert guide on pet breeding for pet owners",
-    images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/pet-breeding"
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Pet Breeding: Expert Tips and Professional Advice",
-  "description": "Expert guide on pet breeding for pet owners",
+  "headline": "Responsible Pet Breeding Guide: Health, Ethics & Best Practices",
+  "description": "Guide to responsible pet breeding with health screening, genetic testing, and ethical breeding practices",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -83,16 +83,6 @@ function PetBreedingGuideContent() {
             <span>🐾 Pet Care</span>
           </div>
         </header>
-
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="Pet Breeding: Expert Tips and Professional Advice" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
 
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">

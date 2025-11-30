@@ -6,9 +6,21 @@ import BottomFeederCard from "./components/BottomFeederCard";
 import ProductRecommendation from "./components/ProductRecommendation";
 import QuickActionPlan from "./components/QuickActionPlan";
 import VideoEmbed from "./components/VideoEmbed";
-import { bottomFeeders, products, proTips } from "./data";
-// Metadata configuration - convert to server component if needed
-function PodcastContent() {
+import { bottomFeeders, products, proTips, comparisonTable } from "./data";
+
+export const metadata = {
+  title: "Best Bottom Feeders for Medium Fish: Complete Species Comparison Guide",
+  description: "Discover the top 10 bottom feeders for 4-5 inch fish. Compare species, learn compatibility, and find the perfect cleanup crew for your community tank.",
+  keywords: "bottom feeders, aquarium cleanup crew, Corydoras catfish, loaches, medium fish, community tank",
+  openGraph: {
+    title: "Best Bottom Feeders for Medium Fish: Complete Species Comparison Guide",
+    description: "Expert guide to choosing bottom feeders that eat excess food and thrive with medium-sized fish. Compare 10 species with detailed compatibility information.",
+    url: "https://petshard.com/blog/best-bottom-feeders-for-medium-fish",
+    type: "article",
+  },
+};
+
+function BottomFeedersContent() {
   return (
     <Layout title="Blog" showBackButton={true}>
       <article className="max-w-4xl mx-auto px-4">
@@ -21,86 +33,116 @@ function PodcastContent() {
             <span>Aquarium Care</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Best Bottom Feeders for Community Tanks: 10 Perfect Clean-Up Crew Options
+            Best Bottom Feeders for Medium Fish: Complete Species Comparison Guide
           </h1>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>November 23, 2024</span>
             <span>•</span>
-            <span>15 min read</span>
+            <span>18 min read</span>
             <span>•</span>
             <span>📝 Blog Post</span>
           </div>
         </header>
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://www.hygger-online.com/wp-content/uploads/2023/03/Top-10-Bottom-Feeder-Fish-For-Freshwater-Community-Tank-2.jpg" 
-            alt="Bottom feeder fish for community aquarium - Cory Catfish and Loaches" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-blue-50 p-8 rounded-xl">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
-              Introduction
+              Why Bottom Feeders Are Essential for Medium Fish Tanks
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Have you noticed uneaten food piling up at the bottom of your aquarium? 
-              Are you tired of constantly cleaning your tank? You're not alone. This is 
-              one of the most common problems aquarium owners face – and it can lead to 
-              cloudy water, ammonia spikes, and unhealthy fish.
+              Have you noticed uneaten food piling up at the bottom of your aquarium? Are you tired of constantly cleaning your tank? You're not alone. This is one of the most common problems aquarium owners face – and it can lead to cloudy water, ammonia spikes, and unhealthy fish. The solution? A well-chosen cleanup crew of bottom feeders specifically matched to your 4-5 inch fish.
             </p>
             <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-blue-400">
               <p className="text-lg font-medium text-gray-800">
-                <span className="text-blue-600">Reader Question:</span> "Looking for a bottom feeder for my community tank with 4-5 inch fish. Need something that will eat excess food and get along peacefully with my existing fish."
+                <span className="text-blue-600">Common Question:</span> "I have a community tank with 4-5 inch fish. What bottom feeders will eat excess food, keep my tank clean, and get along peacefully with my existing fish?"
               </p>
             </div>
             <p className="text-lg leading-relaxed">
-              In this episode, we'll reveal 10 proven bottom feeders that not only keep 
-              your tank clean but also thrive peacefully with medium-sized fish. Plus, 
-              we'll share two game-changing products that make tank maintenance even easier.
+              In this comprehensive guide, we'll reveal 10 proven bottom feeders that not only keep your tank clean but also thrive peacefully with medium-sized fish. We'll compare species by size, compatibility, cleaning power, and special abilities. Plus, we'll share expert tips and product recommendations to help you build the perfect cleanup crew for your specific tank setup.
             </p>
           </div>
           {/* ========== Background Knowledge Section ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
-              Understanding Bottom Feeders
+              Understanding Bottom Feeders for Medium Fish Tanks
             </h2>
+            <div className="bg-yellow-50 rounded-lg p-6 mb-6 border-l-4 border-yellow-400">
+              <p className="text-gray-700">
+                <strong className="text-yellow-700">🚨 Key Fact:</strong> Uneaten food that decays at the tank bottom produces ammonia and nitrite, which can spike to dangerous levels within 24-48 hours. A proper cleanup crew prevents this toxic buildup before it harms your fish.
+              </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-green-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  🐟 What Are They?
+                  🐟 What Are Bottom Feeders?
                 </h3>
                 <p className="text-gray-700 text-sm">
-                  Bottom feeders are aquatic animals that naturally scavenge for food at the tank floor. They play a crucial role in maintaining ecosystem balance by consuming leftover food, algae, and organic debris that other fish miss.
+                  Bottom feeders are aquatic animals that naturally scavenge for food at the tank floor. They play a crucial role in maintaining ecosystem balance by consuming leftover food, algae, and organic debris that other fish miss. They're not optional—they're essential for tank health.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  ⚖️ Size Compatibility
+                  ⚖️ Size Compatibility Matters
                 </h3>
                 <p className="text-gray-700 text-sm">
-                  Matching bottom feeders to your existing fish size prevents aggression and ensures peaceful coexistence. For 4-5 inch fish, look for species that are similar sized or smaller and have compatible temperaments.
+                  Matching bottom feeders to your existing fish size prevents aggression and ensures peaceful coexistence. For 4-5 inch fish, look for species that are similar sized or smaller and have compatible temperaments. Mismatched sizes lead to stress and conflict.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-purple-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  🧹 Cleaning Power
+                  🧹 Three Types of Cleaning Power
                 </h3>
                 <p className="text-gray-700 text-sm">
-                  Evaluate effectiveness by feeding habits: scavengers consume excess food, algae eaters target algae growth, and substrate sifters clean between gravel. Choose based on your specific tank needs.
+                  Scavengers consume excess food, algae eaters target algae growth, and substrate sifters clean between gravel. Most species specialize in one area. Choose based on your specific tank needs and existing problems.
                 </p>
               </div>
             </div>
           </div>
+          {/* ========== Species Comparison Table ========== */}
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              Quick Species Comparison Table
+            </h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Use this table to quickly compare the top bottom feeders for medium fish tanks. Each species has unique strengths—choose based on your specific tank needs and existing fish.
+            </p>
+            <div className="overflow-x-auto bg-white rounded-lg shadow-md">
+              <table className="w-full text-sm">
+                <thead className="bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+                  <tr>
+                    <th className="px-4 py-3 text-left font-bold">Species</th>
+                    <th className="px-4 py-3 text-left font-bold">Size</th>
+                    <th className="px-4 py-3 text-left font-bold">Compatibility</th>
+                    <th className="px-4 py-3 text-left font-bold">Specialization</th>
+                    <th className="px-4 py-3 text-left font-bold">Tank Size</th>
+                    <th className="px-4 py-3 text-left font-bold">Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonTable.map((row, index) => (
+                    <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                      <td className="px-4 py-3 font-semibold text-gray-800">{row.species}</td>
+                      <td className="px-4 py-3 text-gray-700">{row.size}</td>
+                      <td className="px-4 py-3 text-gray-700">{row.compatibility}</td>
+                      <td className="px-4 py-3 text-gray-700">{row.specialization}</td>
+                      <td className="px-4 py-3 text-gray-700">{row.tankSize}</td>
+                      <td className="px-4 py-3 text-gray-700">{row.cost}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           {/* ========== Main Content: 10 Bottom Feeders ========== */}
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
-              Top 10 Bottom Feeders for Your Community Tank
+              Detailed Species Guide: Top 10 Bottom Feeders for Medium Fish
             </h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Here's a detailed breakdown of each species, including their specific characteristics, compatibility with 4-5 inch fish, and why they excel at tank cleaning.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {bottomFeeders.map((feeder, index) => (
                 <BottomFeederCard 
@@ -200,36 +242,59 @@ function PodcastContent() {
               </Link>
             </div>
           </div>
-          {/* ========== Related Resources ========== */}
+          {/* ========== Related Resources & Internal Links ========== */}
           <div className="mt-12">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Aquarium & Pet Care Resources</h3>
+            <p className="text-gray-700 mb-6">
+              Explore these related articles to build a complete understanding of aquarium maintenance and pet care:
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Link 
-                href="/health-guide" 
+                href="/blog/best-aquarium-thermometers-with-alarm" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
               >
                 <div className="bg-blue-100 p-3 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
+                  <span className="text-2xl">🌡️</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-800">Pet Health Guide</h4>
-                  <p className="text-gray-600">Comprehensive health information</p>
+                  <h4 className="font-bold text-gray-800">Aquarium Thermometers with Alarm</h4>
+                  <p className="text-sm text-gray-600">Keep your tank temperature stable and safe</p>
+                </div>
+              </Link>
+              <Link 
+                href="/blog/best-full-spectrum-aquarium-lights" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-yellow-100 p-3 rounded-full">
+                  <span className="text-2xl">💡</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Full Spectrum Aquarium Lights</h4>
+                  <p className="text-sm text-gray-600">Optimize plant growth and fish health</p>
+                </div>
+              </Link>
+              <Link 
+                href="/blog/aquarium-water-quality-problems-solutions" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-green-100 p-3 rounded-full">
+                  <span className="text-2xl">💧</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Water Quality Problems & Solutions</h4>
+                  <p className="text-sm text-gray-600">Maintain healthy water parameters</p>
                 </div>
               </Link>
               <Link 
                 href="/pet-care-guide" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
               >
-                <div className="bg-green-100 p-3 rounded-full">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
+                <div className="bg-purple-100 p-3 rounded-full">
+                  <span className="text-2xl">📚</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-800">Pet Care Guide</h4>
-                  <p className="text-gray-600">Essential care tips and tricks</p>
+                  <h4 className="font-bold text-gray-800">Complete Pet Care Guide</h4>
+                  <p className="text-sm text-gray-600">Comprehensive care for all pet types</p>
                 </div>
               </Link>
             </div>
@@ -257,10 +322,11 @@ function PodcastContent() {
     </Layout>
   );
 }
+
 export default function BottomFeedersPage() {
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
-      <PodcastContent />
+      <BottomFeedersContent />
     </Suspense>
   );
 }

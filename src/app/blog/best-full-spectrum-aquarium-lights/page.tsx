@@ -7,6 +7,19 @@ import ProductCard from "./components/ProductCard";
 import VideoEmbed from "./components/VideoEmbed";
 import PlantCategoryGuide from "./components/PlantCategoryGuide";
 import { lightingFactors, budgetLights, topProducts, proTips, plantCategories, comparisonData } from "./data";
+
+export const metadata = {
+  title: "Best Full Spectrum Aquarium Lights: Complete Guide 2024",
+  description: "Expert guide to full-spectrum aquarium lights for planted tanks. Compare 5 budget-friendly options and learn about color spectrum, intensity, and light spread.",
+  keywords: "full spectrum aquarium lights, planted tank lighting, LED aquarium lights, aquarium light recommendations, plant growth lights",
+  openGraph: {
+    title: "Best Full Spectrum Aquarium Lights: Complete Guide 2024",
+    description: "Discover the best full-spectrum aquarium lights for planted tanks. Learn about color spectrum, intensity, and light spread. Compare budget-friendly options with real-world testing results.",
+    url: "https://petshard.com/blog/best-full-spectrum-aquarium-lights",
+    type: "article",
+  },
+};
+
 function AquariumLightContent() {
   return (
     <Layout title="Blog" showBackButton={true}>
@@ -20,7 +33,7 @@ function AquariumLightContent() {
             <span>Aquarium Equipment</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Best Full Spectrum Aquarium Lights for Planted Tanks: Complete Guide 2024
+            Best Full Spectrum Aquarium Lights: Complete Guide 2024
           </h1>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span>November 24, 2024</span>
@@ -86,6 +99,59 @@ function AquariumLightContent() {
                 <AquariumLightCard key={light.id} light={light} rank={index + 1} />
               ))}
             </div>
+            
+            {/* Comparison Table */}
+            <div className="mb-8 overflow-x-auto">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Quick Comparison Table</h3>
+              <table className="w-full border-collapse bg-white rounded-lg shadow-md overflow-hidden">
+                <thead>
+                  <tr className="bg-blue-600 text-white">
+                    <th className="px-4 py-3 text-left font-bold">Light Model</th>
+                    <th className="px-4 py-3 text-left font-bold">Price</th>
+                    <th className="px-4 py-3 text-left font-bold">Lumens</th>
+                    <th className="px-4 py-3 text-left font-bold">Wattage</th>
+                    <th className="px-4 py-3 text-left font-bold">Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">Siora SR616</td>
+                    <td className="px-4 py-3 text-gray-700">$15-20</td>
+                    <td className="px-4 py-3 text-gray-700">720</td>
+                    <td className="px-4 py-3 text-gray-700">10W</td>
+                    <td className="px-4 py-3 text-gray-700">Beginners, easy plants</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">Higer 058</td>
+                    <td className="px-4 py-3 text-gray-700">$18-22</td>
+                    <td className="px-4 py-3 text-gray-700">774</td>
+                    <td className="px-4 py-3 text-gray-700">11W</td>
+                    <td className="px-4 py-3 text-gray-700">Entry-level planted tanks</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">Higer 957</td>
+                    <td className="px-4 py-3 text-gray-700">$27-32</td>
+                    <td className="px-4 py-3 text-gray-700">927</td>
+                    <td className="px-4 py-3 text-gray-700">20W</td>
+                    <td className="px-4 py-3 text-gray-700">Red plants, intermediate</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">Higer 076</td>
+                    <td className="px-4 py-3 text-gray-700">$25-30</td>
+                    <td className="px-4 py-3 text-gray-700">915</td>
+                    <td className="px-4 py-3 text-gray-700">14W</td>
+                    <td className="px-4 py-3 text-gray-700">Energy-efficient, heavily planted</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">Chihiros A2</td>
+                    <td className="px-4 py-3 text-gray-700">$47-54</td>
+                    <td className="px-4 py-3 text-gray-700">1,628-1,957</td>
+                    <td className="px-4 py-3 text-gray-700">15-21W</td>
+                    <td className="px-4 py-3 text-gray-700">Advanced plants, serious aquascapers</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           {/* Video Review Section */}
           <div className="mb-12">
@@ -135,7 +201,7 @@ function AquariumLightContent() {
                       Identify Your Plant Types
                     </h3>
                     <p className="text-gray-700">
-                      Start by categorizing your plants: Easy (Anubias, Java Fern) need 720-900 lumens. Medium (Amazon Sword, Ludwigia) need 900-1,200 lumens. Advanced/Red plants (Rotala, carpeting species) need 1,600+ lumens.
+                      Start by categorizing your plants: Easy (Anubias, Java Fern) need 720-900 lumens. Medium (Amazon Sword, Ludwigia) need 900-1,200 lumens. Advanced/Red plants (Rotala, carpeting species) need 1,600+ lumens. Learn more about specific plant requirements in our <Link href="/blog/pet-nutrition-guide" className="text-blue-600 hover:text-blue-800 font-semibold">aquatic plant care guides</Link>.
                     </p>
                   </div>
                 </div>
@@ -252,7 +318,7 @@ function AquariumLightContent() {
               <div className="bg-white rounded-lg p-5 border-l-4 border-red-500">
                 <h3 className="font-bold text-red-700 mb-2">❌ Forgetting About Heat</h3>
                 <p className="text-gray-700">
-                  High-wattage lights generate significant heat. Monitor water temperature, especially in rimless tanks or small volumes. Some lights (Higer 957, Chihiros A2) run noticeably warm—ensure adequate ventilation.
+                  High-wattage lights generate significant heat. Monitor water temperature, especially in rimless tanks or small volumes. Some lights (Higer 957, Chihiros A2) run noticeably warm—ensure adequate ventilation. Use a reliable <Link href="/blog/best-aquarium-thermometers-with-alarm" className="text-blue-600 hover:text-blue-800 font-semibold">aquarium thermometer with alarms</Link> to track temperature changes.
                 </p>
               </div>
             </div>
@@ -275,7 +341,7 @@ function AquariumLightContent() {
               </p>
             </div>
             <p className="text-lg leading-relaxed">
-              Remember: The best light is one that matches your plants' needs, fits your tank properly, and includes features you'll actually use. Start conservative with photoperiods and intensity, monitor your plants' response, and adjust accordingly. With the right lighting, your planted aquarium will transform into a thriving underwater garden.
+              Remember: The best light is one that matches your plants' needs, fits your tank properly, and includes features you'll actually use. Start conservative with photoperiods and intensity, monitor your plants' response, and adjust accordingly. Maintain proper <Link href="/blog/aquarium-water-quality-problems-solutions" className="text-blue-600 hover:text-blue-800 font-semibold">water quality</Link> and use a <Link href="/blog/best-bottom-feeders-for-medium-fish" className="text-blue-600 hover:text-blue-800 font-semibold">cleanup crew</Link> to support your planted tank ecosystem. With the right lighting, your planted aquarium will transform into a thriving underwater garden.
             </p>
           </div>
           {/* Call to Action */}
@@ -303,7 +369,7 @@ function AquariumLightContent() {
           </div>
           {/* Related Resources */}
           <div className="mt-12">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Aquarium Resources</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Link 
                 href="/blog/best-aquarium-thermometers-with-alarm" 
@@ -314,7 +380,7 @@ function AquariumLightContent() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Aquarium Thermometers</h4>
-                  <p className="text-sm text-gray-600">Temperature monitoring with alarms</p>
+                  <p className="text-sm text-gray-600">Temperature monitoring with alarms for planted tanks</p>
                 </div>
               </Link>
               <Link 
@@ -326,7 +392,31 @@ function AquariumLightContent() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Bottom Feeders Guide</h4>
-                  <p className="text-sm text-gray-600">Clean-up crew for planted tanks</p>
+                  <p className="text-sm text-gray-600">Clean-up crew for planted community tanks</p>
+                </div>
+              </Link>
+              <Link 
+                href="/blog/best-quiet-filters-40-gallon-tank" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-purple-100 p-3 rounded-full">
+                  <span className="text-2xl">💨</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Quiet Aquarium Filters</h4>
+                  <p className="text-sm text-gray-600">Filtration for planted tanks without noise</p>
+                </div>
+              </Link>
+              <Link 
+                href="/blog/aquarium-water-quality-problems-solutions" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-cyan-100 p-3 rounded-full">
+                  <span className="text-2xl">💧</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Water Quality Guide</h4>
+                  <p className="text-sm text-gray-600">Maintain healthy conditions for aquatic plants</p>
                 </div>
               </Link>
             </div>
@@ -339,8 +429,8 @@ function AquariumLightContent() {
             __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "BlogPosting",
-              "headline": "Best Full Spectrum Aquarium Lights for Planted Tanks: Complete Guide 2024",
-              "description": "Expert guide to choosing full-spectrum aquarium lights. Learn about color spectrum, intensity, and light spread. Compare 5 budget-friendly options with real-world testing results.",
+              "headline": "Best Full Spectrum Aquarium Lights: Complete Guide 2024",
+              "description": "Expert guide to full-spectrum aquarium lights for planted tanks. Compare 5 budget-friendly options, learn about color spectrum and intensity, and find the perfect light for your plants.",
               "url": "https://petshard.com/blog/best-full-spectrum-aquarium-lights",
               "datePublished": "2024-11-24",
               "dateModified": "2024-11-24",

@@ -5,17 +5,17 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Everything You Need to Know About Pet Breeder",
-  description: "Essential pet breeder guide for pet care",
-  keywords: ["pet breeder", "pet breeder tips", "pet breeder guide", "pet pet breeder", "pet breeder advice", "pet breeder care"],
+  title: "Finding a Responsible Pet Breeder: Complete Guide",
+  description: "Learn how to find a responsible pet breeder. Discover red flags, questions to ask, health certifications, and ethical breeding practices.",
+  keywords: ["pet breeder", "responsible breeder", "finding a breeder", "ethical breeding", "breeder selection", "puppy breeder"],
   openGraph: {
-    title: "Everything You Need to Know About Pet Breeder",
-    description: "Essential pet breeder guide for pet care",
+    title: "Finding a Responsible Pet Breeder: Complete Guide",
+    description: "Expert guide to finding ethical, responsible pet breeders. Learn what to look for and questions to ask.",
     type: "article",
     url: "https://petshard.com/blog/pet-breeder",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/ag4.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
       alt: "Everything You Need to Know About Pet Breeder"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Everything You Need to Know About Pet Breeder",
     description: "Essential pet breeder guide for pet care",
-    images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/pet-breeder"
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Everything You Need to Know About Pet Breeder",
-  "description": "Essential pet breeder guide for pet care",
+  "headline": "Finding a Responsible Pet Breeder: Complete Guide",
+  "description": "Guide to finding ethical pet breeders with health certifications and responsible breeding practices",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -83,16 +83,6 @@ function PetBreederGuideContent() {
             <span>🐾 Pet Care</span>
           </div>
         </header>
-
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="Everything You Need to Know About Pet Breeder" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
 
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">

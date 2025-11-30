@@ -184,3 +184,60 @@ export const proTips: ProTip[] = [
     text: "Provide hiding spots for shy bottom feeders like caves, driftwood, or dense plants"
   }
 ];
+
+export const comparisonTable = [
+  {
+    species: "Corydoras Catfish",
+    size: "2-4 inches",
+    compatibility: "5/5",
+    specialization: "Substrate sifting",
+    tankSize: "20+ gallons",
+    groupSize: "3+",
+    cost: "$5-15 each"
+  },
+  {
+    species: "Kuhli Loach",
+    size: "3-4 inches",
+    compatibility: "5/5",
+    specialization: "Nocturnal sifting",
+    tankSize: "20+ gallons",
+    groupSize: "3+",
+    cost: "$8-12 each"
+  },
+  {
+    species: "Yoyo Loach",
+    size: "4-6 inches",
+    compatibility: "4/5",
+    specialization: "Snail control",
+    tankSize: "40+ gallons",
+    groupSize: "5+",
+    cost: "$10-18 each"
+  },
+  {
+    species: "Bristlenose Pleco",
+    size: "4-5 inches",
+    compatibility: "5/5",
+    specialization: "Algae & wood",
+    tankSize: "30+ gallons",
+    groupSize: "1-2",
+    cost: "$15-25 each"
+  },
+  {
+    species: "Otocinclus Catfish",
+    size: "1.5-2 inches",
+    compatibility: "5/5",
+    specialization: "Algae cleaning",
+    tankSize: "10+ gallons",
+    groupSize: "6+",
+    cost: "$3-8 each"
+  },
+  {
+    species: "Siamese Algae Eater",
+    size: "4-6 inches",
+    compatibility: "4/5",
+    specialization: "Black beard algae",
+    tankSize: "30+ gallons",
+    groupSize: "1-2",
+    cost: "$8-15 each"
+  }
+];

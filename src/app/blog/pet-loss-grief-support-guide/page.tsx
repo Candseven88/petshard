@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://petshard.com/blog/pet-loss-grief-support-guide",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/e35.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
       alt: "Pet Loss Grief Support: Coping Strategies & Healing"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pet Loss Grief Support: Coping Strategies & Healing",
     description: "Compassionate guide to pet loss grief with healthy coping strategies, memorial ideas, and professional support resources for healing after losing a beloved pet.",
-    images: ["https://cdn2.thecatapi.com/images/e35.jpg"]
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/pet-loss-grief-support-guide"
@@ -38,7 +38,7 @@ const griefProducts = [
     id: 1,
     name: "Pet Memorial Photo Frame with Paw Print Kit",
     type: "Memorial Keepsake",
-    imageUrl: "https://cdn2.thecatapi.com/images/ag4.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
     price: "$29.99",
     affiliateLink: "https://amzn.to/pet-memorial-frame",
     description: "Beautiful memorial frame with clay impression kit to preserve your pet's paw print as a lasting keepsake and tribute."
@@ -76,15 +76,6 @@ function PetLossGriefGuideContent() {
             <span>💔 Pet Loss Support</span>
           </div>
         </header>
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/e35.jpg" 
-            alt="Peaceful memorial setup with pet photos and candles representing pet loss remembrance" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-purple-50 p-8 rounded-xl">

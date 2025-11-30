@@ -5,27 +5,27 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Complete Guide to Pet Naming for Pet Owners",
-  description: "Complete pet naming information for pets",
-  keywords: ["pet naming", "pet naming tips", "pet naming guide", "pet pet naming", "pet naming advice", "pet naming care"],
+  title: "Pet Naming Guide: How to Choose the Perfect Name for Your Dog or Cat",
+  description: "Expert guide to choosing pet names. Learn naming tips, popular names by breed, and how to train your pet to respond to their name.",
+  keywords: ["pet naming", "dog names", "cat names", "how to name a pet", "best pet names", "pet naming tips"],
   openGraph: {
-    title: "Complete Guide to Pet Naming for Pet Owners",
-    description: "Complete pet naming information for pets",
+    title: "Pet Naming Guide: How to Choose the Perfect Name for Your Dog or Cat",
+    description: "Learn how to choose the perfect pet name. Discover naming tips, popular names by breed, and training techniques.",
     type: "article",
     url: "https://petshard.com/blog/pet-naming",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/ag4.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
-      alt: "Complete Guide to Pet Naming for Pet Owners"
+      alt: "Pet Naming Guide: How to Choose the Perfect Name for Your Dog or Cat"
     }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Complete Guide to Pet Naming for Pet Owners",
-    description: "Complete pet naming information for pets",
-    images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
+    title: "Pet Naming Guide: How to Choose the Perfect Name for Your Dog or Cat",
+    description: "Expert tips for choosing the perfect pet name for your dog or cat.",
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/pet-naming"
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "structured-data": JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Complete Guide to Pet Naming for Pet Owners",
-  "description": "Complete pet naming information for pets",
+  "headline": "Pet Naming Guide: How to Choose the Perfect Name for Your Dog or Cat",
+  "description": "Expert guide to choosing pet names with tips, popular names, and training techniques",
   "author": {
     "@type": "Organization",
     "name": "PetShard"
@@ -83,16 +83,6 @@ function PetNamingGuideContent() {
             <span>🐾 Pet Care</span>
           </div>
         </header>
-
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="Complete Guide to Pet Naming for Pet Owners" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
 
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">

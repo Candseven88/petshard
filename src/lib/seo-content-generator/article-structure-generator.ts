@@ -191,8 +191,16 @@ Professional veterinarians and animal behaviorists emphasize the importance of e
     const keywordLower = keyword.toLowerCase();
     let specificContent = '';
 
+    // Generate care guide content if keyword contains care-related terms
+    if (keywordLower.includes('groom') || keywordLower.includes('train') || keywordLower.includes('care') || 
+        keywordLower.includes('nutrition') || keywordLower.includes('exercise') || keywordLower.includes('first aid') ||
+        keywordLower.includes('treat') || keywordLower.includes('walk') || keywordLower.includes('identification') ||
+        keywordLower.includes('guide') || keywordLower.includes('tips') || keywordLower.includes('humidity') ||
+        keywordLower.includes('litter') || keywordLower.includes('bird') || keywordLower.includes('reptile')) {
+      specificContent = this.generateCareGuideContent(keyword);
+    }
     // Generate breed-specific content if keyword contains breed-related terms
-    if (keywordLower.includes('breed') || keywordLower.includes('dog') || keywordLower.includes('cat')) {
+    else if (keywordLower.includes('breed') || keywordLower.includes('dog') || keywordLower.includes('cat')) {
       const petType = keywordLower.includes('cat') ? 'cat' : 'dog';
       const data = this.breedData[petType];
       
@@ -226,7 +234,7 @@ Environmental factors significantly impact pet wellbeing and comfort for every $
       }
     }
 
-    // Fallback to generic content if not breed-specific
+    // Fallback to generic content if not breed-specific or care-specific
     if (!specificContent) {
       specificContent = `${this.capitalizeWords(keyword)} encompasses several important aspects that every pet owner should understand. The key elements include proper identification, health considerations, behavioral patterns, and care requirements. When dealing with ${keyword}, it's essential to consider factors such as individual pet needs, environmental conditions, and long-term health implications.
 
@@ -242,6 +250,185 @@ Environmental factors significantly impact pet wellbeing and comfort when managi
     }
 
     return specificContent;
+  }
+
+  private generateCareGuideContent(keyword: string): string {
+    const keywordLower = keyword.toLowerCase();
+    
+    // Generate supplies list
+    const suppliesSection = this.generateSuppliesSection(keyword);
+    
+    // Generate step-by-step guide
+    const stepsSection = this.generateStepsSection(keyword);
+    
+    // Generate breed variations
+    const variationsSection = this.generateVariationsSection(keyword);
+    
+    // Generate professional help section
+    const professionalSection = this.generateProfessionalHelpSection(keyword);
+    
+    return `## Why ${this.capitalizeWords(keyword)} Matters
+
+Regular ${keyword} is essential for maintaining your pet's health, comfort, and wellbeing. Professional guidance can be expensive, but with the right techniques and knowledge, you can achieve excellent results at home. This comprehensive guide will walk you through step-by-step procedures and best practices.
+
+${suppliesSection}
+
+${stepsSection}
+
+${variationsSection}
+
+${professionalSection}
+
+## Key Takeaways
+
+Understanding proper ${keyword} techniques ensures your pet receives optimal care. By following these guidelines and remaining consistent with your approach, you'll strengthen your bond with your pet while maintaining their health and happiness. Remember that every pet is unique, and adjustments may be needed based on individual needs.`;
+  }
+
+  private generateSuppliesSection(keyword: string): string {
+    const keywordLower = keyword.toLowerCase();
+    let supplies: string[] = [];
+    
+    if (keywordLower.includes('groom')) {
+      supplies = [
+        'Dog shampoo (appropriate for coat type)',
+        'Conditioner (optional but recommended)',
+        'Non-slip bath mat',
+        'Towels or microfiber drying towel',
+        'Slicker brush (for mats and tangles)',
+        'Metal comb (for fine detailing)',
+        'Dog nail clippers (scissor or guillotine style)',
+        'Styptic powder (for bleeding)',
+        'Ear cleaning solution',
+        'Cotton balls or gauze pads'
+      ];
+    } else if (keywordLower.includes('train')) {
+      supplies = [
+        'High-value training treats',
+        'Clicker (for clicker training)',
+        'Leash and collar',
+        'Training harness (optional)',
+        'Toys for positive reinforcement',
+        'Training mat or designated area',
+        'Treat pouch for easy access',
+        'Notebook for tracking progress',
+        'Training guide or manual',
+        'Patience and consistency'
+      ];
+    } else if (keywordLower.includes('nutrition')) {
+      supplies = [
+        'High-quality pet food (appropriate for age/size)',
+        'Food and water bowls',
+        'Measuring cup for portions',
+        'Food storage container',
+        'Supplements (if recommended)',
+        'Treats for training',
+        'Feeding schedule chart',
+        'Nutritional information guide',
+        'Veterinary consultation notes',
+        'Weight tracking log'
+      ];
+    } else if (keywordLower.includes('first aid')) {
+      supplies = [
+        'First aid kit for pets',
+        'Bandages and gauze pads',
+        'Antiseptic solution',
+        'Tweezers (for splinter removal)',
+        'Thermometer (pet-specific)',
+        'Pain relief medication',
+        'Antibiotic ointment',
+        'Saline solution',
+        'Emergency contact numbers',
+        'Pet medical records'
+      ];
+    } else {
+      supplies = [
+        'Essential tools and equipment',
+        'Quality materials and products',
+        'Reference guides and manuals',
+        'Cleaning and maintenance supplies',
+        'Safety equipment',
+        'Record-keeping materials',
+        'Professional resources',
+        'Training aids',
+        'Comfort items',
+        'Emergency supplies'
+      ];
+    }
+    
+    const suppliesList = supplies.map(s => `• ${s}`).join('\n');
+    return `## Essential Supplies and Tools
+
+Before starting, gather these supplies:
+
+${suppliesList}`;
+  }
+
+  private generateStepsSection(keyword: string): string {
+    const steps = [
+      {
+        title: 'Step 1: Preparation',
+        content: 'Gather all supplies and arrange them within reach. Set up your workspace with good lighting and a comfortable, non-slip surface. Ensure the environment is calm and your pet is relaxed. Pro tip: Start with short sessions and gradually increase duration. Common mistake: Rushing the preparation phase or working with an anxious pet.'
+      },
+      {
+        title: 'Step 2: Initial Assessment',
+        content: 'Examine your pet\'s current condition and identify any specific needs or concerns. Check for any health issues or areas requiring special attention. Take time to understand your pet\'s comfort level and preferences. Pro tip: Document observations for future reference. Common mistake: Skipping this important assessment step.'
+      },
+      {
+        title: 'Step 3: Main Procedure',
+        content: 'Execute the primary task using proper techniques and gentle handling. Work systematically and maintain a calm demeanor throughout. Pay attention to your pet\'s comfort and adjust as needed. Pro tip: Use positive reinforcement and rewards frequently. Common mistake: Applying too much pressure or moving too quickly.'
+      },
+      {
+        title: 'Step 4: Detailed Work',
+        content: 'Complete any detailed or specialized work required. Focus on areas that need extra attention or precision. Take breaks if your pet becomes stressed or tired. Pro tip: Work in sections and reward completion of each section. Common mistake: Neglecting difficult areas or rushing through important details.'
+      },
+      {
+        title: 'Step 5: Finishing and Cleanup',
+        content: 'Complete the final touches and ensure everything is properly finished. Clean up your workspace and put away all supplies. Reward your pet for their cooperation and patience. Pro tip: End on a positive note with treats and praise. Common mistake: Forgetting to reward your pet or leaving the area messy.'
+      },
+      {
+        title: 'Step 6: Follow-up Care',
+        content: 'Monitor your pet for any issues or concerns following the procedure. Provide appropriate aftercare as needed. Schedule follow-up appointments or sessions if necessary. Pro tip: Keep records of what was done and how your pet responded. Common mistake: Ignoring signs of discomfort or complications.'
+      }
+    ];
+    
+    const stepsContent = steps.map(step => `### ${step.title}\n\n${step.content}`).join('\n\n');
+    return `## Complete Step-by-Step Guide\n\n${stepsContent}`;
+  }
+
+  private generateVariationsSection(keyword: string): string {
+    const variations = [
+      {
+        type: 'Short-Haired Breeds',
+        content: 'Short-haired breeds like Labradors and Beagles require less frequent sessions but benefit from regular maintenance. Focus on shedding control and skin health. Frequency: Every 8-12 weeks.'
+      },
+      {
+        type: 'Long-Haired Breeds',
+        content: 'Long-haired breeds like Golden Retrievers require more frequent attention to prevent matting. Daily brushing is often necessary. Frequency: Every 4-6 weeks.'
+      },
+      {
+        type: 'Double-Coated Breeds',
+        content: 'Double-coated breeds like German Shepherds need special attention to the undercoat. Use appropriate tools for their coat type. Frequency: Every 6-8 weeks, more during shedding season.'
+      },
+      {
+        type: 'Senior Pets',
+        content: 'Senior pets may require gentler handling and shorter sessions. Watch for signs of discomfort or fatigue. Adjust techniques based on mobility and health status.'
+      }
+    ];
+    
+    const variationsContent = variations.map(v => `### ${v.type}\n\n${v.content}`).join('\n\n');
+    return `## Breed and Type-Specific Variations\n\n${variationsContent}`;
+  }
+
+  private generateProfessionalHelpSection(keyword: string): string {
+    return `## When to Seek Professional Help
+
+Consider professional assistance if your pet has severe issues, anxiety during procedures, or complex needs requiring specialized expertise. Professional providers can also identify health issues that need veterinary attention.
+
+**Cost Expectations:** Professional services typically range from $50-$150+ depending on your pet's size and specific needs.
+
+**Finding Professionals:** Ask your veterinarian for recommendations, check online reviews, and visit facilities to ensure they meet your standards.
+
+**Frequency Recommendations:** Most pets benefit from professional services every 6-8 weeks, with home maintenance between appointments.`;
   }
 
   private generateUseCases(keyword: string): string[] {

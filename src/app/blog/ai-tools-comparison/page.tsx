@@ -73,15 +73,6 @@ function AIToolsComparisonContent() {
           </div>
         </header>
         {/* Featured Image */}
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="/pet/3.jpg" 
-            alt="AI Tools Comparison" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         {/* Article Content */}
         <div className="prose prose-lg max-w-none">
           {/* Introduction */}

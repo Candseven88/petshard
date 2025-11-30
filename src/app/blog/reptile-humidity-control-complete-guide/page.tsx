@@ -66,15 +66,6 @@ function HumidityGuideContent() {
             <span>🦎 Reptile Care</span>
           </div>
         </header>
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://images1.ratemyfishtank.com/photo/9/660x508c/47000/46502/23234-1-40-gallon-tank-102c3lb4buxgy.webp" 
-            alt="Reptile terrarium with humidity control setup showing misting system, hygrometer, and moisture-retaining substrate" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
           <div className="mb-12 bg-green-50 p-8 rounded-xl">

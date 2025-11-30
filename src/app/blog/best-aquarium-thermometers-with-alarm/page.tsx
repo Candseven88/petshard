@@ -6,6 +6,19 @@ import ThermometerCard from "./components/ThermometerCard";
 import ProductRecommendation from "./components/ProductRecommendation";
 import TemperatureGuide from "./components/TemperatureGuide";
 import { thermometerTypes, products, proTips, temperatureGuides } from "./data";
+
+export const metadata = {
+  title: "Best Aquarium Thermometers with Alarm: 2024 Guide",
+  description: "Compare aquarium thermometers with alarm functions. Learn about digital, LCD, and glass options. Find the perfect temperature monitoring solution for your fish tank.",
+  keywords: "aquarium thermometer with alarm, best aquarium thermometer, digital aquarium thermometer, temperature alarm, fish tank thermometer",
+  openGraph: {
+    title: "Best Aquarium Thermometers with Alarm: 2024 Guide",
+    description: "Expert guide to aquarium thermometers with alarm functions. Compare digital, LCD, and glass options. Protect your fish with reliable temperature monitoring.",
+    url: "https://petshard.com/blog/best-aquarium-thermometers-with-alarm",
+    type: "article",
+  },
+};
+
 function ThermometerContent() {
   return (
     <Layout title="Blog" showBackButton={true}>
@@ -18,41 +31,32 @@ function ThermometerContent() {
             <span>Aquarium Equipment</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Best Aquarium Thermometers with High Temp Alarm: Keep Your Fish Safe 24/7
+            Best Aquarium Thermometers with Alarm: 2024 Guide
           </h1>
           <div className="flex items-center gap-4 text-sm text-gray-500">
-            <span>November 23, 2024</span>
+            <span>November 24, 2024</span>
             <span>•</span>
-            <span>12 min read</span>
+            <span>14 min read</span>
             <span>•</span>
-            <span>📝 Blog Post</span>
+            <span>📝 Expert Guide</span>
           </div>
         </header>
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://www.thesprucepets.com/thmb/DWmPXX3FB2nkHBvvqo-asPo5BWQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Aquarium-digital-thermometer-59000ef63df78ca1591de6b0.jpg" 
-            alt="Digital aquarium thermometer with LED display" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
         <div className="prose prose-lg max-w-none">
-          <div className="mb-12 bg-blue-50 p-8 rounded-xl">
+          <div className="mb-12 bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl border-l-4 border-blue-500">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6">
-              Why Temperature Alarms Can Save Your Fish
+              "I Need a Thermometer with High Temp Alarm for My Aquarium"
             </h2>
             
             <p className="text-lg leading-relaxed mb-4">
-              Have you ever woken up to find your fish gasping at the surface because your heater malfunctioned overnight? Temperature swings are one of the leading causes of fish stress, disease, and death. Unlike humans who can adjust to temperature changes, fish are cold-blooded and rely entirely on their environment.
+              Temperature fluctuations are one of the leading causes of fish stress, disease, and death in home aquariums. A single heater malfunction overnight can devastate an entire tank. Unlike humans who can adjust to temperature changes, fish are cold-blooded creatures that depend entirely on stable water conditions for survival. A 5°F temperature swing can stress fish within hours, and a 10°F+ change can be fatal within 24 hours.
             </p>
-            <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-blue-400">
+            <div className="bg-white rounded-lg p-5 mb-4 border-l-4 border-pink-400">
               <p className="text-lg font-medium text-gray-800">
-                <span className="text-blue-600">Today's Question:</span> "Looking for a thermometer with high temp alarm for fish raising. Any recommendations?"
+                <span className="text-pink-600">Real User Question:</span> "Looking for a thermometer with high temp alarm for fish raising. Any recommendations?"
               </p>
             </div>
             <p className="text-lg leading-relaxed">
-              In this comprehensive guide, we'll explore the best aquarium thermometers with alarm functions, compare different types, and help you choose the perfect one to protect your aquatic pets around the clock.
+              In this comprehensive guide, we'll compare the best aquarium thermometers with alarm functions—from budget-friendly digital models to premium options. You'll learn how to choose the right thermometer for your specific setup, understand the three main types available, and discover which models offer the most reliable alarm functionality to protect your fish 24/7.
             </p>
           </div>
           <div className="mb-12">
@@ -71,6 +75,44 @@ function ThermometerContent() {
               {thermometerTypes.map((thermo) => (
                 <ThermometerCard key={thermo.id} thermometer={thermo} />
               ))}
+            </div>
+            
+            <div className="mb-8 overflow-x-auto">
+              <h3 className="text-xl font-bold text-gray-800 mb-4">Thermometer Comparison Table</h3>
+              <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-md">
+                <thead>
+                  <tr className="bg-blue-600 text-white">
+                    <th className="px-4 py-3 text-left font-bold">Type</th>
+                    <th className="px-4 py-3 text-left font-bold">Price Range</th>
+                    <th className="px-4 py-3 text-left font-bold">Accuracy</th>
+                    <th className="px-4 py-3 text-left font-bold">Alarm Function</th>
+                    <th className="px-4 py-3 text-left font-bold">Best For</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">Digital LED</td>
+                    <td className="px-4 py-3 text-gray-700">$10-$20</td>
+                    <td className="px-4 py-3 text-gray-700">±0.9°F</td>
+                    <td className="px-4 py-3"><span className="bg-green-100 text-green-800 px-2 py-1 rounded">Yes</span></td>
+                    <td className="px-4 py-3 text-gray-700">Serious aquarists</td>
+                  </tr>
+                  <tr className="border-b hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">LCD Strip</td>
+                    <td className="px-4 py-3 text-gray-700">$3-$8</td>
+                    <td className="px-4 py-3 text-gray-700">±2°F</td>
+                    <td className="px-4 py-3"><span className="bg-red-100 text-red-800 px-2 py-1 rounded">No</span></td>
+                    <td className="px-4 py-3 text-gray-700">Budget beginners</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-4 py-3 font-semibold text-gray-800">Glass Traditional</td>
+                    <td className="px-4 py-3 text-gray-700">$4-$10</td>
+                    <td className="px-4 py-3 text-gray-700">±1°F</td>
+                    <td className="px-4 py-3"><span className="bg-red-100 text-red-800 px-2 py-1 rounded">No</span></td>
+                    <td className="px-4 py-3 text-gray-700">Traditional setups</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <TemperatureGuide guides={temperatureGuides} />
@@ -262,6 +304,77 @@ function ThermometerContent() {
               </p>
             </div>
           </div>
+          <div className="mb-12 bg-gray-50 p-8 rounded-xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+              Frequently Asked Questions About Aquarium Thermometers
+            </h2>
+            
+            <div className="space-y-6">
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  What's the best temperature for tropical fish?
+                </h3>
+                <p className="text-gray-700">
+                  Most tropical fish thrive in water temperatures between 75-80°F (24-27°C). However, specific species have different requirements. Always research your particular fish species to determine their ideal temperature range.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  How often should I check my aquarium temperature?
+                </h3>
+                <p className="text-gray-700">
+                  Check your aquarium temperature at least twice daily—once in the morning and once in the evening. With a digital thermometer with alarms, you'll receive automatic alerts if temperatures drift outside your set range, providing 24/7 monitoring.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  Can I use a regular thermometer in my aquarium?
+                </h3>
+                <p className="text-gray-700">
+                  No, regular household thermometers are not designed for aquarium use. They may contain mercury (toxic to fish if broken) or lack the accuracy needed for precise temperature monitoring. Always use aquarium-specific thermometers.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  How accurate do aquarium thermometers need to be?
+                </h3>
+                <p className="text-gray-700">
+                  For most aquariums, accuracy within ±1°F is acceptable. However, for sensitive species like discus or reef tanks, digital thermometers with ±0.9°F accuracy are recommended to catch small temperature fluctuations before they stress your fish.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  What should I do if my aquarium temperature drops suddenly?
+                </h3>
+                <p className="text-gray-700">
+                  If your temperature drops suddenly, first check if your heater is functioning. If it's broken, use an emergency heater or place sealed bags of warm water in the tank. For temperature increases, use ice packs in sealed bags or turn off lights temporarily. Always make gradual adjustments to avoid shocking your fish.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  How do I set alarm thresholds on my digital thermometer?
+                </h3>
+                <p className="text-gray-700">
+                  Most digital thermometers with alarms have buttons to set high and low temperature limits. Set your high alarm 2-3°F above your target maximum and your low alarm 2-3°F below your target minimum. For example, if your target is 75-80°F, set alarms at 77-82°F. Test the alarms monthly to ensure they're working properly.
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                <h3 className="text-lg font-bold text-gray-800 mb-2">
+                  How long do aquarium thermometer batteries last?
+                </h3>
+                <p className="text-gray-700">
+                  Most digital aquarium thermometers use button cell batteries (like LR44 or 3V batteries) that last 1-2 years depending on usage. Keep spare batteries on hand and replace them annually as a preventive measure. Some models include batteries, while others require separate purchase.
+                </p>
+              </div>
+            </div>
+          </div>
+          
           <div className="bg-pink-50 rounded-xl p-6 shadow-md mb-8">
             <h3 className="text-xl font-bold text-pink-600 mb-2">
               💬 What's Your Experience?
@@ -285,8 +398,32 @@ function ThermometerContent() {
             </div>
           </div>
           <div className="mt-12">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Resources</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Related Aquarium Resources</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Link 
+                href="/blog/best-full-spectrum-aquarium-lights" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-yellow-100 p-3 rounded-full">
+                  <span className="text-2xl">💡</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Full Spectrum Aquarium Lights</h4>
+                  <p className="text-sm text-gray-600">Complete lighting guide for planted tanks</p>
+                </div>
+              </Link>
+              <Link 
+                href="/blog/best-quiet-filters-40-gallon-tank" 
+                className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
+              >
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <span className="text-2xl">🔇</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800">Quiet Aquarium Filters</h4>
+                  <p className="text-sm text-gray-600">Best filters for 40-gallon tanks</p>
+                </div>
+              </Link>
               <Link 
                 href="/blog/best-bottom-feeders-for-medium-fish" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
@@ -295,20 +432,20 @@ function ThermometerContent() {
                   <span className="text-2xl">🐟</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-800">Bottom Feeders Guide</h4>
-                  <p className="text-sm text-gray-600">Best clean-up crew for medium fish</p>
+                  <h4 className="font-bold text-gray-800">Bottom Feeders for Medium Fish</h4>
+                  <p className="text-sm text-gray-600">Best clean-up crew species</p>
                 </div>
               </Link>
               <Link 
-                href="/health-guide" 
+                href="/blog/aquarium-water-quality-problems-solutions" 
                 className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-all flex items-center gap-4"
               >
                 <div className="bg-green-100 p-3 rounded-full">
-                  <span className="text-2xl">🏥</span>
+                  <span className="text-2xl">💧</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-gray-800">Pet Health Center</h4>
-                  <p className="text-sm text-gray-600">Complete health resources</p>
+                  <h4 className="font-bold text-gray-800">Water Quality Problems & Solutions</h4>
+                  <p className="text-sm text-gray-600">Troubleshooting guide for tank issues</p>
                 </div>
               </Link>
             </div>

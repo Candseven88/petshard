@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://petshard.com/blog/dog-breed-exercise-requirements",
     siteName: "PetShard",
     images: [{
-      url: "https://cdn2.thecatapi.com/images/ag4.jpg",
+      url: "https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
       width: 1200,
       height: 630,
       alt: "Dog Breed Exercise Requirements: Complete Activity Guide"
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dog Breed Exercise Requirements: Complete Activity Guide",
     description: "Discover exercise needs for different dog breeds. Learn daily activity requirements, best exercises, and tips for high-energy and low-energy dogs.",
-    images: ["https://cdn2.thecatapi.com/images/ag4.jpg"]
+    images: ["https://images.unsplash.com/photo-1633722715463-d30628519d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"]
   },
   alternates: {
     canonical: "https://petshard.com/blog/dog-breed-exercise-requirements"
@@ -83,16 +83,6 @@ function DogBreedExerciseRequirementsGuideContent() {
             <span>🐾 Pet Care</span>
           </div>
         </header>
-
-        <div className="relative h-64 md:h-96 w-full mb-12 rounded-xl overflow-hidden">
-          <Image 
-            src="https://cdn2.thecatapi.com/images/ag4.jpg" 
-            alt="Everything You Need to Know About Dog Breed Exercise Requirements" 
-            fill 
-            className="object-cover"
-            priority
-          />
-        </div>
 
         {/* ========== Introduction Section ========== */}
         <div className="prose prose-lg max-w-none">
