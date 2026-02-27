@@ -43,6 +43,7 @@ const coreFeatures = [
 ];
 
 const minorFeatures = [
+  { title: "Punch the Monkey", icon: "🐒", desc: "Viral macaque tribute & primate ID", href: "/punch-the-monkey" },
   { title: "Age Calculator", icon: "📅", desc: "Convert pet age to human years", href: "/pet-age-calculator" },
   { title: "Virtual Breeding", icon: "🧬", desc: "Predict offspring appearance", href: "/virtual-breeding" },
   { title: "Video Generator", icon: "🎬", desc: "Create fun pet videos", href: "/pet-video" },

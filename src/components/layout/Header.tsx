@@ -19,6 +19,7 @@ const mainNavItems = [
 
 // 次要导航项（将放入下拉菜单）
 const dropdownNavItems = [
+  { label: "Punch the Monkey", href: "/punch-the-monkey", icon: "🐒" },
   { label: "Age Calculator", href: "/pet-age-calculator", icon: "📅" },
   { label: "Virtual Breeding", href: "/virtual-breeding", icon: "🧬" },
   { label: "Video Generator", href: "/pet-video", icon: "🎬" },
