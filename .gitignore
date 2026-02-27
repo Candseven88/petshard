@@ -144,3 +144,17 @@ junit.xml
 *.tgz
 *.tar.gz
 .eslintcache 
+
+# Generated/temporary files
+generated-articles/
+keywords/
+examples/
+bin/
+dist/
+seo-compliance-report.*
+tsconfig.cli.*
+prepare-for-github.sh
+
+# Other IDE configs
+.windsurf/
+.cursor/
